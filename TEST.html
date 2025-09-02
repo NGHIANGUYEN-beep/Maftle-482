@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "EN-US">
+<head>
+  <meta charset = "UTF-8">
+  <title>Brush Feature on a Canvas</title>
+</head>
+<body>
+  <canvas id = "Canvas"
+  width = "800"
+  height = "800"
+  style = "border:2px solid #000000";
+  style = "background-color: #ffffff">
+  </canvas>
+
+  <script>
+    const canvas = document.getElementById('Canvas');
+    const ctx = canvas.getContext('2d');
+    const brushSize = 3;
+    const brushColor = '#000000';
+    
+    //isDrawing keeps track of holding left click
+    let isDrawing = false;
+    let lastX = null;
+    let lastY = null;
+
+    //Left click is pressed. Line will begin and
+    //recenter line in case it leaves the canvas
+    window.addEventListener('mousedown', draw => {
+      isDrawing = true;
+      const rect = canvas.getBoundingClientRect();
+      lastX = draw.clientX - rect.left;
+      lastY = draw.clientY - rect.top;
+    });
+
+    canvas.addEventListener('mousemove', draw => {
+      if (isDrawing) brush(draw);
+    });
+
+    //Reduces unwanted line jumping
+    canvas.addEventListener('mouseleave', draw => {
+      if (isDrawing) brush(draw);
+    });
+    canvas.addEventListener('mouseenter', draw => {
+      if (isDrawing) brush(draw);
+    });
+
+    //Left-click released. Checks bounds of whole screen
+    //rather than just the canvas for consistency
+    window.addEventListener('mouseup', draw => {
+      isDrawing = false;
+    });
+
+    function brush(draw) {
+      // Centering line to cursor position
+      const rect = canvas.getBoundingClientRect();
+      const x = draw.clientX - rect.left;
+      const y = draw.clientY - rect.top;
+
+      // Attributes of the line
+      ctx.strokeStyle = "brushColor";
+      ctx.lineWidth = brushSize;
+      ctx.lineCap = 'round';
+
+      // Smooths lines by using last known position
+      // and connects them with another line
+      ctx.beginPath();
+      ctx.moveTo(lastX, lastY);
+      ctx.lineTo(x, y);
+      ctx.stroke();
+
+      lastX = x;
+      lastY = y;
+    }
+  </script>
+</body>
+</html>
