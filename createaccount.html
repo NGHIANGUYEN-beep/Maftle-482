@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("Minecraft background.webp");
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .setup-container {
+            background-image: url("Minecraft cobblestone.webp");
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 2rem;
+            width: 320px;
+        }
+
+        .setup-container h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: black;
+        }
+
+        .setup-container input[type="text"],
+        .setup-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            background-image: url("Minecraft cobblestone.png");
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .setup-container button {
+            width: 100%;
+            padding: 10px;
+            background-image: url("Minecraft cobblestone.webp");
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .setup-container button:hover {
+            background-color: black;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <div class="setup-container">
+        <form method="POST">
+        <h2>Create Account</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button type="submit">Create</button>
+        </form>
+    </div>
+</body>
+</html>
