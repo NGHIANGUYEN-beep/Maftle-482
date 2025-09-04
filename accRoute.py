@@ -19,4 +19,4 @@ def create_account():
         
         return redirect('/')
     
-    return render_template("createpage.html")
+    return render_template("createaccount.html")
