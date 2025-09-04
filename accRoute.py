@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash
-from Account import maftleAcc, Account
+from Account import maftleAcc, Accounts
 
 bp = Blueprint('main', __name__)
 @bp.route("/")
