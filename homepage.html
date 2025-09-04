@@ -23,7 +23,9 @@
         }
         .split-container {
             display: flex;
+            justify-content: center;
             gap: 7px;
+            min-width: 250px;
             width: 100%;
         }
         .split-container button {
@@ -49,7 +51,9 @@
         <button class="one" onclick="functionOne()">Play Daily Mode</button>
         <button class="two" onclick="functionTwo()">Play Infinite Mode</button>
         <div class="split-container">
-            <button class="three" onclick="functionThree()">Login</button>
+            <a href="loginpage.html">
+                <button class="split-container">Login</button>
+            </a>
             <button class="four" onclick="functionFour()">Stats</button>
         </div>
     </div>
