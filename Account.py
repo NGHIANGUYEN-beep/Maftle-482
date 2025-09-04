@@ -12,4 +12,3 @@ class Accounts(maftleAcc.Model):
         self.username = username
         self.email = email
         self.password = password
-        super().__init__()
