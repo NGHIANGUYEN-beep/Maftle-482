@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maftle Main Page</title>
+    <style>
+        body {
+            height: 130vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/ca/End_Poem_background_BE.png");
+            background-size: cover;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 7px;
+            width: 500px;
+        }
+        .split-container {
+            display: flex;
+            gap: 7px;
+            width: 100%;
+        }
+        .split-container button {
+            width: 50%;
+        }
+        button {
+            padding: 20px;
+            font-size: 24px;
+            color: white;
+            background-image: url("https://static.planetminecraft.com/files/image/minecraft/texture-pack/2024/030/18429433-cobblewall_xl.webp");
+            background-size: 500px;
+            border-radius: 8px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: black;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="one" onclick="functionOne()">Play Daily Mode</button>
+        <button class="two" onclick="functionTwo()">Play Infinite Mode</button>
+        <div class="split-container">
+            <button class="three" onclick="functionThree()">Login</button>
+            <button class="four" onclick="functionFour()">Stats</button>
+        </div>
+    </div>
+
+    <script>
+        function functionOne() {
+            alert("Function One triggered!");
+        }
+        function functionTwo() {
+            alert("Function Two triggered!");
+        }
+        function functionThree() {
+            alert("Function Three triggered!");
+        }
+        function functionFour() {
+            alert("Function Four triggered!");
+        }
+    </script>
+</body>
+</html>
