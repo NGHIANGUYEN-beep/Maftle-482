@@ -13,7 +13,7 @@ def create_account():
         email = request.form.get("email")
         password = request.form.get("password")
         
-        account = Account(username, email, password)
+        account = Accounts(username, email, password)
         maftleAcc.session.add(account)
         maftleAcc.session.commit()
         
