@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from Account import maftleAcc
 maftleAcc = SQLAlchemy()
 
 def accountImport():
@@ -10,6 +11,11 @@ def accountImport():
     
     from accRoute import bp
     app.register_blueprint(bp)
+    
+    return app
+
+app = accountImport()
+app.run()
     
     
     

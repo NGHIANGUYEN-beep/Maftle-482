@@ -8,7 +8,7 @@ def home():
     return render_template("homepage.html")
 
 #BP for creating an account
-@bp.route("/create", methods = ["GET", "POST"])
+@bp.route("/createaccount.html", methods = ["GET", "POST"])
 def create_account():
     
     if request.method == "POST":
@@ -25,7 +25,7 @@ def create_account():
     return render_template("createaccount.html")
 
 #BP for logging in
-@bp.route("/login", methods = ["GET", "POST"])
+@bp.route("/loginpage.html", methods = ["GET", "POST"])
 def login():
     
     #Obtaining Email and Password
