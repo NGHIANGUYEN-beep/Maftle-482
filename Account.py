@@ -1,6 +1,8 @@
 from flask_sqlalchemy import SQLAlchemy
 
 maftleAcc = SQLAlchemy()
+
+#Model for our account
 class Accounts(maftleAcc.Model):
     __tablename__ = "users"
     id = maftleAcc.Column(maftleAcc.Integer, primary_key = True)
