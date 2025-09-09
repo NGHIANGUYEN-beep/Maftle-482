@@ -43,7 +43,7 @@ def login():
             flash("Login Successful!", "Success")
             
         #Redirects if valid
-            return redirect('/')
+            return redirect("/")
         
         else:
         #Redirects if invalid
