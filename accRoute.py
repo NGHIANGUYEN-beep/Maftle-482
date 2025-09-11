@@ -37,17 +37,17 @@ def login():
         user = Accounts.query.filter_by(email=email).first()
         
         #Finds account
-        if user and user.password == password:
-            session[user.id] = user.id
-            session[password] = user.password
-            flash("Login Successful!", "Success")
+        if user.password == password:
+            session["user_id"] = user.id
+            session["email"] = user.email
+            flash("Login Successful!", "success")
             
         #Redirects if valid
             return redirect("/")
         
         else:
         #Redirects if invalid
-            flash("Invalid credentials", "Error")
-            return redirect("/login")
+            flash("Invalid credentials", "error")
+            return redirect("/loginpage.html")
         
     return render_template("loginpage.html")
