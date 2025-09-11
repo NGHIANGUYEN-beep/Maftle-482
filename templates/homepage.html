@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maftle Main Page</title>
     <style>
+        @font-face {
+            font-family: "MinecraftFont";
+            src: url("/static/MinecraftFont.woff") format("woff");
+        }
         body {
-            height: 130vh;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url("/static/Minecraft background.webp");
+            background-image: url("/static/MinecraftBackground.png");
             overflow: hidden;
-            font-family: Arial, sans-serif;
         }
         .button-container {
             display: flex;
@@ -32,22 +35,26 @@
             width: 50%;
         }
         button {
-            padding: 20px;
-            font-size: 24px;
+            padding: 12px;
+            font-size: 28px;
+            font-family: "MinecraftFont";
             color: white;
-            background-image: url("/static/Minecraft cobblestone.webp");
+            background-image: url("/static/StoneButtons.png");
             background-size: 500px;
             border-radius: 8px;
             width: 100%;
         }
         button:hover {
-            background-color: black;
-            opacity: 0.85;
+            filter: brightness(85%);
+        }
+        a {
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="button-container">
+        <img src="/static/Maftle.png">
         <button class="one" onclick="functionOne()">Play Daily Mode</button>
         <button class="two" onclick="functionTwo()">Play Infinite Mode</button>
         <div class="split-container">
@@ -64,9 +71,6 @@
         }
         function functionTwo() {
             alert("Function Two triggered!");
-        }
-        function functionThree() {
-            alert("Function Three triggered!");
         }
         function functionFour() {
             alert("Function Four triggered!");

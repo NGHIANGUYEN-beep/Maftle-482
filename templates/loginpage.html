@@ -5,51 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
     <style>
+        @font-face {
+            font-family: "MinecraftFont";
+            src: url("/static/MinecraftFont.woff") format("woff");
+        }
         body {
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url("/static/Minecraft background.webp");
+            background-image: url("/static/MinecraftBackground.png");
             overflow: hidden;
-            font-family: Arial, sans-serif;
         }
         .login-container {
-            background-image: url("/static/Minecraft cobblestone.webp");
+            background-image: url("/static/StoneButtons.png");
             border: 2px solid black;
             border-radius: 8px;
-            padding: 2rem;
-            width: 320px;
+            padding: 2.5rem;
+            font-family: "MinecraftFont";
+            color: white;
+            font-size: 24px;
         }
 
         .login-container h2 {
             text-align: center;
-            margin-bottom: 1.5rem;
-            color: black;
+            margin: 1.5rem;
+            font-family: "MinecraftFont";
+            color: white;
+            font-size: 54px;
+            line-height: .1em;
         }
 
         .login-container input[type="text"],
         .login-container input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 1rem;
-            background-image: url("/static/Minecraft cobblestone.png");
-            border: 1px solid black;
+            width: 96%;
+            padding: 8px;
+            border: 2px solid black;
             border-radius: 5px;
-            font-size: 14px;
+            font-size: 18px;
+            font-family: "MinecraftFont";
         }
 
         .login-container button {
             width: 100%;
-            padding: 10px;
-            background-image: url("/static/Minecraft cobblestone.webp");
+            padding: 8px;
+            background-image: url("/static/StoneButtons.png");
+            background-size: 500px;
             border-radius: 5px;
-            font-size: 20px;
+            font-size: 24px;
+            font-family: "MinecraftFont";
+            color: white;
         }
 
         .login-container button:hover {
-            background-color: black;
-            opacity: 0.85;
+            filter: brightness(85%);
+        }
+        a {
+            color: white;
+        }
+        a:hover {
+            filter: brightness(85%);
         }
     </style>
 </head>
