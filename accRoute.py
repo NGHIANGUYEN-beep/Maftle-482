@@ -61,5 +61,5 @@ def auth_status():
 #BP for logging out
 @bp.route('/logout')
 def logout():
-    session.pop('user_id', None)
+    session.clear()
     return 'Logged out'
