@@ -20,7 +20,7 @@ def create_account():
         maftleAcc.session.add(account)
         maftleAcc.session.commit()
         
-        return redirect('/')
+        return redirect("/loginpage.html")
     
     return render_template("createaccount.html")
 
@@ -37,7 +37,7 @@ def login():
         user = Accounts.query.filter_by(email=email).first()
         
         #Finds account
-        if user.password == password:
+        if user and user.checkPassword(password):
             session["user_id"] = user.id
             session["email"] = user.email
             flash("Login Successful!", "success")
