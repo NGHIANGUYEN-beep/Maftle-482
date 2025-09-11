@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash, session, Flask
+from flask import Blueprint, render_template, jsonify, request, redirect, url_for, flash, session, Flask
 from Account import maftleAcc, Accounts
 
 #BP for running the home page, only uses the template
@@ -51,3 +51,15 @@ def login():
             return redirect("/loginpage.html")
         
     return render_template("loginpage.html")
+
+#BP for checking login status
+@bp.route('/auth/status')
+def auth_status():
+    is_logged_in = 'user_id' in session
+    return jsonify({'logged_in': is_logged_in})
+
+#BP for logging out
+@bp.route('/logout')
+def logout():
+    session.pop('user_id', None)
+    return 'Logged out'
