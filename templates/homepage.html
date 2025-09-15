@@ -59,9 +59,7 @@
         <button class="one" onclick="functionOne()">Play Daily Mode</button>
         <button class="two" onclick="functionTwo()">Play Infinite Mode</button>
         <div class="split-container">
-            <a href="loginpage.html">
-                <button class="split-container">Login</button>
-            </a>
+            <button id="authButton"></button>
             <button class="four" onclick="functionFour()">Stats</button>
         </div>
     </div>
@@ -77,5 +75,34 @@
             alert("Function Four triggered!");
         }
     </script>
+    <script>
+    function functionOne() {
+        alert("Function One triggered!");
+    }
+    function functionTwo() {
+        alert("Function Two triggered!");
+    }
+    function functionFour() {
+        alert("Function Four triggered!");
+    }
+
+    // Dynamic Login/Logout button updater
+    async function updateButton() {
+        const response = await fetch("/auth/status");
+        const data = await response.json();
+        
+        const button = document.getElementById("authButton");
+
+        if (data.logged_in) {
+            button.textContent = "Logout";
+            button.onclick = () => window.location.href = "/logout";
+        } else {
+            button.textContent = "Login";
+            button.onclick = () => window.location.href = "/loginpage.html";
+        }
+    }
+    // Run on page load
+    updateButton();
+</script>
 </body>
 </html>
