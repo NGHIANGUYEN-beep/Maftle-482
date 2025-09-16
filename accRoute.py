@@ -56,8 +56,11 @@ def login():
 #BP for checking login status
 @bp.route('/auth/status')
 def auth_status():
-    is_logged_in = 'user_id' in session
-    return jsonify({'logged_in': is_logged_in})
+    if 'user_id' in session:
+        return jsonify({
+            'logged_in': True,
+            'username': session.get('username')})
+    return jsonify({'logged_in': False})
 
 #BP for logging out
 @bp.route("/logoutpage.html")

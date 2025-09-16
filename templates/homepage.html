@@ -58,12 +58,16 @@
             font-family: "MinecraftFont";
             font-size: 20px;
             color: white;
+            background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
             padding: 8px 12px;
             border-radius: 5px;
         }
     </style>
 </head>
 <body>
+    <!-- top right welcome -->
+    <div id="welcome" class="top-right"></div>
+
     <div class="button-container">
         <img src="/static/Maftle.png">
         <button class="one" onclick="functionOne()">Play Daily Mode</button>
@@ -73,12 +77,6 @@
             <button class="four" onclick="functionFour()">Stats</button>
         </div>
     </div>
-
-    {% if username %}
-        <div class="top-right">
-            Welcome back, {{ username }}
-        </div>
-    {% endif %}
 
     <script>
     function functionOne() {
@@ -97,11 +95,14 @@
         const data = await response.json();
         
         const button = document.getElementById("authButton");
+        const welcome = document.getElementById("welcome");
 
         if (data.logged_in) {
+            welcome.innerText = `Welcome, ${data.username}!`;
             button.textContent = "Logout";
             button.onclick = () => window.location.href = "/logoutpage.html";
         } else {
+            welcome.innerText = "You are not logged in.";
             button.textContent = "Login";
             button.onclick = () => window.location.href = "/loginpage.html";
         }
