@@ -48,7 +48,7 @@ def login():
         if user and user.checkPassword(password):
             session["user_id"] = user.id
             session["email"] = user.email
-            session["username"] = user.usernames
+            session["username"] = user.username
             
         #Redirects if valid
             return redirect("/")
