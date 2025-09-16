@@ -62,4 +62,4 @@ def auth_status():
 @bp.route("/logoutpage.html")
 def logout():
     session.clear()
-    return redirect("/")
+    return render_template("logoutpage.html")
