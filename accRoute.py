@@ -11,11 +11,19 @@ def home():
 @bp.route("/createaccount.html", methods = ["GET", "POST"])
 def create_account():
     
+    #Gets username, email, password from front-end submission
     if request.method == "POST":
         username = request.form.get("username")
         email = request.form.get("email")
         password = request.form.get("password")
-        
+    
+    #Checks if there is account with existing email
+        existing_user = Accounts.query.filter_by(email=email).first()
+        if existing_user:
+            flash("Email is already registered. Please log in.", "error")
+            return redirect("/createaccount.html")
+    
+    #Commits account to database
         account = Accounts(username, email, password)
         maftleAcc.session.add(account)
         maftleAcc.session.commit()
