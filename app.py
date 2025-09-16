@@ -2,7 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from Account import maftleAcc
 
-def accountImport():
+def main():
 
     app = Flask(__name__)
     app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+mysqlconnector://nghianguyen@localhost/fall2025_482m"
@@ -15,7 +15,7 @@ def accountImport():
     
     return app
 
-app = accountImport()
+app = main()
 if __name__ == "__main__":
     app.run(debug=True, port = 5000)
 
