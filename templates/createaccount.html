@@ -59,6 +59,15 @@
         .setup-container button:hover {
             filter: brightness(85%);
         }
+        .flash-message {
+            text-align: center;
+            margin: 10px auto;
+            padding: 8px 16px;
+            border-radius: 5px;
+            width: fit-content;
+            font-family: "MinecraftFont";
+            font-size: 25px;
+}
         a {
             color: white;
         }
@@ -80,6 +89,13 @@
             <button type="submit">Create</button>
             <a href="/">Return to Login</a>
         </form>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
     </div>
 </body>
 </html>

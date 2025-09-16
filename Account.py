@@ -2,7 +2,7 @@ from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 maftleAcc = SQLAlchemy()
 
-#Model for our account
+#Model for accounts
 class Accounts(maftleAcc.Model):
     __tablename__ = "users"
     id = maftleAcc.Column(maftleAcc.Integer, primary_key = True)

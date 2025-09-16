@@ -17,10 +17,16 @@ def create_account():
         email = request.form.get("email")
         password = request.form.get("password")
     
-    #Checks if there is account with existing email
-        existing_user = Accounts.query.filter_by(email=email).first()
+    #Checks if username is taken
+        existing_user = Accounts.query.filter_by(username=username).first()
         if existing_user:
-            flash("Email is already registered. Please log in.", "error")
+            flash("Username already exists!", "usererror")
+            return redirect("/createaccount.html")
+        
+    #Checks if there is account with existing email
+        existing_email = Accounts.query.filter_by(email=email).first()
+        if existing_email:
+            flash("Email is already registered. Please log in!", "createerror")
             return redirect("/createaccount.html")
     
     #Commits account to database
@@ -55,7 +61,7 @@ def login():
         
         else:
         #Redirects if invalid
-            flash("Invalid Email or Password", "error")
+            flash("Invalid Email or Password!", "error")
             return redirect("/loginpage.html")
         
     return render_template("loginpage.html")
