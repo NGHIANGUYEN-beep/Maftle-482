@@ -36,6 +36,7 @@
             font-family: "MinecraftFont";
             color: white;
             font-size: 24px;
+            display: block;
         }
         .button-container p {
             text-align: center;
@@ -45,11 +46,10 @@
             font-size: 32px;
             line-height: .1em;
         }
-        button:hover {
-            filter: brightness(85%);
-        }
         a {
+            display: block;
             color: white;
+            text-decoration: none;
         }
         a:hover {
             filter: brightness(85%);
@@ -58,8 +58,8 @@
     <body>
         <div class="button-container">
             <p>You have been Logged Out</p><br>
-            <button type="return">
-                <a href="/">Return to Home</a>
+            <button type="submit">
+            <a href="/">Return to Home</a>
             </button>
         </div>
     </body>
