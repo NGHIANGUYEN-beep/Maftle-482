@@ -75,12 +75,13 @@
         </div>
     </div>
 
-    <div ID='hidename' class="top-right"></div>
+    <div ID='userdisplay' class="top-right"></div>
     <script>
-    if (username != null) {
-        const div = document.getElementById('hidename');
+    const username = {username, tojson, safe };
+    if (username) {
+        const div = document.getElementById('userdisplay');
         displayDiv.textContent = "Welcome back, ${username}";
-        displayDiv.style.display = 'block'; // Show it
+        displayDiv.style.display = 'block';
     }
     </script>
 
