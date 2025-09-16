@@ -48,15 +48,14 @@ def login():
         if user and user.checkPassword(password):
             session["user_id"] = user.id
             session["email"] = user.email
-            session["username"] = user.username
-            flash("Login Successful!", "success")
+            session["username"] = user.usernames
             
         #Redirects if valid
             return redirect("/")
         
         else:
         #Redirects if invalid
-            flash("Invalid credentials", "error")
+            flash("Invalid Email or Password", "error")
             return redirect("/loginpage.html")
         
     return render_template("loginpage.html")
