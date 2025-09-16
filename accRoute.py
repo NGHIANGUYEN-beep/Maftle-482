@@ -59,7 +59,7 @@ def auth_status():
     return jsonify({'logged_in': is_logged_in})
 
 #BP for logging out
-@bp.route('/logout')
+@bp.route("/logoutpage.html")
 def logout():
     session.clear()
-    return 'Logged out'
+    return redirect("/")

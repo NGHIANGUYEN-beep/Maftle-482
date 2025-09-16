@@ -77,10 +77,10 @@
 
     <div ID='hidename' class="top-right"></div>
     <script>
-    if (username != null) {
+    if (username) {
         const div = document.getElementById('hidename');
         displayDiv.textContent = "Welcome back, ${username}";
-        displayDiv.style.display = 'block'; // Show it
+        displayDiv.style.display = 'block';
     }
     </script>
 
