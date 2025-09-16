@@ -74,15 +74,11 @@
         </div>
     </div>
 
-    <div ID='userdisplay' class="top-right"></div>
-    <script>
-    const username = {username, tojson, safe };
-    if (username) {
-        const div = document.getElementById('userdisplay');
-        displayDiv.textContent = "Welcome back, ${username}";
-        displayDiv.style.display = 'block';
-    }
-    </script>
+    {% if username %}
+        <div class="top-right">
+            Welcome back, {{ username }}
+        </div>
+    {% endif %}
 
     <script>
     function functionOne() {
