@@ -40,6 +40,7 @@ def login():
         if user and user.checkPassword(password):
             session["user_id"] = user.id
             session["email"] = user.email
+            session["username"] = user.username
             flash("Login Successful!", "success")
             
         #Redirects if valid
