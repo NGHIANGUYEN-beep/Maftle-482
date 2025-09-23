@@ -1,0 +1,1818 @@
+2,Cobblestone,cobblestone,FALSE,TRUE,64
+3,Cobblestone Slab,cobblestone_slab,TRUE,FALSE,64
+4,Cobblestone Stairs,cobblestone_stairs,TRUE,FALSE,64
+5,Cobblestone Wall,cobblestone_wall,TRUE,FALSE,64
+6,Infested Cobblestone,infested_cobblestone,FALSE,FALSE,64
+7,Mossy Cobblestone,mossy_cobblestone,TRUE,TRUE,64
+8,Mossy Cobblestone Slab,mossy_cobblestone_slab,TRUE,FALSE,64
+9,Mossy Cobblestone Stairs,mossy_cobblestone_stairs,TRUE,FALSE,64
+10,Mossy Cobblestone Wall,mossy_cobblestone_wall,TRUE,FALSE,64
+11,Stone,stone,FALSE,TRUE,64
+12,Stone Slab,stone_slab,TRUE,TRUE,64
+13,Stone Stairs,stone_stairs,TRUE,FALSE,64
+14,Infested Stone,infested_stone,TRUE,FALSE,64
+15,Smooth Stone,smooth_stone,FALSE,TRUE,64
+16,Smooth Stone Slab,smooth_stone_slab,TRUE,TRUE,64
+17,Stone Bricks,stone_bricks,TRUE,TRUE,64
+18,Stone Brick Slab,stone_brick_slab,TRUE,TRUE,64
+19,Stone Brick Stairs,stone_brick_stairs,TRUE,FALSE,64
+20,Stone Brick Wall,stone_brick_wall,TRUE,FALSE,64
+21,Infested Stone Bricks,infested_stone_bricks,FALSE,FALSE,64
+22,Cracked Stone Bricks,cracked_stone_bricks,FALSE,FALSE,64
+23,Infested Cracked Stone Bricks,infested_cracked_stone_bricks,FALSE,FALSE,64
+24,Chiseled Stone Bricks,chiseled_stone_bricks,TRUE,TRUE,64
+25,Infested Chiseled Stone Bricks,infested_chiseled_stone_bricks,FALSE,FALSE,64
+26,Mossy Stone Bricks,mossy_stone_bricks,TRUE,TRUE,64
+27,Mossy Stone Brick Slab,mossy_stone_brick_slab,TRUE,FALSE,64
+28,Mossy Stone Brick Stairs,mossy_stone_brick_stairs,TRUE,FALSE,64
+29,Mossy Stone Brick Wall,mossy_stone_brick_wall,TRUE,FALSE,64
+30,Infested Mossy Stone Bricks,infested_mossy_stone_bricks,FALSE,FALSE,64
+31,Stone Pressure Plate,stone_pressure_plate,TRUE,TRUE,64
+32,Stone Button,stone_button,TRUE,FALSE,64
+33,Deepslate,deepslate,FALSE,FALSE,64
+34,Cobbled Deepslate,cobbled_deepslate,FALSE,TRUE,64
+35,Cobbled Deepslate Slab,cobbled_deepslate_slab,TRUE,TRUE,64
+36,Cobbled Deepslate Stairs,cobbled_deepslate_stairs,TRUE,FALSE,64
+37,Cobbled Deepslate Wall,cobbled_deepslate_wall,TRUE,FALSE,64
+38,Infested Deepslate,infested_deepslate,FALSE,FALSE,64
+39,Polished Deepslate,polished_deepslate,TRUE,TRUE,64
+40,Polished Deepslate Slab,polished_deepslate_slab,TRUE,FALSE,64
+41,Polished Deepslate Stairs,polished_deepslate_stairs,TRUE,FALSE,64
+42,Polished Deepslate Wall,polished_deepslate_wall,TRUE,FALSE,64
+43,Deepslate Bricks,deepslate_bricks,TRUE,TRUE,64
+44,Deepslate Brick Slab,deepslate_brick_slab,TRUE,FALSE,64
+45,Deepslate Brick Stairs,deepslate_brick_stairs,TRUE,FALSE,64
+46,Deepslate Brick Wall,deepslate_brick_wall,TRUE,FALSE,64
+47,Cracked Deepslate Bricks,cracked_deepslate_bricks,FALSE,FALSE,64
+48,Deepslate Tiles,deepslate_tiles,TRUE,TRUE,64
+49,Deepslate Tile Slab,deepslate_tile_slab,TRUE,FALSE,64
+50,Deepslate Tile Stairs,deepslate_tile_stairs,TRUE,FALSE,64
+51,Deepslate Tile Wall,deepslate_tile_wall,TRUE,FALSE,64
+52,Cracked Deepslate Tiles,cracked_deepslate_tiles,FALSE,FALSE,64
+53,Chiseled Deepslate,chiseled_deepslate,TRUE,FALSE,64
+54,Reinforced Deepslate,reinforced_deepslate,FALSE,FALSE,64
+55,Bedrock,bedrock,FALSE,FALSE,64
+56,Diorite,diorite,TRUE,TRUE,64
+57,Diorite Slab,diorite_slab,TRUE,FALSE,64
+58,Diorite Stairs,diorite_stairs,TRUE,FALSE,64
+59,Diorite Wall,diorite_wall,TRUE,FALSE,64
+60,Polished Diorite,polished_diorite,TRUE,TRUE,64
+61,Polished Diorite Slab,polished_diorite_slab,TRUE,FALSE,64
+62,Polished Diorite Stairs,polished_diorite_stairs,TRUE,FALSE,64
+63,Andesite,andesite,TRUE,TRUE,64
+64,Andesite Slab,andesite_slab,TRUE,FALSE,64
+65,Andesite Stairs,andesite_stairs,TRUE,FALSE,64
+66,Andesite Wall,andesite_wall,TRUE,FALSE,64
+67,Polished Andesite,polished_andesite,TRUE,TRUE,64
+68,Polished Andesite Slab,polished_andesite_slab,TRUE,FALSE,64
+69,Polished Andesite Stairs,polished_andesite_stairs,TRUE,FALSE,64
+70,Granite,granite,TRUE,TRUE,64
+71,Granite Slab,granite_slab,TRUE,FALSE,64
+72,Granite Stairs,granite_stairs,TRUE,FALSE,64
+73,Granite Wall,granite_wall,TRUE,FALSE,64
+74,Polished Granite,polished_granite,TRUE,TRUE,64
+75,Polished Granite Slab,polished_granite_slab,TRUE,FALSE,64
+76,Polished Granite Stairs,polished_granite_stairs,TRUE,FALSE,64
+77,Tuff,tuff,FALSE,FALSE,64
+78,Tuff Slab,tuff_slab,TRUE,FALSE,64
+79,Tuff Stairs,tuff_stairs,TRUE,FALSE,64
+80,Tuff Wall,tuff_wall,TRUE,FALSE,64
+81,Chiseled Tuff,chiseled_tuff,TRUE,FALSE,64
+82,Polished Tuff,polished_tuff,TRUE,FALSE,64
+83,Polished Tuff Slab,polished_tuff_slab,TRUE,FALSE,64
+84,Polished Tuff Stairs,polished_tuff_stairs,TRUE,FALSE,64
+85,Polished Tuff Wall,polished_tuff_wall,TRUE,FALSE,64
+86,Tuff Bricks,tuff_bricks,TRUE,FALSE,64
+87,Tuff Brick Slab,tuff_brick_slab,TRUE,FALSE,64
+88,Tuff Brick Stairs,tuff_brick_stairs,TRUE,FALSE,64
+89,Tuff Brick Wall,tuff_brick_wall,TRUE,FALSE,64
+90,Chiseled Tuff Bricks,chiseled_tuff_bricks,TRUE,FALSE,64
+91,Calcite,calcite,FALSE,FALSE,64
+92,Dripstone Block,dripstone_block,TRUE,FALSE,64
+93,Pointed Dripstone,pointed_dripstone,FALSE,TRUE,64
+94,Dirt,dirt,FALSE,TRUE,64
+95,Grass Block,grass_block,FALSE,FALSE,64
+96,Mycelium,mycelium,FALSE,FALSE,64
+97,Podzol,podzol,FALSE,FALSE,64
+98,Coarse Dirt,coarse_dirt,TRUE,FALSE,64
+99,Rooted Dirt,rooted_dirt,FALSE,FALSE,64
+100,Dirt Path,dirt_path,FALSE,FALSE,64
+101,Farmland,farmland,FALSE,FALSE,64
+102,Oak Log,oak_log,FALSE,TRUE,64
+103,Oak Wood,oak_wood,TRUE,TRUE,64
+104,Stripped Oak Log,stripped_oak_log,FALSE,TRUE,64
+105,Stripped Oak Wood,stripped_oak_wood,TRUE,TRUE,64
+106,Oak Planks,oak_planks,TRUE,TRUE,64
+107,Oak Slab,oak_slab,TRUE,TRUE,64
+108,Oak Stairs,oak_stairs,TRUE,FALSE,64
+109,Oak Fence,oak_fence,TRUE,FALSE,64
+110,Oak Fence Gate,oak_fence_gate,TRUE,FALSE,64
+111,Oak Door,oak_door,TRUE,FALSE,64
+112,Oak Trapdoor,oak_trapdoor,TRUE,FALSE,64
+113,Oak Sign,oak_sign,TRUE,FALSE,16
+114,Oak Hanging Sign,oak_hanging_sign,TRUE,FALSE,16
+115,Oak Pressure Plate,oak_pressure_plate,TRUE,FALSE,64
+116,Oak Button,oak_button,TRUE,FALSE,64
+117,Oak Boat,oak_boat,TRUE,TRUE,1
+118,Oak Boat with Chest,oak_chest_boat,TRUE,FALSE,1
+119,Birch Log,birch_log,FALSE,TRUE,64
+120,Birch Wood,birch_wood,TRUE,TRUE,64
+121,Stripped Birch Log,stripped_birch_log,FALSE,TRUE,64
+122,Stripped Birch Wood,stripped_birch_wood,TRUE,TRUE,64
+123,Birch Planks,birch_planks,TRUE,TRUE,64
+124,Birch Slab,birch_slab,TRUE,TRUE,64
+125,Birch Stairs,birch_stairs,TRUE,FALSE,64
+126,Birch Fence,birch_fence,TRUE,FALSE,64
+127,Birch Fence Gate,birch_fence_gate,TRUE,FALSE,64
+128,Birch Door,birch_door,TRUE,FALSE,64
+129,Birch Trapdoor,birch_trapdoor,TRUE,FALSE,64
+130,Birch Sign,birch_sign,TRUE,FALSE,16
+131,Birch Hanging Sign,birch_hanging_sign,TRUE,FALSE,16
+132,Birch Pressure Plate,birch_pressure_plate,TRUE,FALSE,64
+133,Birch Button,birch_button,TRUE,FALSE,64
+134,Birch Boat,birch_boat,TRUE,TRUE,1
+135,Birch Boat with Chest,birch_chest_boat,TRUE,FALSE,1
+136,Spruce Log,spruce_log,FALSE,TRUE,64
+137,Spruce Wood,spruce_wood,TRUE,TRUE,64
+138,Stripped Spruce Log,stripped_spruce_log,FALSE,TRUE,64
+139,Stripped Spruce Wood,stripped_spruce_wood,TRUE,TRUE,64
+140,Spruce Planks,spruce_planks,TRUE,TRUE,64
+141,Spruce Slab,spruce_slab,TRUE,TRUE,64
+142,Spruce Stairs,spruce_stairs,TRUE,FALSE,64
+143,Spruce Fence,spruce_fence,TRUE,FALSE,64
+144,Spruce Fence Gate,spruce_fence_gate,TRUE,FALSE,64
+145,Spruce Door,spruce_door,TRUE,FALSE,64
+146,Spruce Trapdoor,spruce_trapdoor,TRUE,FALSE,64
+147,Spruce Sign,spruce_sign,TRUE,FALSE,16
+148,Spruce Hanging Sign,spruce_hanging_sign,TRUE,FALSE,16
+149,Spruce Pressure Plate,spruce_pressure_plate,TRUE,FALSE,64
+150,Spruce Button,spruce_button,TRUE,FALSE,64
+151,Spruce Boat,spruce_boat,TRUE,TRUE,1
+152,Spruce Boat with Chest,spruce_chest_boat,TRUE,FALSE,1
+153,Jungle Log,jungle_log,FALSE,TRUE,64
+154,Jungle Wood,jungle_wood,TRUE,TRUE,64
+155,Stripped Jungle Log,stripped_jungle_log,FALSE,TRUE,64
+156,Stripped Jungle Wood,stripped_jungle_wood,TRUE,TRUE,64
+157,Jungle Planks,jungle_planks,TRUE,TRUE,64
+158,Jungle Slab,jungle_slab,TRUE,TRUE,64
+159,Jungle Stairs,jungle_stairs,TRUE,FALSE,64
+160,Jungle Fence,jungle_fence,TRUE,FALSE,64
+161,Jungle Fence Gate,jungle_fence_gate,TRUE,FALSE,64
+162,Jungle Door,jungle_door,TRUE,FALSE,64
+163,Jungle Trapdoor,jungle_trapdoor,TRUE,FALSE,64
+164,Jungle Sign,jungle_sign,TRUE,FALSE,16
+165,Jungle Hanging Sign,jungle_hanging_sign,TRUE,FALSE,16
+166,Jungle Pressure Plate,jungle_pressure_plate,TRUE,FALSE,64
+167,Jungle Button,jungle_button,TRUE,FALSE,64
+168,Jungle Boat,jungle_boat,TRUE,TRUE,1
+169,Jungle Boat with Chest,jungle_chest_boat,TRUE,FALSE,1
+170,Dark Oak Log,dark_oak_log,FALSE,TRUE,64
+171,Dark Oak Wood,dark_oak_wood,TRUE,TRUE,64
+172,Stripped Dark Oak Log,stripped_dark_oak_log,FALSE,TRUE,64
+173,Stripped Dark Oak Wood,stripped_dark_oak_wood,TRUE,TRUE,64
+174,Dark Oak Planks,dark_oak_planks,TRUE,TRUE,64
+175,Dark Oak Slab,dark_oak_slab,TRUE,TRUE,64
+176,Dark Oak Stairs,dark_oak_stairs,TRUE,FALSE,64
+177,Dark Oak Fence,dark_oak_fence,TRUE,FALSE,64
+178,Dark Oak Fence Gate,dark_oak_fence_gate,TRUE,FALSE,64
+179,Dark Oak Door,dark_oak_door,TRUE,FALSE,64
+180,Dark Oak Trapdoor,dark_oak_trapdoor,TRUE,FALSE,64
+181,Dark Oak Sign,dark_oak_sign,TRUE,FALSE,16
+182,Dark Oak Hanging Sign,dark_oak_hanging_sign,TRUE,FALSE,16
+183,Dark Oak Pressure Plate,dark_oak_pressure_plate,TRUE,FALSE,64
+184,Dark Oak Button,dark_oak_button,TRUE,FALSE,64
+185,Dark Oak Boat,dark_oak_boat,TRUE,TRUE,1
+186,Dark Oak Boat with Chest,dark_oak_chest_boat,TRUE,FALSE,1
+187,Acacia Log,acacia_log,FALSE,TRUE,64
+188,Acacia Wood,acacia_wood,TRUE,TRUE,64
+189,Stripped Acacia Log,stripped_acacia_log,FALSE,TRUE,64
+190,Stripped Acacia Wood,stripped_acacia_wood,TRUE,TRUE,64
+191,Acacia Planks,acacia_planks,TRUE,TRUE,64
+192,Acacia Slab,acacia_slab,TRUE,TRUE,64
+193,Acacia Stairs,acacia_stairs,TRUE,FALSE,64
+194,Acacia Fence,acacia_fence,TRUE,FALSE,64
+195,Acacia Fence Gate,acacia_fence_gate,TRUE,FALSE,64
+196,Acacia Door,acacia_door,TRUE,FALSE,64
+197,Acacia Trapdoor,acacia_trapdoor,TRUE,FALSE,64
+198,Acacia Sign,acacia_sign,TRUE,FALSE,16
+199,Acacia Hanging Sign,acacia_hanging_sign,TRUE,FALSE,16
+200,Acacia Pressure Plate,acacia_pressure_plate,TRUE,FALSE,64
+201,Acacia Button,acacia_button,TRUE,FALSE,64
+202,Acacia Boat,acacia_boat,TRUE,TRUE,1
+203,Acacia Boat with Chest,acacia_chest_boat,TRUE,FALSE,1
+204,Mangrove Log,mangrove_log,FALSE,TRUE,64
+205,Mangrove Wood,mangrove_wood,TRUE,TRUE,64
+206,Stripped Mangrove Log,stripped_mangrove_log,FALSE,TRUE,64
+207,Stripped Mangrove Wood,stripped_mangrove_wood,TRUE,TRUE,64
+208,Mangrove Planks,mangrove_planks,TRUE,TRUE,64
+209,Mangrove Slab,mangrove_slab,TRUE,TRUE,64
+210,Mangrove Stairs,mangrove_stairs,TRUE,FALSE,64
+211,Mangrove Fence,mangrove_fence,TRUE,FALSE,64
+212,Mangrove Gate,mangrove_fence_gate,TRUE,FALSE,64
+213,Mangrove Door,mangrove_door,TRUE,FALSE,64
+214,Mangrove Trapdoor,mangrove_trapdoor,TRUE,FALSE,64
+215,Mangrove Sign,mangrove_sign,TRUE,FALSE,16
+216,Mangrove Hanging Sign,mangrove_hanging_sign,TRUE,FALSE,16
+217,Mangrove Pressure Plate,mangrove_pressure_plate,TRUE,FALSE,64
+218,Mangrove Button,mangrove_button,TRUE,FALSE,64
+219,Mangrove Boat,mangrove_boat,TRUE,TRUE,1
+220,Mangrove Boat with Chest,mangrove_chest_boat,TRUE,FALSE,1
+221,Cherry Log,cherry_log,FALSE,TRUE,64
+222,Cherry Wood,cherry_wood,TRUE,TRUE,64
+223,Stripped Cherry Log,stripped_cherry_log,FALSE,TRUE,64
+224,Stripped Cherry Wood,stripped_cherry_wood,TRUE,TRUE,64
+225,Cherry Planks,cherry_planks,TRUE,TRUE,64
+226,Cherry Slab,cherry_slab,TRUE,TRUE,64
+227,Cherry Stairs,cherry_stairs,TRUE,FALSE,64
+228,Cherry Fence,cherry_fence,TRUE,FALSE,64
+229,Cherry Fence Gate,cherry_fence_gate,TRUE,FALSE,64
+230,Cherry Door,cherry_door,TRUE,FALSE,64
+231,Cherry Trapdoor,cherry_trapdoor,TRUE,FALSE,64
+232,Cherry Sign,cherry_sign,TRUE,FALSE,16
+233,Cherry Hanging Sign,cherry_hanging_sign,TRUE,FALSE,16
+234,Cherry Pressure Plate,cherry_pressure_plate,TRUE,FALSE,64
+235,Cherry Button,cherry_button,TRUE,FALSE,64
+236,Cherry Boat,cherry_boat,TRUE,TRUE,1
+237,Cherry Boat with Chest,cherry_chest_boat,TRUE,FALSE,1
+238,Block of Bamboo,bamboo_block,TRUE,TRUE,64
+239,Block of Stripped Bamboo,stripped_bamboo_block,TRUE,TRUE,64
+240,Bamboo Planks,bamboo_planks,TRUE,TRUE,64
+241,Bamboo Slab,bamboo_slab,TRUE,TRUE,64
+242,Bamboo Stairs,bamboo_stairs,TRUE,FALSE,64
+243,Bamboo Fence,bamboo_fence,TRUE,FALSE,64
+244,Bamboo Fence Gate,bamboo_fence_gate,TRUE,FALSE,64
+245,Bamboo Door,bamboo_door,TRUE,FALSE,64
+246,Bamboo Trapdoor,bamboo_trapdoor,TRUE,FALSE,64
+247,Bamboo Sign,bamboo_sign,TRUE,FALSE,16
+248,Bamboo Hanging Sign,bamboo_hanging_sign,TRUE,FALSE,16
+249,Bamboo Pressure Plate,bamboo_pressure_plate,TRUE,FALSE,64
+250,Bamboo Button,bamboo_button,TRUE,FALSE,64
+251,Bamboo Raft,bamboo_raft,TRUE,TRUE,1
+252,Bamboo Raft with Chest,bamboo_chest_raft,TRUE,FALSE,1
+253,Bamboo Mosaic,bamboo_mosaic,TRUE,TRUE,64
+254,Bamboo Mosaic Slab,bamboo_mosaic_slab,TRUE,FALSE,64
+255,Bamboo Mosaic Stairs,bamboo_mosaic_stairs,TRUE,FALSE,64
+256,Pale Oak Log,pale_oak_log,FALSE,TRUE,64
+257,Creaking Heart,creaking_heart,TRUE,FALSE,64
+258,Pale Oak Wood,pale_oak_wood,TRUE,TRUE,64
+259,Stripped Pale Oak Log,stripped_pale_oak_log,FALSE,TRUE,64
+260,Stripped Pale Oak Wood,stripped_pale_oak_wood,TRUE,TRUE,64
+261,Pale Oak Planks,pale_oak_planks,TRUE,TRUE,64
+262,Pale Oak Slab,pale_oak_slab,TRUE,TRUE,64
+263,Pale Oak Stairs,pale_oak_stairs,TRUE,FALSE,64
+264,Pale Oak Fence,pale_oak_fence,TRUE,FALSE,64
+265,Pale Oak Fence Gate,pale_oak_fence_gate,TRUE,FALSE,64
+266,Pale Oak Door,pale_oak_door,TRUE,FALSE,64
+267,Pale Oak Trapdoor,pale_oak_trapdoor,TRUE,FALSE,64
+268,Pale Oak Sign,pale_oak_sign,TRUE,FALSE,16
+269,Pale Oak Hanging Sign,pale_oak_hanging_sign,TRUE,FALSE,16
+270,Pale Oak Pressure Plate,pale_oak_pressure_plate,TRUE,FALSE,64
+271,Pale Oak Button,pale_oak_button,TRUE,FALSE,64
+272,Pale Oak Boat,pale_oak_boat,TRUE,TRUE,1
+273,Pale Oak Boat with Chest,pale_oak_chest_boat,TRUE,FALSE,1
+274,Warped Stem,warped_stem,FALSE,TRUE,64
+275,Warped Hyphae,warped_hyphae,TRUE,TRUE,64
+276,Stripped Warped Stem,stripped_warped_stem,FALSE,TRUE,64
+277,Stripped Warped Hyphae,stripped_warped_hyphae,TRUE,TRUE,64
+278,Warped Planks,warped_planks,TRUE,TRUE,64
+279,Warped Slab,warped_slab,TRUE,TRUE,64
+280,Warped Stairs,warped_stairs,TRUE,FALSE,64
+281,Warped Fence,warped_fence,TRUE,FALSE,64
+282,Warped Fence Gate,warped_fence_gate,TRUE,FALSE,64
+283,Warped Door,warped_door,TRUE,FALSE,64
+284,Warped Trapdoor,warped_trapdoor,TRUE,FALSE,64
+285,Warped Sign,warped_sign,TRUE,FALSE,16
+286,Warped Hanging Sign,warped_hanging_sign,TRUE,FALSE,16
+287,Warped Pressure Plate,warped_pressure_plate,TRUE,FALSE,64
+288,Warped Button,warped_button,TRUE,FALSE,64
+289,Crimson Stem,crimson_stem,FALSE,TRUE,64
+290,Crimson Hyphae,crimson_hyphae,TRUE,TRUE,64
+291,Stripped Crimson Stem,stripped_crimson_stem,FALSE,TRUE,64
+292,Stripped Crimson Hyphae,stripped_crimson_hyphae,TRUE,TRUE,64
+293,Crimson Planks,crimson_planks,TRUE,TRUE,64
+294,Crimson Slab,crimson_slab,TRUE,TRUE,64
+295,Crimson Stairs,crimson_stairs,TRUE,FALSE,64
+296,Crimson Fence,crimson_fence,TRUE,FALSE,64
+297,Crimson Fence Gate,crimson_fence_gate,TRUE,FALSE,64
+298,Crimson Door,crimson_door,TRUE,FALSE,64
+299,Crimson Trapdoor,crimson_trapdoor,TRUE,FALSE,64
+300,Crimson Sign,crimson_sign,TRUE,FALSE,16
+301,Crimson Hanging Sign,crimson_hanging_sign,TRUE,FALSE,16
+302,Crimson Pressure Plate,crimson_pressure_plate,TRUE,FALSE,64
+303,Crimson Button,crimson_button,TRUE,FALSE,64
+304,Petrified Oak Slab,petrified_oak_slab,FALSE,FALSE,64
+305,Gravel,gravel,FALSE,TRUE,64
+306,Suspicious Gravel,suspicious_gravel,FALSE,FALSE,64
+307,Flint,flint,FALSE,TRUE,64
+308,Sand,sand,FALSE,TRUE,64
+309,Suspicious Sand,suspicious_sand,FALSE,FALSE,64
+310,Sandstone,sandstone,TRUE,TRUE,64
+311,Sandstone Slab,sandstone_slab,TRUE,TRUE,64
+312,Sandstone Stairs,sandstone_stairs,TRUE,FALSE,64
+313,Sandstone Wall,sandstone_wall,TRUE,FALSE,64
+314,Smooth Sandstone,smooth_sandstone,FALSE,TRUE,64
+315,Smooth Sandstone Slab,smooth_sandstone_slab,TRUE,FALSE,64
+316,Smooth Sandstone Stairs,smooth_sandstone_stairs,TRUE,FALSE,64
+317,Cut Sandstone,cut_sandstone,TRUE,TRUE,64
+318,Cut Sandstone Slab,cut_sandstone_slab,TRUE,FALSE,64
+319,Chiseled Sandstone,chiseled_sandstone,TRUE,TRUE,64
+320,Red Sand,red_sand,FALSE,TRUE,64
+321,Red Sandstone,red_sandstone,TRUE,TRUE,64
+322,Red Sandstone Slab,red_sandstone_slab,TRUE,FALSE,64
+323,Red Sandstone Stairs,red_sandstone_stairs,TRUE,FALSE,64
+324,Red Sandstone Wall,red_sandstone_wall,TRUE,FALSE,64
+325,Smooth Red Sandstone,smooth_red_sandstone,FALSE,TRUE,64
+326,Smooth Red Sandstone Slab,smooth_red_sandstone_slab,TRUE,FALSE,64
+327,Smooth Red Sandstone Stairs,smooth_red_sandstone_stairs,TRUE,FALSE,64
+328,Cut Red Sandstone,cut_red_sandstone,TRUE,TRUE,64
+329,Cut Red Sandstone Slab,cut_red_sandstone_slab,TRUE,FALSE,64
+330,Chiseled Red Sandstone,chiseled_red_sandstone,TRUE,TRUE,64
+331,Emerald Ore,emerald_ore,FALSE,FALSE,64
+332,Deepslate Emerald Ore,deepslate_emerald_ore,FALSE,FALSE,64
+333,Coal Ore,coal_ore,FALSE,FALSE,64
+334,Deepslate Coal Ore,deepslate_coal_ore,FALSE,FALSE,64
+335,Copper Ore,copper_ore,FALSE,FALSE,64
+336,Deepslate Copper Ore,deepslate_copper_ore,FALSE,FALSE,64
+337,Iron Ore,iron_ore,FALSE,FALSE,64
+338,Deepslate Iron Ore,deepslate_iron_ore,FALSE,FALSE,64
+339,Lapis Lazuli Ore,lapis_ore,FALSE,FALSE,64
+340,Deepslate Lapis Lazuli Ore,deepslate_lapis_ore,FALSE,FALSE,64
+341,Gold Ore,gold_ore,FALSE,FALSE,64
+342,Deepslate Gold Ore,deepslate_gold_ore,FALSE,FALSE,64
+343,Redstone Ore,redstone_ore,FALSE,FALSE,64
+344,Deepslate Redstone Ore,deepslate_redstone_ore,FALSE,FALSE,64
+345,Diamond Ore,diamond_ore,FALSE,FALSE,64
+346,Deepslate Diamond Ore,deepslate_diamond_ore,FALSE,FALSE,64
+347,Nether Quartz Ore,nether_quartz_ore,FALSE,FALSE,64
+348,Nether Gold Ore,nether_gold_ore,FALSE,FALSE,64
+349,Ancient Debris,ancient_debris,FALSE,FALSE,64
+350,Emerald,emerald,TRUE,TRUE,64
+351,Block of Emerald,emerald_block,TRUE,TRUE,64
+352,Coal,coal,TRUE,TRUE,64
+353,Block of Coal,coal_block,TRUE,TRUE,64
+354,Raw Copper,raw_copper,TRUE,TRUE,64
+355,Block of Raw Copper,raw_copper_block,TRUE,TRUE,64
+356,Copper ingot,copper_ingot,TRUE,TRUE,64
+357,Block of Copper,copper_block,TRUE,TRUE,64
+358,Exposed Copper,exposed_copper,FALSE,TRUE,64
+359,Weathered Copper,weathered_copper,FALSE,TRUE,64
+360,Oxidized Copper,oxidized_copper,FALSE,TRUE,64
+361,Cut Copper,cut_copper,TRUE,TRUE,64
+362,Exposed Cut Copper,exposed_cut_copper,TRUE,TRUE,64
+363,Weathered Cut Copper,weathered_cut_copper,TRUE,TRUE,64
+364,Oxidized Cut Copper,oxidized_cut_copper,TRUE,TRUE,64
+365,Cut Copper Slab,cut_copper_slab,TRUE,TRUE,64
+366,Exposed Cut Copper Slab,exposed_cut_copper_slab,TRUE,TRUE,64
+367,Weathered Cut Copper Slab,weathered_cut_copper_slab,TRUE,TRUE,64
+368,Oxidized Cut Copper Slab,oxidized_cut_copper_slab,TRUE,TRUE,64
+369,Cut Copper Stairs,cut_copper_stairs,TRUE,TRUE,64
+370,Exposed Cut Copper Stairs,exposed_cut_copper_stairs,TRUE,TRUE,64
+371,Weathered Cut Copper Stairs,weathered_cut_copper_stairs,TRUE,TRUE,64
+372,Oxidized Cut Copper Stairs,oxidized_cut_copper_stairs,TRUE,TRUE,64
+373,Chiseled Copper,chiseled_copper,TRUE,TRUE,64
+374,Exposed Chiseled Copper,exposed_chiseled_copper,TRUE,TRUE,64
+375,Weathered Chiseled Copper,weathered_chiseled_copper,TRUE,TRUE,64
+376,Oxidized Chiseled Copper,oxidized_chiseled_copper,TRUE,TRUE,64
+377,Copper Grate,copper_grate,TRUE,TRUE,64
+378,Exposed Copper Grate,exposed_copper_grate,TRUE,TRUE,64
+379,Weathered Copper Grate,weathered_copper_grate,TRUE,TRUE,64
+380,Oxidized Copper Grate,oxidized_copper_grate,TRUE,TRUE,64
+381,Copper Bulb,copper_bulb,TRUE,TRUE,64
+382,Exposed Copper Bulb,exposed_copper_bulb,TRUE,TRUE,64
+383,Weathered Copper Bulb,weathered_copper_bulb,TRUE,TRUE,64
+384,Oxidized Copper Bulb,oxidized_copper_bulb,TRUE,TRUE,64
+385,Copper Door,copper_door,TRUE,TRUE,64
+386,Exposed Copper Door,exposed_copper_door,TRUE,TRUE,64
+387,Weathered Copper Door,weathered_copper_door,TRUE,TRUE,64
+388,Oxidized Copper Door,oxidized_copper_door,TRUE,TRUE,64
+389,Copper Trapdoor,copper_trapdoor,TRUE,TRUE,64
+390,Exposed Copper Trapdoor,exposed_copper_trapdoor,TRUE,TRUE,64
+391,Weathered Copper Trapdoor,weathered_copper_trapdoor,TRUE,TRUE,64
+392,Oxidized Copper Trapdoor,oxidized_copper_trapdoor,TRUE,TRUE,64
+393,Waxed Block of Copper,waxed_copper_block,TRUE,TRUE,64
+394,Waxed Exposed Copper,waxed_exposed_copper,TRUE,TRUE,64
+395,Waxed Weathered Copper,waxed_weathered_copper,TRUE,TRUE,64
+396,Waxed Oxidized Copper,waxed_oxidized_copper,TRUE,TRUE,64
+397,Waxed Cut Copper,waxed_cut_copper,TRUE,TRUE,64
+398,Waxed Exposed Cut Copper,waxed_exposed_cut_copper,TRUE,TRUE,64
+399,Waxed Weathered Cut Copper,waxed_weathered_cut_copper,TRUE,TRUE,64
+400,Waxed Oxidized Cut Copper,waxed_oxidized_cut_copper,TRUE,TRUE,64
+401,Waxed Cut Copper Slab,waxed_cut_copper_slab,TRUE,TRUE,64
+402,Waxed Exposed Cut Copper Slab,waxed_exposed_cut_copper_slab,TRUE,TRUE,64
+403,Waxed Weathered Cut Copper Slab,waxed_weathered_cut_copper_slab,TRUE,TRUE,64
+404,Waxed Oxidized Cut Copper Slab,waxed_oxidized_cut_copper_slab,TRUE,TRUE,64
+405,Waxed Cut Copper Stairs,waxed_cut_copper_stairs,TRUE,FALSE,64
+406,Waxed Exposed Cut Copper Stairs,waxed_exposed_cut_copper_stairs,TRUE,FALSE,64
+407,Waxed Weathered Cut Copper Stairs,waxed_weathered_cut_copper_stairs,TRUE,FALSE,64
+408,Waxed Oxidized Cut Copper Stairs,waxed_oxidized_cut_copper_stairs,TRUE,FALSE,64
+409,Waxed Chiseled Copper,waxed_chiseled_copper,TRUE,FALSE,64
+410,Waxed Exposed Chiseled Copper,waxed_exposed_chiseled_copper,TRUE,FALSE,64
+411,Waxed Weathered Chiseled Copper,waxed_weathered_chiseled_copper,TRUE,FALSE,64
+412,Waxed Oxidized Chiseled Copper,waxed_oxidized_chiseled_copper,TRUE,FALSE,64
+413,Waxed Copper Grate,waxed_copper_grate,TRUE,FALSE,64
+414,Waxed Exposed Copper Grate,waxed_exposed_copper_grate,TRUE,FALSE,64
+415,Waxed Weathered Copper Grate,waxed_weathered_copper_grate,TRUE,FALSE,64
+416,Waxed Oxidized Copper Grate,waxed_oxidized_copper_grate,TRUE,FALSE,64
+417,Waxed Copper Bulb,waxed_copper_bulb,TRUE,FALSE,64
+418,Waxed Exposed Copper Bulb,waxed_exposed_copper_bulb,TRUE,FALSE,64
+419,Waxed Weathered Copper Bulb,waxed_weathered_copper_bulb,TRUE,FALSE,64
+420,Waxed Oxidized Copper Bulb,waxed_oxidized_copper_bulb,TRUE,FALSE,64
+421,Waxed Copper Door,waxed_copper_door,TRUE,FALSE,64
+422,Waxed Exposed Copper Door,waxed_exposed_copper_door,TRUE,FALSE,64
+423,Waxed Weathered Copper Door,waxed_weathered_copper_door,TRUE,FALSE,64
+424,Waxed Oxidized Copper Door,waxed_oxidized_copper_door,TRUE,FALSE,64
+425,Waxed Copper Trapdoor,waxed_copper_trapdoor,TRUE,FALSE,64
+426,Waxed Exposed Copper Trapdoor,waxed_exposed_copper_trapdoor,TRUE,FALSE,64
+427,Waxed Weathered Copper Trapdoor,waxed_weathered_copper_trapdoor,TRUE,FALSE,64
+428,Waxed Oxidized Copper Trapdoor,waxed_oxidized_copper_trapdoor,TRUE,FALSE,64
+429,Raw Iron,raw_iron,TRUE,TRUE,64
+430,Block of Raw Iron,raw_iron_block,TRUE,TRUE,64
+431,Iron Ingot,iron_ingot,TRUE,TRUE,64
+432,Block of Iron,iron_block,TRUE,TRUE,64
+433,Iron Door,iron_door,TRUE,FALSE,64
+434,Iron Trapdoor,iron_trapdoor,TRUE,FALSE,64
+435,Heavy Weighted Pressure Plate,heavy_weighted_pressure_plate,TRUE,FALSE,64
+436,Iron Nugget,iron_nugget,TRUE,TRUE,64
+437,Lapis Lazuli,lapis_lazuli,TRUE,TRUE,64
+438,Block of Lapis Lazuli,lapis_block,TRUE,TRUE,64
+439,Raw Gold,raw_gold,TRUE,TRUE,64
+440,Block of Raw Gold,raw_gold_block,TRUE,TRUE,64
+441,Gold Ingot,gold_ingot,TRUE,TRUE,64
+442,Block of Gold,gold_block,TRUE,TRUE,64
+443,Light Weighted Pressure Plate,light_weighted_pressure_plate,TRUE,FALSE,64
+444,Gold Nugget,gold_nugget,TRUE,TRUE,64
+445,Redstone Dust,redstone,TRUE,TRUE,64
+446,Block of Redstone,redstone_block,TRUE,TRUE,64
+447,Diamond,diamond,TRUE,TRUE,64
+448,Block of Diamond,diamond_block,TRUE,TRUE,64
+449,Nether Quartz,quartz,FALSE,TRUE,64
+450,Block of Quartz,quartz_block,TRUE,TRUE,64
+451,Quartz Slab,quartz_slab,TRUE,TRUE,64
+452,Quartz Stairs,quartz_stairs,TRUE,FALSE,64
+453,Smooth Quartz Block,smooth_quartz,TRUE,TRUE,64
+454,Smooth Quartz Slab,smooth_quartz_slab,TRUE,FALSE,64
+455,Smooth Quartz Stairs,smooth_quartz_stairs,TRUE,FALSE,64
+456,Chiseled Quartz Block,chiseled_quartz_block,TRUE,TRUE,64
+457,Quartz Pillar,quartz_pillar,TRUE,TRUE,64
+458,Quartz Bricks,quartz_bricks,TRUE,FALSE,64
+459,Netherite Scrap,netherite_scrap,FALSE,TRUE,64
+460,Netherite Ingot,netherite_ingot,TRUE,TRUE,64
+461,Block of Netherite,netherite_block,TRUE,TRUE,64
+462,Small Amethyst Bud,small_amethyst_bud,FALSE,FALSE,64
+463,Medium Amethyst Bud,medium_amethyst_bud,FALSE,FALSE,64
+464,Large Amethyst Bud,large_amethyst_bud,FALSE,FALSE,64
+465,Amethyst Cluster,amethyst_cluster,FALSE,FALSE,64
+466,Amethyst Shard,amethyst_shard,FALSE,TRUE,64
+467,Block of Amethyst,amethyst_block,TRUE,FALSE,64
+468,Budding Amethyst,budding_amethyst,FALSE,FALSE,64
+469,Resin Clump,resin_clump,TRUE,TRUE,64
+470,Block of Resin,resin_block,TRUE,TRUE,64
+471,Resin Brick,resin_brick,FALSE,TRUE,64
+472,Resin Bricks,resin_bricks,FALSE,TRUE,64
+473,Resin Brick Slab,resin_brick_slab,FALSE,TRUE,64
+474,Resin Brick Stairs,resin_brick_stairs,FALSE,FALSE,64
+475,Resin Brick Wall,resin_brick_wall,FALSE,FALSE,64
+476,Chiseled Resin Bricks,chiseled_resin_bricks,FALSE,FALSE,64
+477,Clay Ball,clay_ball,FALSE,TRUE,64
+478,Clay,clay,TRUE,FALSE,64
+479,Brick,brick,FALSE,TRUE,64
+480,Bricks,bricks,TRUE,TRUE,64
+481,Brick Slab,brick_slab,TRUE,FALSE,64
+482,Brick Stairs,brick_stairs,TRUE,FALSE,64
+483,Brick Wall,brick_wall,TRUE,FALSE,64
+484,Mud,mud,FALSE,TRUE,64
+485,Packed Mud,packed_mud,TRUE,TRUE,64
+486,Mud Bricks,mud_bricks,TRUE,TRUE,64
+487,Mud Brick Slab,mud_brick_slab,TRUE,FALSE,64
+488,Mud Brick Stairs,mud_brick_stairs,TRUE,FALSE,64
+489,Mud Brick Wall,mud_brick_wall,TRUE,FALSE,64
+490,Prismarine Shard,prismarine_shard,FALSE,TRUE,64
+491,Prismarine Crystals,prismarine_crystals,FALSE,TRUE,64
+492,Prismarine,prismarine,TRUE,TRUE,64
+493,Prismarine Slab,prismarine_slab,TRUE,FALSE,64
+494,Prismarine Stairs,prismarine_stairs,TRUE,FALSE,64
+495,Prismarine Wall,prismarine_wall,TRUE,FALSE,64
+496,Prismarine Bricks,prismarine_bricks,TRUE,TRUE,64
+497,Prismarine Brick Slab,prismarine_brick_slab,TRUE,FALSE,64
+498,Prismarine Brick Stairs,prismarine_brick_stairs,TRUE,FALSE,64
+499,Dark Prismarine,dark_prismarine,TRUE,TRUE,64
+500,Dark Prismarine Slab,dark_prismarine_slab,TRUE,FALSE,64
+501,Dark Prismarine Stairs,dark_prismarine_stairs,TRUE,FALSE,64
+502,Sea Lantern,sea_lantern,TRUE,FALSE,64
+503,Sponge,sponge,FALSE,FALSE,64
+504,Wet Sponge,wet_sponge,FALSE,FALSE,64
+505,Snowball,snowball,FALSE,TRUE,16
+506,Snow Block,snow_block,TRUE,TRUE,64
+507,Snow,snow,TRUE,FALSE,64
+508,Ice,ice,FALSE,TRUE,64
+509,Packed Ice,packed_ice,TRUE,TRUE,64
+510,Blue Ice,blue_ice,TRUE,FALSE,64
+511,Netherrack,netherrack,FALSE,TRUE,64
+512,Glowstone Dust,glowstone_dust,FALSE,TRUE,64
+513,Glowstone,glowstone,TRUE,TRUE,64
+514,Shroomlight,shroomlight,FALSE,FALSE,64
+515,Magma Block,magma_block,TRUE,FALSE,64
+516,Nether Wart,nether_wart,FALSE,TRUE,64
+517,Nether Brick,nether_brick,FALSE,TRUE,64
+518,Nether Bricks,nether_bricks,TRUE,TRUE,64
+519,Nether Brick Slab,nether_brick_slab,TRUE,TRUE,64
+520,Nether Brick Stairs,nether_brick_stairs,TRUE,FALSE,64
+521,Nether Brick Wall,nether_brick_wall,TRUE,FALSE,64
+522,Nether Brick Fence,nether_brick_fence,TRUE,FALSE,64
+523,Chiseled Nether Bricks,chiseled_nether_bricks,TRUE,FALSE,64
+524,Cracked Nether Bricks,cracked_nether_bricks,TRUE,FALSE,64
+525,Red Nether Bricks,red_nether_bricks,TRUE,TRUE,64
+526,Red Nether Brick Slab,red_nether_brick_slab,TRUE,FALSE,64
+527,Red Nether Brick Stairs,red_nether_brick_stairs,TRUE,FALSE,64
+528,Red Nether Brick Wall,red_nether_brick_wall,TRUE,FALSE,64
+529,Warped Nylium,warped_nylium,FALSE,FALSE,64
+530,Warped Wart Block,warped_wart_block,FALSE,FALSE,64
+531,Warped Fungus,warped_fungus,FALSE,TRUE,64
+532,Warped Roots,warped_roots,FALSE,FALSE,64
+533,Nether Sprouts,nether_sprouts,FALSE,FALSE,64
+534,Twisting Vines,twisting_vines,FALSE,FALSE,64
+535,Crimson Nylium,crimson_nylium,FALSE,FALSE,64
+536,Nether Wart Block,nether_wart_block,TRUE,FALSE,64
+537,Crimson Fungus,crimson_fungus,FALSE,FALSE,64
+538,Crimson Roots,crimson_roots,FALSE,FALSE,64
+539,Weeping Vines,weeping_vines,FALSE,FALSE,64
+540,Basalt,basalt,FALSE,TRUE,64
+541,Polished Basalt,polished_basalt,TRUE,FALSE,64
+542,Smooth Basalt,smooth_basalt,FALSE,FALSE,64
+543,Soul Sand,soul_sand,FALSE,TRUE,64
+544,Soul Soil,soul_soil,FALSE,TRUE,64
+545,Blackstone,blackstone,FALSE,TRUE,64
+546,Blackstone Slab,blackstone_slab,TRUE,FALSE,64
+547,Blackstone Stairs,blackstone_stairs,TRUE,FALSE,64
+548,Blackstone Wall,blackstone_wall,TRUE,FALSE,64
+549,Polished Blackstone,polished_blackstone,TRUE,TRUE,64
+550,Polished Blackstone Slab,polished_blackstone_slab,TRUE,TRUE,64
+551,Polished Blackstone Stairs,polished_blackstone_stairs,TRUE,FALSE,64
+552,Polished Blackstone Wall,polished_blackstone_wall,TRUE,FALSE,64
+553,Polished Blackstone Bricks,polished_blackstone_bricks,TRUE,TRUE,64
+554,Polished Blackstone Brick Slab,polished_blackstone_brick_slab,TRUE,FALSE,64
+555,Polished Blackstone Brick Stairs,polished_blackstone_brick_stairs,TRUE,FALSE,64
+556,Polished Blackstone Brick Wall,polished_blackstone_brick_wall,TRUE,FALSE,64
+557,Cracked Polished Blackstone Bricks,cracked_polished_blackstone_bricks,TRUE,FALSE,64
+558,Chiseled Polished Blackstone,chiseled_polished_blackstone,TRUE,FALSE,64
+559,Polished Blackstone Pressure Plate,polished_blackstone_pressure_plate,TRUE,FALSE,64
+560,Polished Blackstone Button,polished_blackstone_button,TRUE,FALSE,64
+561,Gilded Blackstone,gilded_blackstone,FALSE,FALSE,64
+562,Obsidian,obsidian,FALSE,TRUE,64
+563,Crying Obsidian,crying_obsidian,FALSE,TRUE,64
+564,End Stone,end_stone,FALSE,TRUE,64
+565,End Stone Bricks,end_stone_bricks,TRUE,TRUE,64
+566,End Stone Brick Slab,end_stone_brick_slab,TRUE,FALSE,64
+567,End Stone Brick Stairs,end_stone_brick_stairs,TRUE,FALSE,64
+568,End Stone Brick Wall,end_stone_brick_wall,TRUE,FALSE,64
+569,End Portal Frame,end_portal_frame,FALSE,FALSE,64
+570,Chorus Flower,chorus_flower,FALSE,FALSE,64
+571,Chorus Plant,chorus_plant,FALSE,FALSE,64
+572,Chorus Fruit,chorus_fruit,FALSE,FALSE,64
+573,Popped Chorus,popped_chorus_fruit,FALSE,TRUE,64
+574,Purpur Block,purpur_block,TRUE,TRUE,64
+575,Purpur Slab,purpur_slab,TRUE,TRUE,64
+576,Purpur Stairs,purpur_stairs,TRUE,FALSE,64
+577,Purpur Pillar,purpur_pillar,TRUE,FALSE,64
+578,White Dye,white_dye,TRUE,TRUE,64
+579,Light Gray Dye,light_gray_dye,TRUE,TRUE,64
+580,Gray Dye,gray_dye,TRUE,TRUE,64
+581,Black Dye,black_dye,TRUE,TRUE,64
+582,Brown Dye,brown_dye,TRUE,TRUE,64
+583,Red Dye,red_dye,TRUE,TRUE,64
+584,Orange Dye,orange_dye,TRUE,TRUE,64
+585,Yellow Dye,yellow_dye,TRUE,TRUE,64
+586,Lime Dye,lime_dye,TRUE,TRUE,64
+587,Green Dye,green_dye,FALSE,TRUE,64
+588,Cyan Dye,cyan_dye,TRUE,TRUE,64
+589,Light Blue Dye,light_blue_dye,TRUE,TRUE,64
+590,Blue Dye,blue_dye,TRUE,TRUE,64
+591,Purple Dye,purple_dye,TRUE,TRUE,64
+592,Magenta Dye,magenta_dye,TRUE,TRUE,64
+593,Pink Dye,pink_dye,TRUE,TRUE,64
+594,White Wool,white_wool,TRUE,TRUE,64
+595,Light Gray Wool,light_gray_wool,TRUE,TRUE,64
+596,Gray Wool,gray_wool,TRUE,TRUE,64
+597,Black Wool,black_wool,TRUE,TRUE,64
+598,Brown Wool,brown_wool,TRUE,TRUE,64
+599,Red Wool,red_wool,TRUE,TRUE,64
+600,Orange Wool,orange_wool,TRUE,TRUE,64
+601,Yellow Wool,yellow_wool,TRUE,TRUE,64
+602,Lime Wool,lime_wool,TRUE,TRUE,64
+603,Green Wool,green_wool,TRUE,TRUE,64
+604,Cyan Wool,cyan_wool,TRUE,TRUE,64
+605,Light Blue Wool,light_blue_wool,TRUE,TRUE,64
+606,Blue Wool,blue_wool,TRUE,TRUE,64
+607,Purple Wool,purple_wool,TRUE,TRUE,64
+608,Magenta Wool,magenta_wool,TRUE,TRUE,64
+609,Pink Wool,pink_wool,TRUE,TRUE,64
+610,White Carpet,white_carpet,TRUE,TRUE,64
+611,Light Gray Carpet,light_gray_carpet,TRUE,TRUE,64
+612,Gray Carpet,gray_carpet,TRUE,TRUE,64
+613,Black Carpet,black_carpet,TRUE,TRUE,64
+614,Brown Carpet,brown_carpet,TRUE,TRUE,64
+615,Red Carpet,red_carpet,TRUE,TRUE,64
+616,Orange Carpet,orange_carpet,TRUE,TRUE,64
+617,Yellow Carpet,yellow_carpet,TRUE,TRUE,64
+618,Lime Carpet,lime_carpet,TRUE,TRUE,64
+619,Green Carpet,green_carpet,TRUE,TRUE,64
+620,Cyan Carpet,cyan_carpet,TRUE,TRUE,64
+621,Light Blue Carpet,light_blue_carpet,TRUE,TRUE,64
+622,Blue Carpet,blue_carpet,TRUE,TRUE,64
+623,Purple Carpet,purple_carpet,TRUE,TRUE,64
+624,Magenta Carpet,magenta_carpet,TRUE,TRUE,64
+625,Pink Carpet,pink_carpet,TRUE,TRUE,64
+626,White Banner,white_banner,TRUE,TRUE,16
+627,Light Gray Banner,light_gray_banner,TRUE,TRUE,16
+628,Gray Banner,gray_banner,TRUE,TRUE,16
+629,Black Banner,black_banner,TRUE,TRUE,16
+630,Brown Banner,brown_banner,TRUE,TRUE,16
+631,Red Banner,red_banner,TRUE,TRUE,16
+632,Orange Banner,orange_banner,TRUE,TRUE,16
+633,Yellow Banner,yellow_banner,TRUE,TRUE,16
+634,Lime Banner,lime_banner,TRUE,TRUE,16
+635,Green Banner,green_banner,TRUE,TRUE,16
+636,Cyan Banner,cyan_banner,TRUE,TRUE,16
+637,Light Blue Banner,light_blue_banner,TRUE,TRUE,16
+638,Blue Banner,blue_banner,TRUE,TRUE,16
+639,Purple Banner,purple_banner,TRUE,TRUE,16
+640,Magenta Banner,magenta_banner,TRUE,TRUE,16
+641,Pink Banner,pink_banner,TRUE,TRUE,16
+643,White Bed,white_bed,TRUE,TRUE,1
+644,Light Gray Bed,light_gray_bed,TRUE,TRUE,1
+645,Gray Bed,gray_bed,TRUE,TRUE,1
+646,Black Bed,black_bed,TRUE,TRUE,1
+647,Brown Bed,brown_bed,TRUE,TRUE,1
+648,Red Bed,red_bed,TRUE,TRUE,1
+649,Orange Bed,orange_bed,TRUE,TRUE,1
+650,Yellow Bed,yellow_bed,TRUE,TRUE,1
+651,Lime Bed,lime_bed,TRUE,TRUE,1
+652,Green Bed,green_bed,TRUE,TRUE,1
+653,Cyan Bed,cyan_bed,TRUE,TRUE,1
+654,Light Blue Bed,light_blue_bed,TRUE,TRUE,1
+655,Blue Bed,blue_bed,TRUE,TRUE,1
+656,Purple Bed,purple_bed,TRUE,TRUE,1
+657,Magenta Bed,magenta_bed,TRUE,TRUE,1
+658,Pink Bed,pink_bed,TRUE,TRUE,1
+659,White Concrete Powder,white_concrete_powder,TRUE,FALSE,64
+660,Light Gray Concrete Powder,light_gray_concrete_powder,TRUE,FALSE,64
+661,Gray Concrete Powder,gray_concrete_powder,TRUE,FALSE,64
+662,Black Concrete Powder,black_concrete_powder,TRUE,FALSE,64
+663,Brown Concrete Powder,brown_concrete_powder,TRUE,FALSE,64
+664,Red Concrete Powder,red_concrete_powder,TRUE,FALSE,64
+665,Orange Concrete Powder,orange_concrete_powder,TRUE,FALSE,64
+666,Yellow Concrete Powder,yellow_concrete_powder,TRUE,FALSE,64
+667,Lime Concrete Powder,lime_concrete_powder,TRUE,FALSE,64
+668,Green Concrete Powder,green_concrete_powder,TRUE,FALSE,64
+669,Cyan Concrete Powder,cyan_concrete_powder,TRUE,FALSE,64
+670,Light Blue Concrete Powder,light_blue_concrete_powder,TRUE,FALSE,64
+671,Blue Concrete Powder,blue_concrete_powder,TRUE,FALSE,64
+672,Purple Concrete Powder,purple_concrete_powder,TRUE,FALSE,64
+673,Magenta Concrete Powder,magenta_concrete_powder,TRUE,FALSE,64
+674,Pink Concrete Powder,pink_concrete_powder,TRUE,FALSE,64
+675,White Concrete,white_concrete,FALSE,FALSE,64
+676,Light Gray Concrete,light_gray_concrete,FALSE,FALSE,64
+677,Gray Concrete,gray_concrete,FALSE,FALSE,64
+678,Black Concrete,black_concrete,FALSE,FALSE,64
+679,Brown Concrete,brown_concrete,FALSE,FALSE,64
+680,Red Concrete,red_concrete,FALSE,FALSE,64
+681,Orange Concrete,orange_concrete,FALSE,FALSE,64
+682,Yellow Concrete,yellow_concrete,FALSE,FALSE,64
+683,Lime Concrete,lime_concrete,FALSE,FALSE,64
+684,Green Concrete,green_concrete,FALSE,FALSE,64
+685,Cyan Concrete,cyan_concrete,FALSE,FALSE,64
+686,Light Blue Concrete,light_blue_concrete,FALSE,FALSE,64
+687,Blue Concrete,blue_concrete,FALSE,FALSE,64
+688,Purple Concrete,purple_concrete,FALSE,FALSE,64
+689,Magenta Concrete,magenta_concrete,FALSE,FALSE,64
+690,Pink Concrete,pink_concrete,FALSE,FALSE,64
+691,Terracotta,terracotta,TRUE,TRUE,64
+692,White Terracotta,white_terracotta,TRUE,FALSE,64
+693,Light Gray Terracotta,light_gray_terracotta,TRUE,FALSE,64
+694,Gray Terracotta,gray_terracotta,TRUE,FALSE,64
+695,Black Terracotta,black_terracotta,TRUE,FALSE,64
+696,Brown Terracotta,brown_terracotta,TRUE,FALSE,64
+697,Red Terracotta,red_terracotta,TRUE,FALSE,64
+698,Orange Terracotta,orange_terracotta,TRUE,FALSE,64
+699,Yellow Terracotta,yellow_terracotta,TRUE,FALSE,64
+700,Lime Terracotta,lime_terracotta,TRUE,FALSE,64
+701,Green Terracotta,green_terracotta,TRUE,FALSE,64
+702,Cyan Terracotta,cyan_terracotta,TRUE,FALSE,64
+703,Light Blue Terracotta,light_blue_terracotta,TRUE,FALSE,64
+704,Blue Terracotta,blue_terracotta,TRUE,FALSE,64
+705,Purple Terracotta,purple_terracotta,TRUE,FALSE,64
+706,Magenta Terracotta,magenta_terracotta,TRUE,FALSE,64
+707,Pink Terracotta,pink_terracotta,TRUE,FALSE,64
+708,White Glazed Terracotta,white_glazed_terracotta,FALSE,FALSE,64
+709,Light Gray Glazed Terracotta,light_gray_glazed_terracotta,FALSE,FALSE,64
+710,Gray Glazed Terracotta,gray_glazed_terracotta,FALSE,FALSE,64
+711,Black Glazed Terracotta,black_glazed_terracotta,FALSE,FALSE,64
+712,Brown Glazed Terracotta,brown_glazed_terracotta,FALSE,FALSE,64
+713,Red Glazed Terracotta,red_glazed_terracotta,FALSE,FALSE,64
+714,Orange Glazed Terracotta,orange_glazed_terracotta,FALSE,FALSE,64
+715,Yellow Glazed Terracotta,yellow_glazed_terracotta,FALSE,FALSE,64
+716,Lime Glazed Terracotta,lime_glazed_terracotta,FALSE,FALSE,64
+717,Green Glazed Terracotta,green_glazed_terracotta,FALSE,FALSE,64
+718,Cyan Glazed Terracotta,cyan_glazed_terracotta,FALSE,FALSE,64
+719,Light Blue Glazed Terracotta,light_blue_glazed_terracotta,FALSE,FALSE,64
+720,Blue Glazed Terracotta,blue_glazed_terracotta,FALSE,FALSE,64
+721,Purple Glazed Terracotta,purple_glazed_terracotta,FALSE,FALSE,64
+722,Magenta Glazed Terracotta,magenta_glazed_terracotta,FALSE,FALSE,64
+723,Pink Glazed Terracotta,pink_glazed_terracotta,FALSE,FALSE,64
+724,Glass,glass,FALSE,TRUE,64
+725,White Stained Glass,white_stained_glass,TRUE,TRUE,64
+726,Light Gray Stained Glass,light_gray_stained_glass,TRUE,TRUE,64
+727,Gray Stained Glass,gray_stained_glass,TRUE,TRUE,64
+728,Black Stained Glass,black_stained_glass,TRUE,TRUE,64
+729,Brown Stained Glass,brown_stained_glass,TRUE,TRUE,64
+730,Red Stained Glass,red_stained_glass,TRUE,TRUE,64
+731,Orange Stained Glass,orange_stained_glass,TRUE,TRUE,64
+732,Yellow Stained Glass,yellow_stained_glass,TRUE,TRUE,64
+733,Lime Stained Glass,lime_stained_glass,TRUE,TRUE,64
+734,Green Stained Glass,green_stained_glass,TRUE,TRUE,64
+735,Cyan Stained Glass,cyan_stained_glass,TRUE,TRUE,64
+736,Light Blue Stained Glass,light_blue_stained_glass,TRUE,TRUE,64
+737,Blue Stained Glass,blue_stained_glass,TRUE,TRUE,64
+738,Purple Stained Glass,purple_stained_glass,TRUE,TRUE,64
+739,Magenta Stained Glass,magenta_stained_glass,TRUE,TRUE,64
+740,Pink Stained Glass,pink_stained_glass,TRUE,TRUE,64
+741,Tinted Glass,tinted_glass,TRUE,FALSE,64
+742,Glass Pane,glass_pane,TRUE,TRUE,64
+743,White Stained Glass Pane,white_stained_glass_pane,TRUE,FALSE,64
+744,Light Gray Stained Glass Pane,light_gray_stained_glass_pane,TRUE,FALSE,64
+745,Gray Stained Glass Pane,gray_stained_glass_pane,TRUE,FALSE,64
+746,Black Stained Glass Pane,black_stained_glass_pane,TRUE,FALSE,64
+747,Brown Stained Glass Pane,brown_stained_glass_pane,TRUE,FALSE,64
+748,Red Stained Glass Pane,red_stained_glass_pane,TRUE,FALSE,64
+749,Orange Stained Glass Pane,orange_stained_glass_pane,TRUE,FALSE,64
+750,Yellow Stained Glass Pane,yellow_stained_glass_pane,TRUE,FALSE,64
+751,Lime Stained Glass Pane,lime_stained_glass_pane,TRUE,FALSE,64
+752,Green Stained Glass Pane,green_stained_glass_pane,TRUE,FALSE,64
+753,Cyan Stained Glass Pane,cyan_stained_glass_pane,TRUE,FALSE,64
+754,Light Blue Stained Glass Pane,light_blue_stained_glass_pane,TRUE,FALSE,64
+755,Blue Stained Glass Pane,blue_stained_glass_pane,TRUE,FALSE,64
+756,Purple Stained Glass Pane,purple_stained_glass_pane,TRUE,FALSE,64
+757,Magenta Stained Glass Pane,magenta_stained_glass_pane,TRUE,FALSE,64
+758,Pink Stained Glass Pane,pink_stained_glass_pane,TRUE,FALSE,64
+759,Candle,candle,TRUE,TRUE,64
+760,White Candle,white_candle,TRUE,FALSE,64
+761,Light Gray Candle,light_gray_candle,TRUE,FALSE,64
+762,Gray Candle,gray_candle,TRUE,FALSE,64
+763,Black Candle,black_candle,TRUE,FALSE,64
+764,Brown Candle,brown_candle,TRUE,FALSE,64
+765,Red Candle,red_candle,TRUE,FALSE,64
+766,Orange Candle,orange_candle,TRUE,FALSE,64
+767,Yellow Candle,yellow_candle,TRUE,FALSE,64
+768,Lime Candle,lime_candle,TRUE,FALSE,64
+769,Green Candle,green_candle,TRUE,FALSE,64
+770,Cyan Candle,cyan_candle,TRUE,FALSE,64
+771,Light Blue Candle,light_blue_candle,TRUE,FALSE,64
+772,Blue Candle,blue_candle,TRUE,FALSE,64
+773,Purple Candle,purple_candle,TRUE,FALSE,64
+774,Magenta Candle,magenta_candle,TRUE,FALSE,64
+775,Pink Candle,pink_candle,TRUE,FALSE,64
+776,White Harness,white_harness,TRUE,FALSE,1
+777,Light Gray Harness,light_gray_harness,TRUE,FALSE,1
+778,Gray Harness,gray_harness,TRUE,FALSE,1
+779,Black Harness,black_harness,TRUE,FALSE,1
+780,Brown Harness,brown_harness,TRUE,FALSE,1
+781,Red Harness,red_harness,TRUE,FALSE,1
+782,Orange Harness,orange_harness,TRUE,FALSE,1
+783,Yellow Harness,yellow_harness,TRUE,FALSE,1
+784,Lime Harness,lime_harness,TRUE,FALSE,1
+785,Green Harness,green_harness,TRUE,FALSE,1
+786,Cyan Harness,cyan_harness,TRUE,FALSE,1
+787,Light Blue Harness,light_blue_harness,TRUE,FALSE,1
+788,Blue Harness,blue_harness,TRUE,FALSE,1
+789,Purple Harness,purple_harness,TRUE,FALSE,1
+790,Magenta Harness,magenta_harness,TRUE,FALSE,1
+791,Pink Harness,pink_harness,TRUE,FALSE,1
+792,Bundle,bundle,TRUE,TRUE,1
+793,White Bundle,white_bundle,TRUE,TRUE,1
+794,Light Gray Bundle,light_gray_bundle,TRUE,TRUE,1
+795,Gray Bundle,gray_bundle,TRUE,TRUE,1
+796,Black Bundle,black_bundle,TRUE,TRUE,1
+797,Brown Bundle,brown_bundle,TRUE,TRUE,1
+798,Red Bundle,red_bundle,TRUE,TRUE,1
+799,Orange Bundle,orange_bundle,TRUE,TRUE,1
+800,Yellow Bundle,yellow_bundle,TRUE,TRUE,1
+801,Lime Bundle,lime_bundle,TRUE,TRUE,1
+802,Green Bundle,green_bundle,TRUE,TRUE,1
+803,Cyan Bundle,cyan_bundle,TRUE,TRUE,1
+804,Light Blue Bundle,light_blue_bundle,TRUE,TRUE,1
+805,Blue Bundle,blue_bundle,TRUE,TRUE,1
+806,Purple Bundle,purple_bundle,TRUE,TRUE,1
+807,Magenta Bundle,magenta_bundle,TRUE,TRUE,1
+808,Pink Bundle,pink_bundle,TRUE,TRUE,1
+809,Shulker Box,shulker_box,TRUE,TRUE,1
+810,White Shulker Box,white_shulker_box,TRUE,TRUE,1
+811,Light Gray Shulker Box,light_gray_shulker_box,TRUE,TRUE,1
+812,Gray Shulker Box,gray_shulker_box,TRUE,TRUE,1
+813,Black Shulker Box,black_shulker_box,TRUE,TRUE,1
+814,Brown Shulker Box,brown_shulker_box,TRUE,TRUE,1
+815,Red Shulker Box,red_shulker_box,TRUE,TRUE,1
+816,Orange Shulker Box,orange_shulker_box,TRUE,TRUE,1
+817,Yellow Shulker Box,yellow_shulker_box,TRUE,TRUE,1
+818,Lime Shulker Box,lime_shulker_box,TRUE,TRUE,1
+819,Green Shulker Box,green_shulker_box,TRUE,TRUE,1
+820,Cyan Shulker Box,cyan_shulker_box,TRUE,TRUE,1
+821,Light Blue Shulker Box,light_blue_shulker_box,TRUE,TRUE,1
+822,Blue Shulker Box,blue_shulker_box,TRUE,TRUE,1
+823,Purple Shulker Box,purple_shulker_box,TRUE,TRUE,1
+824,Magenta Shulker Box,magenta_shulker_box,TRUE,TRUE,1
+825,Pink Shulker Box,pink_shulker_box,TRUE,TRUE,1
+826,Crafting Table,crafting_table,TRUE,FALSE,64
+827,Furnace,furnace,TRUE,TRUE,64
+828,Blast Furnace,blast_furnace,TRUE,FALSE,64
+829,Smoker,smoker,TRUE,FALSE,64
+830,Chest,chest,TRUE,TRUE,64
+831,Trapped Chest,trapped_chest,TRUE,FALSE,64
+832,Ender Chest,ender_chest,TRUE,FALSE,64
+833,Enchanting Table,enchanting_table,TRUE,FALSE,64
+834,Anvil,anvil,TRUE,FALSE,64
+835,Chipped Anvil,chipped_anvil,FALSE,FALSE,64
+836,Damaged Anvil,damaged_anvil,FALSE,FALSE,64
+837,Grindstone,grindstone,TRUE,FALSE,64
+838,Stonecutter,stonecutter,TRUE,FALSE,64
+839,Barrel,barrel,TRUE,FALSE,64
+840,Composter,composter,TRUE,FALSE,64
+841,Loom,loom,TRUE,FALSE,64
+842,Cartography Table,cartography_table,TRUE,FALSE,64
+843,Smithing Table,smithing_table,TRUE,FALSE,64
+844,Fletching Table,fletching_table,TRUE,FALSE,64
+845,Lectern,lectern,TRUE,FALSE,64
+846,Jukebox ,jukebox,TRUE,FALSE,64
+847,Bell,bell,FALSE,FALSE,64
+848,Brewing Stand,brewing_stand,TRUE,FALSE,64
+849,Cauldron,cauldron,TRUE,FALSE,64
+850,Lodestone,lodestone,TRUE,FALSE,64
+851,Respawn Anchor,respawn_anchor,TRUE,FALSE,64
+852,Bee Nest,bee_nest,FALSE,FALSE,64
+853,Beehive,beehive,TRUE,FALSE,64
+854,Trial Spawner,trial_spawner,FALSE,FALSE,64
+855,Vault,vault,FALSE,FALSE,64
+856,Trial Key,trial_key,FALSE,FALSE,64
+857,Ominous Trial Key,ominous_trial_key,FALSE,FALSE,64
+858,Heavy Core,heavy_core,FALSE,TRUE,64
+859,Armor Stand,armor_stand,TRUE,FALSE,16
+860,Flower Pot,flower_pot,TRUE,FALSE,64
+861,Decorated Pot,decorated_pot,TRUE,FALSE,64
+862,Painting (Random variant),painting,TRUE,FALSE,64
+863,Painting (Albanian),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:alban""}]",FALSE,FALSE,64
+864,Painting (de_aztec),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:aztec""}]",FALSE,FALSE,64
+865,Painting (de_aztec),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:aztec2""}]",FALSE,FALSE,64
+866,Painting (Kebab med tre pepperoni),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:kebab""}]",FALSE,FALSE,64
+867,Painting (Meditative),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:meditative""}]",FALSE,FALSE,64
+868,Painting (Paradisträd),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:plant""}]",FALSE,FALSE,64
+869,Painting (Target Successfully Bombed),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:bomb""}]",FALSE,FALSE,64
+870,Painting (Wasteland),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:wasteland""}]",FALSE,FALSE,64
+871,Painting (Graham),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:graham""}]",FALSE,FALSE,64
+872,Painting (Prairie Ride),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:prairie_ride""}]",FALSE,FALSE,64
+873,Painting (Wanderer),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:wanderer""}]",FALSE,FALSE,64
+874,Painting (Bonjour Monsieur Courbet),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:courbet""}]",FALSE,FALSE,64
+875,Painting (Creebet),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:creebet""}]",FALSE,FALSE,64
+876,Painting (Seaside),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:sea""}]",FALSE,FALSE,64
+877,Painting (sunset_dense),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:sunset""}]",FALSE,FALSE,64
+878,Painting (The Pool),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:pool""}]",FALSE,FALSE,64
+879,Painting (Baroque),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:baroque""}]",FALSE,FALSE,64
+880,Painting (Bust),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:bust""}]",FALSE,FALSE,64
+881,Painting (Earth),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:earth""}]",FALSE,FALSE,64
+882,Painting (Fire),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:fire""}]",FALSE,FALSE,64
+883,Painting (Humble),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:humble""}]",FALSE,FALSE,64
+884,Painting (Match),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:match""}]",FALSE,FALSE,64
+885,Painting (Skull and Roses),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:skull_and_roses""}]",FALSE,FALSE,64
+886,Painting (The Stage Is Set),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:stage""}]",FALSE,FALSE,64
+887,Painting (The void),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:void""}]",FALSE,FALSE,64
+888,Painting (Water),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:water""}]",FALSE,FALSE,64
+889,Painting (Wind),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:wind""}]",FALSE,FALSE,64
+890,Painting (Wither),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:wither""}]",FALSE,FALSE,64
+891,Painting (Bouquet),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:bouquet""}]",FALSE,FALSE,64
+892,Painting (Cavebird),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:cavebird""}]",FALSE,FALSE,64
+893,Painting (Cotán),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:cotan""}]",FALSE,FALSE,64
+894,Painting (Dennis),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:dennis""}]",FALSE,FALSE,64
+895,Painting (Endboss),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:endboss""}]",FALSE,FALSE,64
+896,Painting (Fern),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:fern""}]",FALSE,FALSE,64
+897,Painting (Owlemons),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:owlemons""}]",FALSE,FALSE,64
+898,Painting (Sunflowers),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:sunflowers""}]",FALSE,FALSE,64
+899,Painting (Tides),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:tides""}]",FALSE,FALSE,64
+900,Painting (Backyard),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:backyard""}]",FALSE,FALSE,64
+901,Painting (Pond),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:pond""}]",FALSE,FALSE,64
+902,Painting (Changing),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:changing""}]",FALSE,FALSE,64
+903,Painting (Fighters),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:fighters""}]",FALSE,FALSE,64
+904,Painting (Finding),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:finding""}]",FALSE,FALSE,64
+905,Painting (Lowmist),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:lowmist""}]",FALSE,FALSE,64
+906,Painting (Passage),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:passage""}]",FALSE,FALSE,64
+907,Painting (Kong),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:donkey_kong""}]",FALSE,FALSE,64
+908,Painting (Mortal Coil),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:skeleton""}]",FALSE,FALSE,64
+909,Painting (Orb),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:orb""}]",FALSE,FALSE,64
+910,Painting (Pigscene),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:pigscene""}]",FALSE,FALSE,64
+911,Painting (Pointer),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:pointer""}]",FALSE,FALSE,64
+912,Painting (Skull On Fire),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:burning_skull""}]",FALSE,FALSE,64
+913,Painting (Unpacked),"painting[entity_data={id:""minecraft:painting"",variant:""minecraft:unpacked""}]",FALSE,FALSE,64
+914,Item Frame,item_frame,TRUE,TRUE,64
+915,Glow Item Frame,glow_item_frame,TRUE,FALSE,64
+916,Ladder,ladder,TRUE,FALSE,64
+917,Scaffolding,scaffolding,TRUE,FALSE,64
+918,Iron Bars,iron_bars,TRUE,FALSE,64
+919,Chain,chain,TRUE,TRUE,64
+920,Cobweb,cobweb,FALSE,FALSE,64
+921,Monster Spawner,spawner,FALSE,FALSE,64
+922,End Crystal,end_crystal,TRUE,FALSE,64
+923,Nether Star,nether_star,FALSE,TRUE,64
+924,Beacon,beacon,TRUE,FALSE,64
+925,Nautilus Shell,nautlius_shell,FALSE,TRUE,64
+926,Heart of the Sea,heart_of_the_sea,FALSE,TRUE,64
+927,Conduit,conduit,TRUE,FALSE,64
+928,End Rod,end_rod,TRUE,FALSE,64
+929,Torch,torch,TRUE,TRUE,64
+930,Soul Torch,soul_torch,TRUE,TRUE,64
+931,Lantern,lantern,TRUE,FALSE,64
+932,Soul Lantern,soul_lantern,TRUE,FALSE,64
+933,Campfire,campfire,TRUE,FALSE,64
+934,Soul Campfire,soul_campfire,TRUE,FALSE,64
+935,Redstone Torch,redstone_torch,TRUE,TRUE,64
+936,Redstone Repeater,repeater,TRUE,FALSE,64
+937,Redstone Comparator,comparator,TRUE,FALSE,64
+938,Lever,lever,TRUE,FALSE,64
+939,Hopper,hopper,TRUE,TRUE,64
+940,Observer,observer,TRUE,FALSE,64
+941,Dispenser,dispenser,TRUE,FALSE,64
+942,Dropper,dropper,TRUE,FALSE,64
+943,Crafter,crafter,TRUE,FALSE,64
+944,Piston,piston,TRUE,TRUE,64
+945,Sticky Piston,sticky_piston,TRUE,FALSE,64
+946,Note Block,note_block,TRUE,FALSE,64
+947,TNT,tnt,TRUE,TRUE,64
+948,Redstone Lamp,redstone_lamp,TRUE,FALSE,64
+949,Daylight Detector,daylight_detector,TRUE,FALSE,64
+950,Tripwire Hook,tripwire_hook,TRUE,TRUE,64
+951,Lightning Rod,lightning_rod,TRUE,FALSE,64
+952,Target,target,TRUE,FALSE,64
+953,Rail,rail,TRUE,FALSE,64
+954,Powered Rail,powered_rail,TRUE,FALSE,64
+955,Detector Rail,detector_rail,TRUE,FALSE,64
+956,Activator Rail,activator_rail,TRUE,FALSE,64
+957,Minecart,minecart,TRUE,TRUE,1
+958,Minecart with Chest,chest_minecart,TRUE,FALSE,1
+959,Minecart with Hopper,hopper_minecart,TRUE,FALSE,1
+960,Minecart with Furnace,furnace_minecart,TRUE,FALSE,1
+961,Minecart with TNT,tnt_minecart,TRUE,FALSE,1
+962,Minecart with Command Block,command_block_minecart,FALSE,FALSE,1
+963,Sculk Vein,sculk_vein,FALSE,FALSE,64
+964,Sculk,sculk,FALSE,FALSE,64
+965,Sculk Sensor,sculk_sensor,FALSE,FALSE,64
+966,Calibrated Sculk Sensor,calibrated_sculk_sensor,TRUE,FALSE,64
+967,Sculk Catalyst,sculk_catalyst,FALSE,FALSE,64
+968,Sculk Shrieker,sculk_shrieker,FALSE,FALSE,64
+969,Red Mushroom,red_mushroom,FALSE,TRUE,64
+970,Brown Mushroom,brown_mushroom,FALSE,TRUE,64
+971,Red Mushroom Block,red_mushroom_block,FALSE,FALSE,64
+972,Brown Mushroom Block,brown_mushroom_block,FALSE,FALSE,64
+973,Mushroom Stem,mushroom_stem,FALSE,FALSE,64
+974,Oak Sapling,oak_sapling,FALSE,FALSE,64
+975,Birch Sapling,birch_sapling,FALSE,FALSE,64
+976,Spruce Sapling,spruce_sapling,FALSE,FALSE,64
+977,Jungle Sapling,jungle_sapling,FALSE,FALSE,64
+978,Dark Oak Sapling,dark_oak_sapling,FALSE,FALSE,64
+979,Acacia Sapling,acacia_sapling,FALSE,FALSE,64
+980,Mangrove Propagule,mangrove_propagule,FALSE,FALSE,64
+981,Cherry Sapling,cherry_sapling,FALSE,FALSE,64
+982,Pale Oak Sapling,pale_oak_sapling,FALSE,FALSE,64
+983,Oak Leaves,oak_leaves,FALSE,FALSE,64
+984,Birch Leaves,birch_leaves,FALSE,FALSE,64
+985,Spruce Leaves,spruce_leaves,FALSE,FALSE,64
+986,Jungle Leaves,jungle_leaves,FALSE,FALSE,64
+987,Dark Oak Leaves,dark_oak_leaves,FALSE,FALSE,64
+988,Acacia Leaves,acacia_leaves,FALSE,FALSE,64
+989,Mangrove Leaves,mangrove_leaves,FALSE,FALSE,64
+990,Cherry Leaves,cherry_leaves,FALSE,FALSE,64
+991,Pale Oak Leaves,pale_oak_leaves,FALSE,FALSE,64
+992,Azalea Leaves,azalea_leaves,FALSE,FALSE,64
+993,Flowering Azalea Leaves,flowering_azalea_leaves,FALSE,FALSE,64
+994,Leaf Litter,leaf_litter,FALSE,FALSE,64
+995,Dandelion,dandelion,FALSE,TRUE,64
+996,Poppy,poppy,FALSE,TRUE,64
+997,Blue Orchid,blue_orchid,FALSE,TRUE,64
+998,Allium,allium,FALSE,TRUE,64
+999,Azure Bluet,azure_bluet,FALSE,TRUE,64
+1000,Red Tulip,red_tulip,FALSE,TRUE,64
+1001,Orange Tulip,orange_tulip,FALSE,TRUE,64
+1002,White Tulip,white_tulip,FALSE,TRUE,64
+1003,Pink Tulip,pink_tulip,FALSE,TRUE,64
+1004,Oxeye Daisy,oxeye_daisy,FALSE,TRUE,64
+1005,Cornflower,cornflower,FALSE,TRUE,64
+1006,Lily of the Valley,lily_of_the_valley,FALSE,TRUE,64
+1007,Open Eyeblossom,open_eyeblossom,FALSE,TRUE,64
+1008,Closed Eyeblossom,closed_eyeblossom,FALSE,TRUE,64
+1009,Wither Rose,wither_rose,FALSE,TRUE,64
+1010,Sunflower,sunflower,FALSE,TRUE,64
+1011,Peony,lilac,FALSE,TRUE,64
+1012,Lilac,rose_bush,FALSE,TRUE,64
+1013,Rose Bush,peony,FALSE,TRUE,64
+1014,Pink Petals,pink_petals,FALSE,TRUE,64
+1015,Wildflowers,wildflowers,FALSE,TRUE,64
+1016,Short Grass,short_grass,FALSE,FALSE,64
+1017,Tall Grass,tall_grass,FALSE,FALSE,64
+1018,Fern,fern,FALSE,FALSE,64
+1019,Large Fern,large_fern,FALSE,FALSE,64
+1020,Bush,bush,FALSE,FALSE,64
+1021,Firefly Bush,firefly_bush,FALSE,FALSE,64
+1022,Short Dry Grass,short_dry_grass,FALSE,FALSE,64
+1023,Tall Dry Grass,tall_dry_grass,FALSE,FALSE,64
+1024,Dead Bush,dead_bush,FALSE,FALSE,64
+1025,Cactus Flower,cactus_flower,FALSE,TRUE,64
+1026,Cactus,cactus,FALSE,FALSE,64
+1027,Sugar Cane,sugar_cane,FALSE,TRUE,64
+1028,Bamboo,bamboo,FALSE,TRUE,64
+1029,Lily Pad,lily_pad,FALSE,FALSE,64
+1030,Vines,vine,FALSE,TRUE,64
+1031,Sweet Berries,sweet_berries,FALSE,FALSE,64
+1032,Glow Berries,glow_berries,FALSE,FALSE,64
+1033,Moss Block,moss_block,FALSE,TRUE,64
+1034,Moss Carpet,moss_carpet,TRUE,FALSE,64
+1035,Small Dripleaf,small_dripleaf,FALSE,FALSE,64
+1036,Big Dripleaf,big_dripleaf,FALSE,FALSE,64
+1037,Azalea,azalea,FALSE,FALSE,64
+1038,Flowering Azalea,flowering_azalea,FALSE,FALSE,64
+1039,Spore Blossom,spore_blossom,FALSE,FALSE,64
+1040,Pale Moss Block,pale_moss_block,FALSE,TRUE,64
+1041,Pale Moss Carpet,pale_moss_carpet,TRUE,FALSE,64
+1042,Pale Hanging Moss,pale_hanging_moss,FALSE,FALSE,64
+1043,Hanging Roots,hanging_roots,FALSE,FALSE,64
+1044,Mangrove Roots,mangrove_roots,FALSE,TRUE,64
+1045,Muddy Mangrove Roots,muddy_mangrove_roots,TRUE,FALSE,64
+1046,Glow Lichen,glow_lichen,FALSE,FALSE,64
+1047,Seagrass,seagrass,FALSE,FALSE,64
+1048,Sea Pickle,sea_pickle,FALSE,FALSE,64
+1049,Kelp,kelp,FALSE,FALSE,64
+1050,Dried Kelp,dried_kelp,FALSE,TRUE,64
+1051,Dried Kelp Block,dried_kelp_block,TRUE,TRUE,64
+1052,Tube Coral Block,tube_coral_block,FALSE,FALSE,64
+1053,Brain Coral Block,brain_coral_block,FALSE,FALSE,64
+1054,Bubble Coral Block,bubble_coral_block,FALSE,FALSE,64
+1055,Fire Coral Block,fire_coral_block,FALSE,FALSE,64
+1056,Horn Coral Block,horn_coral_block,FALSE,FALSE,64
+1057,Dead Tube Coral Block,dead_tube_coral_block,FALSE,FALSE,64
+1058,Dead Brain Coral Block,dead_brain_coral_block,FALSE,FALSE,64
+1059,Dead Bubble Coral Block,dead_bubble_coral_block,FALSE,FALSE,64
+1060,Dead Fire Coral Block,dead_fire_coral_block,FALSE,FALSE,64
+1061,Dead Horn Coral Block,dead_horn_coral_block,FALSE,FALSE,64
+1062,Tube Coral,tube_coral,FALSE,FALSE,64
+1063,Brain Coral,brain_coral,FALSE,FALSE,64
+1064,Bubble Coral,bubble_coral,FALSE,FALSE,64
+1065,Fire Coral,fire_coral,FALSE,FALSE,64
+1066,Horn Coral,horn_coral,FALSE,FALSE,64
+1067,Dead Tube Coral,dead_tube_coral,FALSE,FALSE,64
+1068,Dead Brain Coral,dead_brain_coral,FALSE,FALSE,64
+1069,Dead Bubble Coral,dead_bubble_coral,FALSE,FALSE,64
+1070,Dead Fire Coral,dead_fire_coral,FALSE,FALSE,64
+1071,Dead Horn Coral,dead_horn_coral,FALSE,FALSE,64
+1072,Tube Coral Fan,tube_coral_fan,FALSE,FALSE,64
+1073,Brain Coral Fan,brain_coral_fan,FALSE,FALSE,64
+1074,Bubble Coral Fan,bubble_coral_fan,FALSE,FALSE,64
+1075,Fire Coral Fan,fire_coral_fan,FALSE,FALSE,64
+1076,Horn Coral Fan,horn_coral_fan,FALSE,FALSE,64
+1077,Dead Tube Coral Fan,dead_tube_coral_fan,FALSE,FALSE,64
+1078,Dead Brain Coral Fan,dead_brain_coral_fan,FALSE,FALSE,64
+1079,Dead Bubble Coral Fan,dead_bubble_coral_fan,FALSE,FALSE,64
+1080,Dead Fire Coral Fan,dead_fire_coral_fan,FALSE,FALSE,64
+1081,Dead Horn Coral Fan,dead_horn_coral_fan,FALSE,FALSE,64
+1082,Torchflower Seeds,torchflower_seeds,FALSE,FALSE,64
+1083,Torchflower,torchflower,FALSE,TRUE,64
+1084,Pitcher Pod,pitcher_pod,FALSE,FALSE,64
+1085,Pitcher Plant,pitcher_plant,FALSE,TRUE,64
+1086,Wheat Seeds,wheat_seeds,FALSE,FALSE,64
+1087,Wheat,wheat,FALSE,TRUE,64
+1088,Hay Bale,hay_block,TRUE,TRUE,64
+1089,Beetroot Seeds,beetroot_seeds,FALSE,FALSE,64
+1090,Beetroot,beetroot,FALSE,TRUE,64
+1091,Carrot,carrot,FALSE,TRUE,64
+1092,Golden Carrot,golden_carrot,TRUE,FALSE,64
+1093,Potato,potato,FALSE,FALSE,64
+1094,Baked Potato,baked_potato,FALSE,TRUE,64
+1095,Poisonous Potato,poisonous_potato,FALSE,FALSE,64
+1096,Pumpkin Seeds,pumpkin_seeds,TRUE,FALSE,64
+1097,Pumpkin,pumpkin,FALSE,TRUE,64
+1098,Carved Pumpkin,carved_pumpkin,FALSE,TRUE,64
+1099,Jack o'Lantern,jack_o_lantern,TRUE,FALSE,64
+1100,Melon Seeds,melon_seeds,TRUE,FALSE,64
+1101,Melon,melon,TRUE,FALSE,64
+1102,Melon Slice,melon_slice,FALSE,TRUE,64
+1103,Glistering Melon Slice,glistering_melon_slice,TRUE,FALSE,64
+1104,Cocoa Beans,cocoa_beans,FALSE,TRUE,64
+1105,Apple,apple,FALSE,TRUE,64
+1106,Golden Apple,golden_apple,TRUE,FALSE,64
+1107,Enchanted Golden Apple,enchanted_golden_apple,FALSE,TRUE,64
+1108,Bread,bread,TRUE,FALSE,64
+1109,Pumpkin Pie,pumpkin_pie,TRUE,FALSE,64
+1110,Cookie,cookie,TRUE,FALSE,64
+1111,Cake,cake,TRUE,FALSE,1
+1112,Raw Rabbit,rabbit,FALSE,FALSE,64
+1113,Cooked Rabbit,cooked_rabbit,FALSE,TRUE,64
+1114,Raw Mutton,mutton,FALSE,FALSE,64
+1115,Cooked Mutton,cooked_mutton,FALSE,FALSE,64
+1116,Raw Chicken,chicken,FALSE,FALSE,64
+1117,Cooked Chicken,cooked_chicken,FALSE,FALSE,64
+1118,Raw Porkchop,porkchop,FALSE,FALSE,64
+1119,Cooked Porkchop,cooked_porkchop,FALSE,FALSE,64
+1120,Raw Beef,beef,FALSE,FALSE,64
+1121,Steak,cooked_beef,FALSE,FALSE,64
+1122,Raw Cod,cod,FALSE,FALSE,64
+1123,Cooked Cod,cooked_cod,FALSE,FALSE,64
+1124,Raw Salmon,salmon,FALSE,FALSE,64
+1125,Cooked Salmon,cooked_salmon,FALSE,FALSE,64
+1126,Tropical Fish,tropical_fish,FALSE,FALSE,64
+1127,Pufferfish,pufferfish,FALSE,FALSE,64
+1128,Bowl,bowl,TRUE,TRUE,64
+1129,Mushroom Stew,mushroom_stew,TRUE,FALSE,1
+1130,Rabbit Stew,rabbit_stew,TRUE,FALSE,1
+1131,Beetroot Soup,beetroot_soup,TRUE,FALSE,1
+1132,Suspicious Stew,suspicious_stew,FALSE,FALSE,1
+1133,Suspicious Stew (Blindness),"suspicious_stew[suspicious_stew_effects=[{id:""minecraft:blindness"",duration:220}]]",TRUE,FALSE,1
+1134,Suspicious Stew (Fire Resistance),"suspicious_stew[suspicious_stew_effects=[{id:""minecraft:fire_resistance"",duration:60}]]",TRUE,FALSE,1
+1135,Suspicious Stew (Jump Boost),"suspicious_stew[suspicious_stew_effects=[{id:""minecraft:jump_boost"",duration:100}]]",TRUE,FALSE,1
+1136,Suspicious Stew (Night Vision),"suspicious_stew[suspicious_stew_effects=[{id:""minecraft:night_vision"",duration:100}]]",TRUE,FALSE,1
+1137,Suspicious Stew (Nausea),"suspicious_stew[suspicious_stew_effects=[{id:""minecraft:nausea"",duration:140}]]",TRUE,FALSE,1
+1138,Suspicious Stew (Poison),"suspicious_stew[suspicious_stew_effects=[{id:""minecraft:poison"",duration:220}]]",TRUE,FALSE,1
+1139,Suspicious Stew (Regeneration),"suspicious_stew[suspicious_stew_effects=[{id:""minecraft:regeneration"",duration:140}]]",TRUE,FALSE,1
+1140,Suspicious Stew (Saturation),"suspicious_stew[suspicious_stew_effects=[{id:""minecraft:saturation"",duration:7}]]",TRUE,FALSE,1
+1141,Suspicious Stew (Weakness),"suspicious_stew[suspicious_stew_effects=[{id:""minecraft:weakness"",duration:140}]]",TRUE,FALSE,1
+1142,Suspicious Stew (Wither),"suspicious_stew[suspicious_stew_effects=[{id:""minecraft:wither"",duration:140}]]",TRUE,FALSE,1
+1143,Leather,leather,TRUE,TRUE,64
+1144,Rabbit Hide,rabbit_hide,FALSE,TRUE,64
+1145,Rabbit's Foot,rabbit_foot,FALSE,FALSE,64
+1146,Ink Sac,ink_sac,FALSE,TRUE,64
+1147,Glow Ink Sac,glow_ink_sac,FALSE,TRUE,64
+1148,Feather,feather,FALSE,TRUE,64
+1149,Egg,egg,FALSE,TRUE,16
+1150,Blue Egg,blue_egg,FALSE,TRUE,16
+1151,Brown Egg,brown_egg,FALSE,TRUE,16
+1152,Frogspawn,frogspawn,FALSE,FALSE,64
+1153,Armadillo Scute,armadillo_scute,FALSE,TRUE,64
+1154,Scute,scute,FALSE,TRUE,64
+1155,Turtle Egg,turtle_egg,FALSE,FALSE,64
+1156,Sniffer Egg,sniffer_egg,FALSE,FALSE,64
+1157,Honey Bottle,honey_bottle,TRUE,TRUE,16
+1158,Honey Block,honey_block,TRUE,TRUE,64
+1159,Honeycomb,honeycomb,FALSE,TRUE,64
+1160,Honeycomb Block,honeycomb_block,TRUE,FALSE,64
+1161,Slime Ball,slime_ball,TRUE,TRUE,64
+1162,Slime Block,slime_block,TRUE,TRUE,64
+1163,Pearlescent Froglight,pearlescent_froglight,FALSE,FALSE,64
+1164,Verdant Froglight,verdant_froglight,FALSE,FALSE,64
+1165,Ochre Froglight,ochre_froglight,FALSE,FALSE,64
+1166,String,string,FALSE,TRUE,64
+1167,Rotten Flesh,rotten_flesh,FALSE,FALSE,64
+1168,Arrow,arrow,TRUE,TRUE,64
+1169,Uncraftable Tipped Arrow,tipped_arrow,TRUE,FALSE,64
+1170,Arrow of Splashing,"tipped_arrow[potion_contents={potion:""minecraft:water""}]",TRUE,FALSE,64
+1171,Tipped Arrow (Awkward),"tipped_arrow[potion_contents={potion:""minecraft:awkward""}]",TRUE,FALSE,64
+1172,Tipped Arrow (Mundane),"tipped_arrow[potion_contents={potion:""minecraft:mundane""}]",TRUE,FALSE,64
+1173,Tipped Arrow (Thick),"tipped_arrow[potion_contents={potion:""minecraft:thick""}]",TRUE,FALSE,64
+1174,Arrow of Healing,"tipped_arrow[potion_contents={potion:""minecraft:healing""}]",TRUE,FALSE,64
+1175,Arrow of Healing (Strong),"tipped_arrow[potion_contents={potion:""minecraft:strong_healing""}]",TRUE,FALSE,64
+1176,Arrow of Regeneration,"tipped_arrow[potion_contents={potion:""minecraft:regeneration""}]",TRUE,FALSE,64
+1177,Arrow of Regeneration (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_regeneration""}]",TRUE,FALSE,64
+1178,Arrow of Regeneration (Strong),"tipped_arrow[potion_contents={potion:""minecraft:strong_regeneration""}]",TRUE,FALSE,64
+1179,Arrow of Strength,"tipped_arrow[potion_contents={potion:""minecraft:strength""}]",TRUE,FALSE,64
+1180,Arrow of Strength (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_strength""}]",TRUE,FALSE,64
+1181,Arrow of Strength (Strong),"tipped_arrow[potion_contents={potion:""minecraft:strong_strength""}]",TRUE,FALSE,64
+1182,Arrow of Swiftness,"tipped_arrow[potion_contents={potion:""minecraft:swiftness""}]",TRUE,FALSE,64
+1183,Arrow of Swiftness (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_swiftness""}]",TRUE,FALSE,64
+1184,Arrow of Swiftness (Strong),"tipped_arrow[potion_contents={potion:""minecraft:strong_swiftness""}]",TRUE,FALSE,64
+1185,Arrow of Leaping,"tipped_arrow[potion_contents={potion:""minecraft:leaping""}]",TRUE,FALSE,64
+1186,Arrow of Leaping (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_leaping""}]",TRUE,FALSE,64
+1187,Arrow of Leaping (Strong),"tipped_arrow[potion_contents={potion:""minecraft:strong_leaping""}]",TRUE,FALSE,64
+1188,Arrow of Luck,"tipped_arrow[potion_contents={potion:""minecraft:luck""}]",FALSE,FALSE,64
+1189,Arrow of Night Vision,"tipped_arrow[potion_contents={potion:""minecraft:night_vision""}]",TRUE,FALSE,64
+1190,Arrow of Night Vision (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_night_vision""}]",TRUE,FALSE,64
+1191,Arrow of Invisibility,"tipped_arrow[potion_contents={potion:""minecraft:invisibility""}]",TRUE,FALSE,64
+1192,Arrow of Invisibility (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_invisibility""}]",TRUE,FALSE,64
+1193,Arrow of Water Breathing,"tipped_arrow[potion_contents={potion:""minecraft:water_breathing""}]",TRUE,FALSE,64
+1194,Arrow of Water Breathing (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_water_breathing""}]",TRUE,FALSE,64
+1195,Arrow of Fire Resistance,"tipped_arrow[potion_contents={potion:""minecraft:fire_resistance""}]",TRUE,FALSE,64
+1196,Arrow of Fire Resistance (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_fire_resistance""}]",TRUE,FALSE,64
+1197,Arrow of Slow Falling,"tipped_arrow[potion_contents={potion:""minecraft:slow_falling""}]",TRUE,FALSE,64
+1198,Arrow of Slow Falling (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_slow_falling""}]",TRUE,FALSE,64
+1199,Arrow of the Turtle Master,"tipped_arrow[potion_contents={potion:""minecraft:turtle_master""}]",TRUE,FALSE,64
+1200,Arrow of the Turtle Master (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_turtle_master""}]",TRUE,FALSE,64
+1201,Arrow of the Turtle Master (Strong),"tipped_arrow[potion_contents={potion:""minecraft:strong_turtle_master""}]",TRUE,FALSE,64
+1202,Arrow of Harming,"tipped_arrow[potion_contents={potion:""minecraft:harming""}]",TRUE,FALSE,64
+1203,Arrow of Harming (Strong),"tipped_arrow[potion_contents={potion:""minecraft:strong_harming""}]",TRUE,FALSE,64
+1204,Arrow of Poison,"tipped_arrow[potion_contents={potion:""minecraft:poison""}]",TRUE,FALSE,64
+1205,Arrow of Poison (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_poison""}]",TRUE,FALSE,64
+1206,Arrow of Poison (Strong),"tipped_arrow[potion_contents={potion:""minecraft:strong_poison""}]",TRUE,FALSE,64
+1207,Arrow of Weakness,"tipped_arrow[potion_contents={potion:""minecraft:weakness""}]",TRUE,FALSE,64
+1208,Arrow of Weakness (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_weakness""}]",TRUE,FALSE,64
+1209,Arrow of Slowness,"tipped_arrow[potion_contents={potion:""minecraft:slowness""}]",TRUE,FALSE,64
+1210,Arrow of Slowness (Long),"tipped_arrow[potion_contents={potion:""minecraft:long_slowness""}]",TRUE,FALSE,64
+1211,Arrow of Slowness (Strong),"tipped_arrow[potion_contents={potion:""minecraft:strong_slowness""}]",TRUE,FALSE,64
+1212,Arrow of Infestation,"tipped_arrow[potion_contents={potion:""minecraft:infestated""}]",TRUE,FALSE,64
+1213,Arrow of Oozing,"tipped_arrow[potion_contents={potion:""minecraft:oozing""}]",TRUE,FALSE,64
+1214,Arrow of Weaving,"tipped_arrow[potion_contents={potion:""minecraft:weaving""}]",TRUE,FALSE,64
+1215,Arrow of Wind Charging,"tipped_arrow[potion_contents={potion:""minecraft:wind_charged""}]",TRUE,FALSE,64
+1216,Spectral Arrow,spectral_arrow,TRUE,FALSE,64
+1217,Bone,bone,FALSE,TRUE,64
+1218,Bone Meal,bone_meal,TRUE,TRUE,64
+1219,Bone Block,bone_block,TRUE,TRUE,64
+1220,Gunpowder,gunpowder,FALSE,TRUE,64
+1221,Sugar,sugar,TRUE,TRUE,64
+1222,Spider Eye,spider_eye,FALSE,TRUE,64
+1223,Fermented Spider Eye,fermented_spider_eye,TRUE,FALSE,64
+1224,Ender Pearl,ender_pearl,FALSE,TRUE,16
+1225,Eye of Ender,ender_eye,TRUE,TRUE,64
+1226,Shulker Shell,shulker_shell,FALSE,TRUE,64
+1227,Blaze Rod,blaze_rod,FALSE,TRUE,64
+1228,Blaze Powder,blaze_powder,TRUE,TRUE,64
+1229,Magma Cream,magma_cream,TRUE,TRUE,64
+1230,Breeze Rod,breeze_rod,FALSE,TRUE,64
+1231,Wind Charge,wind_charge,TRUE,FALSE,64
+1232,Ghast Tear,ghast_tear,FALSE,TRUE,64
+1233,Dried Ghast,dried_ghast,TRUE,FALSE,64
+1234,Phantom Membrane,phantom_membrane,FALSE,TRUE,64
+1235,Player Head,player_head,FALSE,TRUE,64
+1236,Wither Skeleton Skull,wither_skeleton_skull,FALSE,TRUE,64
+1237,Zombie Head,zombie_head,FALSE,TRUE,64
+1238,Skeleton Skull,skeleton_skull,FALSE,TRUE,64
+1239,Creeper Head,creeper_head,FALSE,TRUE,64
+1240,Piglin Head,piglin_head,FALSE,TRUE,64
+1241,Dragon Head,dragon_head,FALSE,TRUE,64
+1242,Dragon Egg,dragon_egg,FALSE,FALSE,64
+1243,Goat Horn,goat_horn,FALSE,FALSE,1
+1244,Goat Horn (Ponder),"goat_horn[instrument=""minecraft:ponder_goat_horn""]",FALSE,FALSE,1
+1245,Goat Horn (Sing),"goat_horn[instrument=""minecraft:sing_goat_horn""]",FALSE,FALSE,1
+1246,Goat Horn (Seek),"goat_horn[instrument=""minecraft:seek_goat_horn""]",FALSE,FALSE,1
+1247,Goat Horn (Feel),"goat_horn[instrument=""minecraft:feel_goat_horn""]",FALSE,FALSE,1
+1248,Goat Horn (Admire),"goat_horn[instrument=""minecraft:admire_goat_horn""]",FALSE,FALSE,1
+1249,Goat Horn (Call),"goat_horn[instrument=""minecraft:call_goat_horn""]",FALSE,FALSE,1
+1250,Goat Horn (Yearn),"goat_horn[instrument=""minecraft:yearn_goat_horn""]",FALSE,FALSE,1
+1251,Goat Horn (Dream),"goat_horn[instrument=""minecraft:dream_goat_horn""]",FALSE,FALSE,1
+1252,Music Disc (C418 - 13),music_disc_13,FALSE,FALSE,1
+1253,Music Disc (C418 - Cat),music_disc_cat,FALSE,FALSE,1
+1254,Music Disc (C418 - Blocks),music_disc_blocks,FALSE,FALSE,1
+1255,Music Disc (C418 - Chirp),music_disc_chirp,FALSE,FALSE,1
+1256,Music Disc (C418 - Far),music_disc_far,FALSE,FALSE,1
+1257,Music Disc (C418 - Mall),music_disc_mall,FALSE,FALSE,1
+1258,Music Disc (C418 - Mellohi),music_disc_mellohi,FALSE,FALSE,1
+1259,Music Disc (C418 - Stal),music_disc_stal,FALSE,FALSE,1
+1260,Music Disc (C418 - Strad),music_disc_strad,FALSE,FALSE,1
+1261,Music Disc (C418 - Ward),music_disc_ward,FALSE,FALSE,1
+1262,Music Disc (C418 - 11),music_disc_11,FALSE,FALSE,1
+1263,Music Disc (C418 - Wait),music_disc_wait,FALSE,FALSE,1
+1264,Music Disc (Lena Raine - Pigstep),music_disc_pigstep,FALSE,FALSE,1
+1265,Music Disc (Lena Raine - Otherside),music_disc_otherside,FALSE,FALSE,1
+1266,Music Disc (Samuel Åberg - 5),music_disc_5,TRUE,FALSE,1
+1267,Music Disc (Aaron Cherof - Relic),music_disc_relic,FALSE,FALSE,1
+1268,Music Disc (Aaron Cherof - Precipice),music_disc_precipice,FALSE,FALSE,1
+1269,Music Disc (Lena Raine - Creator),music_disc_creator,FALSE,FALSE,1
+1270,Music Disc (Lena Raine - Creator (Music Box)),music_disc_creator_music_box,FALSE,FALSE,1
+1271,Music Disc (Amos Roddy - Tears),music_disc_tears,FALSE,FALSE,1
+1272,Music Disc (Hyper Potions - Lava Chicken),music_disc_lava_chicken,FALSE,FALSE,1
+1273,Disc Fragment,disc_fragment_5,FALSE,TRUE,64
+1274,Echo Shard,echo_shard,FALSE,TRUE,64
+1275,Stick,stick,TRUE,TRUE,64
+1276,Charcoal,charcoal,FALSE,TRUE,64
+1277,Fire Charge,fire_charge,TRUE,TRUE,64
+1278,Paper,paper,TRUE,TRUE,64
+1279,Book,book,TRUE,TRUE,64
+1280,Enchanted Book,enchanted_book,FALSE,FALSE,1
+1281,Enchanted Book (Mending),"enchanted_book[stored_enchantments={levels:{""minecraft:mending"":1}}]",FALSE,FALSE,1
+1282,Enchanted Book (Unbreaking I),"enchanted_book[stored_enchantments={levels:{""minecraft:unbreaking"":1}}]",FALSE,FALSE,1
+1283,Enchanted Book (Unbreaking II),"enchanted_book[stored_enchantments={levels:{""minecraft:unbreaking"":2}}]",FALSE,FALSE,1
+1284,Enchanted Book (Unbreaking III),"enchanted_book[stored_enchantments={levels:{""minecraft:unbreaking"":3}}]",FALSE,FALSE,1
+1285,Enchanted Book (Protection I),"enchanted_book[stored_enchantments={levels:{""minecraft:protection"":1}}]",FALSE,FALSE,1
+1286,Enchanted Book (Protection II),"enchanted_book[stored_enchantments={levels:{""minecraft:protection"":2}}]",FALSE,FALSE,1
+1287,Enchanted Book (Protection III,"enchanted_book[stored_enchantments={levels:{""minecraft:protection"":3}}]",FALSE,FALSE,1
+1288,Enchanted Book (Protection IV),"enchanted_book[stored_enchantments={levels:{""minecraft:protection"":4}}]",FALSE,FALSE,1
+1289,Enchanted Book (Blast Protection I),"enchanted_book[stored_enchantments={levels:{""minecraft:blast_protection"":1}}]",FALSE,FALSE,1
+1290,Enchanted Book (Blast Protection II),"enchanted_book[stored_enchantments={levels:{""minecraft:blast_protection"":2}}]",FALSE,FALSE,1
+1291,Enchanted Book (Blast Protection III),"enchanted_book[stored_enchantments={levels:{""minecraft:blast_protection"":3}}]",FALSE,FALSE,1
+1292,Enchanted Book (Blast Protection IV),"enchanted_book[stored_enchantments={levels:{""minecraft:blast_protection"":4}}]",FALSE,FALSE,1
+1293,Enchanted Book (Fire Protection I),"enchanted_book[stored_enchantments={levels:{""minecraft:fire_protection"":1}}]",FALSE,FALSE,1
+1294,Enchanted Book (Fire Protection II),"enchanted_book[stored_enchantments={levels:{""minecraft:fire_protection"":2}}]",FALSE,FALSE,1
+1295,Enchanted Book (Fire Protection III),"enchanted_book[stored_enchantments={levels:{""minecraft:fire_protection"":3}}]",FALSE,FALSE,1
+1296,Enchanted Book (Fire Protection IV),"enchanted_book[stored_enchantments={levels:{""minecraft:fire_protection"":4}}]",FALSE,FALSE,1
+1297,Enchanted Book (Projectile Protection I),"enchanted_book[stored_enchantments={levels:{""minecraft:projectile_protection"":1}}]",FALSE,FALSE,1
+1298,Enchanted Book (Projectile Protection II),"enchanted_book[stored_enchantments={levels:{""minecraft:projectile_protection"":2}}]",FALSE,FALSE,1
+1299,Enchanted Book (Projectile Protection III),"enchanted_book[stored_enchantments={levels:{""minecraft:projectile_protection"":3}}]",FALSE,FALSE,1
+1300,Enchanted Book (Projectile Protection IV),"enchanted_book[stored_enchantments={levels:{""minecraft:projectile_protection"":4}}]",FALSE,FALSE,1
+1301,Enchanted Book (Thorns I),"enchanted_book[stored_enchantments={levels:{""minecraft:thorns"":1}}]",FALSE,FALSE,1
+1302,Enchanted Book (Thorns II),"enchanted_book[stored_enchantments={levels:{""minecraft:thorns"":2}}]",FALSE,FALSE,1
+1303,Enchanted Book (Thorns III),"enchanted_book[stored_enchantments={levels:{""minecraft:thorns"":3}}]",FALSE,FALSE,1
+1304,Enchanted Book (Respiration I),"enchanted_book[stored_enchantments={levels:{""minecraft:respiration"":1}}]",FALSE,FALSE,1
+1305,Enchanted Book (Respiration II),"enchanted_book[stored_enchantments={levels:{""minecraft:respiration"":2}}]",FALSE,FALSE,1
+1306,Enchanted Book (Respiration III),"enchanted_book[stored_enchantments={levels:{""minecraft:respiration"":3}}]",FALSE,FALSE,1
+1307,Enchanted Book (Aqua Affinity),"enchanted_book[stored_enchantments={levels:{""minecraft:aqua_affinity"":1}}]",FALSE,FALSE,1
+1308,Enchanted Book (Swift Sneak I),"enchanted_book[stored_enchantments={levels:{""minecraft:swift_sneak"":1}}]",FALSE,FALSE,1
+1309,Enchanted Book (Swift Sneak II),"enchanted_book[stored_enchantments={levels:{""minecraft:swift_sneak"":2}}]",FALSE,FALSE,1
+1310,Enchanted Book (Swift Sneak III),"enchanted_book[stored_enchantments={levels:{""minecraft:swift_sneak"":3}}]",FALSE,FALSE,1
+1311,Enchanted Book (Feather Falling I),"enchanted_book[stored_enchantments={levels:{""minecraft:feather_falling"":1}}]",FALSE,FALSE,1
+1312,Enchanted Book (Feather Falling II),"enchanted_book[stored_enchantments={levels:{""minecraft:feather_falling"":2}}]",FALSE,FALSE,1
+1313,Enchanted Book (Feather Falling III),"enchanted_book[stored_enchantments={levels:{""minecraft:feather_falling"":3}}]",FALSE,FALSE,1
+1314,Enchanted Book (Feather Falling IV),"enchanted_book[stored_enchantments={levels:{""minecraft:feather_falling"":4}}]",FALSE,FALSE,1
+1315,Enchanted Book (Soul Speed I),"enchanted_book[stored_enchantments={levels:{""minecraft:soul_speed"":1}}]",FALSE,FALSE,1
+1316,Enchanted Book (Soul Speed II),"enchanted_book[stored_enchantments={levels:{""minecraft:soul_speed"":2}}]",FALSE,FALSE,1
+1317,Enchanted Book (Soul Speed III),"enchanted_book[stored_enchantments={levels:{""minecraft:soul_speed"":3}}]",FALSE,FALSE,1
+1318,Enchanted Book (Depth Strider I),"enchanted_book[stored_enchantments={levels:{""minecraft:depth_strider"":1}}]",FALSE,FALSE,1
+1319,Enchanted Book (Depth Strider II),"enchanted_book[stored_enchantments={levels:{""minecraft:depth_strider"":2}}]",FALSE,FALSE,1
+1320,Enchanted Book (Depth Strider III),"enchanted_book[stored_enchantments={levels:{""minecraft:depth_strider"":3}}]",FALSE,FALSE,1
+1321,Enchanted Book (Frost Walker I),"enchanted_book[stored_enchantments={levels:{""minecraft:frost_walker"":1}}]",FALSE,FALSE,1
+1322,Enchanted Book (Frost Walker II),"enchanted_book[stored_enchantments={levels:{""minecraft:frost_walker"":2}}]",FALSE,FALSE,1
+1323,Enchanted Book (Sharpness I),"enchanted_book[stored_enchantments={levels:{""minecraft:sharpness"":1}}]",FALSE,FALSE,1
+1324,Enchanted Book (Sharpness II),"enchanted_book[stored_enchantments={levels:{""minecraft:sharpness"":2}}]",FALSE,FALSE,1
+1325,Enchanted Book (Sharpness III),"enchanted_book[stored_enchantments={levels:{""minecraft:sharpness"":3}}]",FALSE,FALSE,1
+1326,Enchanted Book (Sharpness IV),"enchanted_book[stored_enchantments={levels:{""minecraft:sharpness"":4}}]",FALSE,FALSE,1
+1327,Enchanted Book (Sharpness V),"enchanted_book[stored_enchantments={levels:{""minecraft:sharpness"":5}}]",FALSE,FALSE,1
+1328,Enchanted Book (Smite I),"enchanted_book[stored_enchantments={levels:{""minecraft:smite"":1}}]",FALSE,FALSE,1
+1329,Enchanted Book (Smite II),"enchanted_book[stored_enchantments={levels:{""minecraft:smite"":2}}]",FALSE,FALSE,1
+1330,Enchanted Book (Smite III),"enchanted_book[stored_enchantments={levels:{""minecraft:smite"":3}}]",FALSE,FALSE,1
+1331,Enchanted Book (Smite IV),"enchanted_book[stored_enchantments={levels:{""minecraft:smite"":4}}]",FALSE,FALSE,1
+1332,Enchanted Book (Smite V),"enchanted_book[stored_enchantments={levels:{""minecraft:smite"":5}}]",FALSE,FALSE,1
+1333,Enchanted Book (Bane of Arthropods I),"enchanted_book[stored_enchantments={levels:{""minecraft:bane_of_arthropods"":1}}]",FALSE,FALSE,1
+1334,Enchanted Book (Bane of Arthropods II),"enchanted_book[stored_enchantments={levels:{""minecraft:bane_of_arthropods"":2}}]",FALSE,FALSE,1
+1335,Enchanted Book (Bane of Arthropods III),"enchanted_book[stored_enchantments={levels:{""minecraft:bane_of_arthropods"":3}}]",FALSE,FALSE,1
+1336,Enchanted Book (Bane of Arthropods IV),"enchanted_book[stored_enchantments={levels:{""minecraft:bane_of_arthropods"":4}}]",FALSE,FALSE,1
+1337,Enchanted Book (Bane of Arthropods V),"enchanted_book[stored_enchantments={levels:{""minecraft:bane_of_arthropods"":5}}]",FALSE,FALSE,1
+1338,Enchanted Book (Looting I),"enchanted_book[stored_enchantments={levels:{""minecraft:looting"":1}}]",FALSE,FALSE,1
+1339,Enchanted Book (Looting II),"enchanted_book[stored_enchantments={levels:{""minecraft:looting"":2}}]",FALSE,FALSE,1
+1340,Enchanted Book (Looting III),"enchanted_book[stored_enchantments={levels:{""minecraft:looting"":3}}]",FALSE,FALSE,1
+1341,Enchanted Book (Sweeping Edge I),"enchanted_book[stored_enchantments={levels:{""minecraft:sweeping_edge"":1}}]",FALSE,FALSE,1
+1342,Enchanted Book (Sweeping Edge II),"enchanted_book[stored_enchantments={levels:{""minecraft:sweeping_edge"":2}}]",FALSE,FALSE,1
+1343,Enchanted Book (Sweeping Edge III),"enchanted_book[stored_enchantments={levels:{""minecraft:sweeping_edge"":3}}]",FALSE,FALSE,1
+1344,Enchanted Book (Fire Aspect I),"enchanted_book[stored_enchantments={levels:{""minecraft:fire_aspect"":1}}]",FALSE,FALSE,1
+1345,Enchanted Book (Fire Aspect II),"enchanted_book[stored_enchantments={levels:{""minecraft:fire_aspect"":2}}]",FALSE,FALSE,1
+1346,Enchanted Book (Knockback I),"enchanted_book[stored_enchantments={levels:{""minecraft:knockback"":1}}]",FALSE,FALSE,1
+1347,Enchanted Book (Knockback II),"enchanted_book[stored_enchantments={levels:{""minecraft:knockback"":2}}]",FALSE,FALSE,1
+1348,Enchanted Book (Efficiency I),"enchanted_book[stored_enchantments={levels:{""minecraft:efficiency"":1}}]",FALSE,FALSE,1
+1349,Enchanted Book (Efficiency II),"enchanted_book[stored_enchantments={levels:{""minecraft:efficiency"":2}}]",FALSE,FALSE,1
+1350,Enchanted Book (Efficiency III),"enchanted_book[stored_enchantments={levels:{""minecraft:efficiency"":3}}]",FALSE,FALSE,1
+1351,Enchanted Book (Efficiency IV),"enchanted_book[stored_enchantments={levels:{""minecraft:efficiency"":4}}]",FALSE,FALSE,1
+1352,Enchanted Book (Efficiency V),"enchanted_book[stored_enchantments={levels:{""minecraft:efficiency"":5}}]",FALSE,FALSE,1
+1353,Enchanted Book (Fortune I),"enchanted_book[stored_enchantments={levels:{""minecraft:fortune"":1}}]",FALSE,FALSE,1
+1354,Enchanted Book (Fortune II),"enchanted_book[stored_enchantments={levels:{""minecraft:fortune"":2}}]",FALSE,FALSE,1
+1355,Enchanted Book (Fortune III),"enchanted_book[stored_enchantments={levels:{""minecraft:fortune"":3}}]",FALSE,FALSE,1
+1356,Enchanted Book (Silk Touch),"enchanted_book[stored_enchantments={levels:{""minecraft:silk_touch"":1}}]",FALSE,FALSE,1
+1357,Enchanted Book (Power I),"enchanted_book[stored_enchantments={levels:{""minecraft:power"":1}}]",FALSE,FALSE,1
+1358,Enchanted Book (Power II),"enchanted_book[stored_enchantments={levels:{""minecraft:power"":2}}]",FALSE,FALSE,1
+1359,Enchanted Book (Power III),"enchanted_book[stored_enchantments={levels:{""minecraft:power"":3}}]",FALSE,FALSE,1
+1360,Enchanted Book (Power IV),"enchanted_book[stored_enchantments={levels:{""minecraft:power"":4}}]",FALSE,FALSE,1
+1361,Enchanted Book (Power V),"enchanted_book[stored_enchantments={levels:{""minecraft:power"":5}}]",FALSE,FALSE,1
+1362,Enchanted Book (Punch I),"enchanted_book[stored_enchantments={levels:{""minecraft:punch"":1}}]",FALSE,FALSE,1
+1363,Enchanted Book (Punch II),"enchanted_book[stored_enchantments={levels:{""minecraft:punch"":2}}]",FALSE,FALSE,1
+1364,Enchanted Book (Flame),"enchanted_book[stored_enchantments={levels:{""minecraft:flame"":1}}]",FALSE,FALSE,1
+1365,Enchanted Book (Infinity),"enchanted_book[stored_enchantments={levels:{""minecraft:infinity"":1}}]",FALSE,FALSE,1
+1366,Enchanted Book (Piercing I),"enchanted_book[stored_enchantments={levels:{""minecraft:piercing"":1}}]",FALSE,FALSE,1
+1367,Enchanted Book (Piercing II),"enchanted_book[stored_enchantments={levels:{""minecraft:piercing"":2}}]",FALSE,FALSE,1
+1368,Enchanted Book (Piercing III),"enchanted_book[stored_enchantments={levels:{""minecraft:piercing"":3}}]",FALSE,FALSE,1
+1369,Enchanted Book (Piercing IV),"enchanted_book[stored_enchantments={levels:{""minecraft:piercing"":4}}]",FALSE,FALSE,1
+1370,Enchanted Book (Quick Charge I),"enchanted_book[stored_enchantments={levels:{""minecraft:quick_charge"":1}}]",FALSE,FALSE,1
+1371,Enchanted Book (Quick Charge II),"enchanted_book[stored_enchantments={levels:{""minecraft:quick_charge"":2}}]",FALSE,FALSE,1
+1372,Enchanted Book (Quick Charge III),"enchanted_book[stored_enchantments={levels:{""minecraft:quick_charge"":3}}]",FALSE,FALSE,1
+1373,Enchanted Book (Multishot),"enchanted_book[stored_enchantments={levels:{""minecraft:multishot"":1}}]",FALSE,FALSE,1
+1374,Enchanted Book (Impaling I),"enchanted_book[stored_enchantments={levels:{""minecraft:impaling"":1}}]",FALSE,FALSE,1
+1375,Enchanted Book (Impaling II),"enchanted_book[stored_enchantments={levels:{""minecraft:impaling"":2}}]",FALSE,FALSE,1
+1376,Enchanted Book (Impaling III),"enchanted_book[stored_enchantments={levels:{""minecraft:impaling"":3}}]",FALSE,FALSE,1
+1377,Enchanted Book (Impaling IV),"enchanted_book[stored_enchantments={levels:{""minecraft:impaling"":4}}]",FALSE,FALSE,1
+1378,Enchanted Book (Impaling V),"enchanted_book[stored_enchantments={levels:{""minecraft:impaling"":5}}]",FALSE,FALSE,1
+1379,Enchanted Book (Riptide I),"enchanted_book[stored_enchantments={levels:{""minecraft:riptide"":1}}]",FALSE,FALSE,1
+1380,Enchanted Book (Riptide II),"enchanted_book[stored_enchantments={levels:{""minecraft:riptide"":2}}]",FALSE,FALSE,1
+1381,Enchanted Book (Riptide III),"enchanted_book[stored_enchantments={levels:{""minecraft:riptide"":3}}]",FALSE,FALSE,1
+1382,Enchanted Book (Loyalty I),"enchanted_book[stored_enchantments={levels:{""minecraft:loyalty"":1}}]",FALSE,FALSE,1
+1383,Enchanted Book (Loyalty II),"enchanted_book[stored_enchantments={levels:{""minecraft:loyalty"":2}}]",FALSE,FALSE,1
+1384,Enchanted Book (Loyalty III),"enchanted_book[stored_enchantments={levels:{""minecraft:loyalty"":3}}]",FALSE,FALSE,1
+1385,Enchanted Book (Channeling),"enchanted_book[stored_enchantments={levels:{""minecraft:channeling"":1}}]",FALSE,FALSE,1
+1386,Enchanted Book (Density I),"enchanted_book[stored_enchantments={levels:{""minecraft:density"":1}}]",FALSE,FALSE,1
+1387,Enchanted Book (Density II),"enchanted_book[stored_enchantments={levels:{""minecraft:density"":2}}]",FALSE,FALSE,1
+1388,Enchanted Book (Density III),"enchanted_book[stored_enchantments={levels:{""minecraft:density"":3}}]",FALSE,FALSE,1
+1389,Enchanted Book (Density IV),"enchanted_book[stored_enchantments={levels:{""minecraft:density"":4}}]",FALSE,FALSE,1
+1390,Enchanted Book (Density V),"enchanted_book[stored_enchantments={levels:{""minecraft:density"":5}}]",FALSE,FALSE,1
+1391,Enchanted Book (Breach I),"enchanted_book[stored_enchantments={levels:{""minecraft:breach"":1}}]",FALSE,FALSE,1
+1392,Enchanted Book (Breach II),"enchanted_book[stored_enchantments={levels:{""minecraft:breach"":2}}]",FALSE,FALSE,1
+1393,Enchanted Book (Breach III),"enchanted_book[stored_enchantments={levels:{""minecraft:breach"":3}}]",FALSE,FALSE,1
+1394,Enchanted Book (Breach IV),"enchanted_book[stored_enchantments={levels:{""minecraft:breach"":4}}]",FALSE,FALSE,1
+1395,Enchanted Book (Wind Burst I),"enchanted_book[stored_enchantments={levels:{""minecraft:wind_burst"":1}}]",FALSE,FALSE,1
+1396,Enchanted Book (Wind Burst II),"enchanted_book[stored_enchantments={levels:{""minecraft:wind_burst"":2}}]",FALSE,FALSE,1
+1397,Enchanted Book (Wind Burst III),"enchanted_book[stored_enchantments={levels:{""minecraft:wind_burst"":3}}]",FALSE,FALSE,1
+1398,Enchanted Book (Luck of the Sea I),"enchanted_book[stored_enchantments={levels:{""minecraft:luck_of_the_sea"":1}}]",FALSE,FALSE,1
+1399,Enchanted Book (Luck of the Sea II),"enchanted_book[stored_enchantments={levels:{""minecraft:luck_of_the_sea"":2}}]",FALSE,FALSE,1
+1400,Enchanted Book (Luck of the Sea III),"enchanted_book[stored_enchantments={levels:{""minecraft:luck_of_the_sea"":3}}]",FALSE,FALSE,1
+1401,Enchanted Book (Lure I),"enchanted_book[stored_enchantments={levels:{""minecraft:lure"":1}}]",FALSE,FALSE,1
+1402,Enchanted Book (Lure II),"enchanted_book[stored_enchantments={levels:{""minecraft:lure"":2}}]",FALSE,FALSE,1
+1403,Enchanted Book (Lure III),"enchanted_book[stored_enchantments={levels:{""minecraft:lure"":3}}]",FALSE,FALSE,1
+1404,Enchanted Book (Curse of Binding),"enchanted_book[stored_enchantments={levels:{""minecraft:binding_curse"":1}}]",FALSE,FALSE,1
+1405,Enchanted Book (Curse of Vanishing),"enchanted_book[stored_enchantments={levels:{""minecraft:vanishing_curse"":1}}]",FALSE,FALSE,1
+1406,Bookshelf,bookshelf,TRUE,TRUE,64
+1407,Chiseled Bookshelf,chiseled_bookshelf,TRUE,FALSE,64
+1408,Book and Quill,writable_book,TRUE,TRUE,1
+1409,Written Book,written_book,TRUE,TRUE,16
+1410,Knowledge Book,knowledge_book,FALSE,FALSE,1
+1411,Empty Map,map,TRUE,TRUE,64
+1412,Map,filled_map,FALSE,FALSE,64
+1413,Thing Banner Pattern,mojang_banner_pattern,TRUE,FALSE,1
+1414,Skull Charge Banner Pattern,skull_banner_pattern,TRUE,FALSE,1
+1415,Creeper Charge Banner Pattern,creeper_banner_pattern,TRUE,FALSE,1
+1416,Flower Charge Banner Pattern,flower_banner_pattern,TRUE,FALSE,1
+1417,Globe Banner Pattern,globe_banner_pattern,FALSE,FALSE,1
+1418,Bordure Indented Banner Pattern,bordure_indented_banner_pattern,TRUE,FALSE,1
+1419,Field Masoned Banner Pattern,field_masoned_banner_pattern,TRUE,FALSE,1
+1420,Snout Banner Pattern,piglin_banner_pattern,FALSE,FALSE,1
+1421,Flow Banner Pattern,flow_banner_pattern,FALSE,FALSE,1
+1422,Guster Banner Pattern,guster_banner_pattern,FALSE,FALSE,1
+1423,Angler Pottery Sherd,angler_pottery_sherd,FALSE,TRUE,64
+1424,Archer Pottery Sherd,archer_pottery_sherd,FALSE,TRUE,64
+1425,Arms Up Pottery Sherd,arms_up_pottery_sherd,FALSE,TRUE,64
+1426,Blade Pottery Sherd,blade_pottery_sherd,FALSE,TRUE,64
+1427,Brewer Pottery Sherd,brewer_pottery_sherd,FALSE,TRUE,64
+1428,Burn Pottery Sherd,burn_pottery_sherd,FALSE,TRUE,64
+1429,Danger Pottery Sherd,danger_pottery_sherd,FALSE,TRUE,64
+1430,Explorer Pottery Sherd,explorer_pottery_sherd,FALSE,TRUE,64
+1431,Friend Pottery Sherd,friend_pottery_sherd,FALSE,TRUE,64
+1432,Flow Pottery Sherd,flow_pottery_sherd,FALSE,TRUE,64
+1433,Guster Pottery Sherd,guster_pottery_sherd,FALSE,TRUE,64
+1434,Heart Pottery Sherd,heart_pottery_sherd,FALSE,TRUE,64
+1435,Heartbreak Pottery Sherd,heartbreak_pottery_sherd,FALSE,TRUE,64
+1436,Howl Pottery Sherd,howl_pottery_sherd,FALSE,TRUE,64
+1437,Miner Pottery Sherd,miner_pottery_sherd,FALSE,TRUE,64
+1438,Mourner Pottery Sherd,mourner_pottery_sherd,FALSE,TRUE,64
+1439,Plenty Pottery Sherd,plenty_pottery_sherd,FALSE,TRUE,64
+1440,Prize Pottery Sherd,prize_pottery_sherd,FALSE,TRUE,64
+1441,Scrape Pottery Sherd,scrape_pottery_sherd,FALSE,TRUE,64
+1442,Sheaf Pottery Sherd,sheaf_pottery_sherd,FALSE,TRUE,64
+1443,Shelter Pottery Sherd,shelter_pottery_sherd,FALSE,TRUE,64
+1444,Skull Pottery Sherd,skull_pottery_sherd,FALSE,TRUE,64
+1445,Snort Pottery Sherd,snort_pottery_sherd,FALSE,TRUE,64
+1446,Netherite Upgrade,netherite_upgrade_smithing_template,TRUE,TRUE,64
+1447,Bolt Armor Trim,bolt_armor_trim_smithing_template,TRUE,TRUE,64
+1448,Coast Armor Trim,coast_armor_trim_smithing_template,TRUE,TRUE,64
+1449,Dune Armor Trim,dune_armor_trim_smithing_template,TRUE,TRUE,64
+1450,Eye Armor Trim,eye_armor_trim_smithing_template,TRUE,TRUE,64
+1451,Flow Armor Trim,flow_armor_trim_smithing_template,TRUE,TRUE,64
+1452,Host Armor Trim,host_armor_trim_smithing_template,TRUE,TRUE,64
+1453,Raiser Armor Trim,raiser_armor_trim_smithing_template,TRUE,TRUE,64
+1454,Rib Armor Trim,rib_armor_trim_smithing_template,TRUE,TRUE,64
+1455,Sentry Armor Trim,sentry_armor_trim_smithing_template,TRUE,TRUE,64
+1456,Shaper Armor Trim,shaper_armor_trim_smithing_template,TRUE,TRUE,64
+1457,Silence Armor Trim,silence_armor_trim_smithing_template,TRUE,TRUE,64
+1458,Snout Armor Trim,snout_armor_trim_smithing_template,TRUE,TRUE,64
+1459,Spire Armor Trim,spire_armor_trim_smithing_template,TRUE,TRUE,64
+1460,Tide Armor Trim,tide_armor_trim_smithing_template,TRUE,TRUE,64
+1461,Vex Armor Trim,vex_armor_trim_smithing_template,TRUE,TRUE,64
+1462,Ward Armor Trim,ward_armor_trim_smithing_template,TRUE,TRUE,64
+1463,Wayfinder Armor Trim,wayfinder_armor_trim_smithing_template,TRUE,TRUE,64
+1464,Wild Armor Trim,wild_armor_trim_smithing_template,TRUE,TRUE,64
+1465,Firework Star,firework_star,TRUE,TRUE,64
+1466,Firework Rocket,firework_rocket,FALSE,FALSE,64
+1467,Firework Rocket (Flight Duration: 1),firework_rocket[fireworks={flight_duration:1}],TRUE,FALSE,64
+1468,Firework Rocket (Flight Duration: 2),firework_rocket[fireworks={flight_duration:2}],TRUE,FALSE,64
+1469,Firework Rocket (Flight Duration: 3),firework_rocket[fireworks={flight_duration:3}],TRUE,FALSE,64
+1470,Glass Bottle,glass_bottle,TRUE,TRUE,64
+1471,Bottle o' Enchanting,experience_bottle,FALSE,FALSE,64
+1472,Ominous Bottle (Bad Omen),ominous_bottle,FALSE,FALSE,64
+1473,Ominous Bottle (Bad Omen II),ominous_bottle[ominous_bottle_amplifier=1],FALSE,FALSE,64
+1474,Ominous Bottle (Bad Omen III),ominous_bottle[ominous_bottle_amplifier=2],FALSE,FALSE,64
+1475,Ominous Bottle (Bad Omen IV),ominous_bottle[ominous_bottle_amplifier=3],FALSE,FALSE,64
+1476,Ominous Bottle (Bad Omen V),ominous_bottle[ominous_bottle_amplifier=4],FALSE,FALSE,64
+1477,Dragon's Breath,dragon_breath,FALSE,FALSE,64
+1478,Water Bottle,"potion[potion_contents={potion:""minecraft:water""}]",FALSE,FALSE,1
+1479,Uncraftable Potion,potion,FALSE,FALSE,1
+1480,Awkward Potion,"potion[potion_contents={potion:""minecraft:awkward""}]",FALSE,FALSE,1
+1481,Mundane Potion,"potion[potion_contents={potion:""minecraft:mundane""}]",FALSE,FALSE,1
+1482,Thick Potion,"potion[potion_contents={potion:""minecraft:thick""}]",FALSE,FALSE,1
+1483,Potion of Healing,"potion[potion_contents={potion:""minecraft:healing""}]",FALSE,FALSE,1
+1484,Potion of Healing (Strong),"potion[potion_contents={potion:""minecraft:strong_healing""}]",FALSE,FALSE,1
+1485,Potion of Regeneration,"potion[potion_contents={potion:""minecraft:regeneration""}]",FALSE,FALSE,1
+1486,Potion of Regeneration (Long),"potion[potion_contents={potion:""minecraft:long_regeneration""}]",FALSE,FALSE,1
+1487,Potion of Regeneration (Strong),"potion[potion_contents={potion:""minecraft:strong_regeneration""}]",FALSE,FALSE,1
+1488,Potion of Strength,"potion[potion_contents={potion:""minecraft:strength""}]",FALSE,FALSE,1
+1489,Potion of Strength (Long),"potion[potion_contents={potion:""minecraft:long_strength""}]",FALSE,FALSE,1
+1490,Potion of Strength (Strong),"potion[potion_contents={potion:""minecraft:strong_strength""}]",FALSE,FALSE,1
+1491,Potion of Swiftness,"potion[potion_contents={potion:""minecraft:swiftness""}]",FALSE,FALSE,1
+1492,Potion of Swiftness (Long),"potion[potion_contents={potion:""minecraft:long_swiftness""}]",FALSE,FALSE,1
+1493,Potion of Swiftness (Strong),"potion[potion_contents={potion:""minecraft:strong_swiftness""}]",FALSE,FALSE,1
+1494,Potion of Leaping,"potion[potion_contents={potion:""minecraft:leaping""}]",FALSE,FALSE,1
+1495,Potion of Leaping (Long),"potion[potion_contents={potion:""minecraft:long_leaping""}]",FALSE,FALSE,1
+1496,Potion of Leaping (Strong),"potion[potion_contents={potion:""minecraft:strong_leaping""}]",FALSE,FALSE,1
+1497,Potion of Luck,"potion[potion_contents={potion:""minecraft:luck""}]",FALSE,FALSE,1
+1498,Potion of Night Vision,"potion[potion_contents={potion:""minecraft:night_vision""}]",FALSE,FALSE,1
+1499,Potion of Night Vision (Long),"potion[potion_contents={potion:""minecraft:long_night_vision""}]",FALSE,FALSE,1
+1500,Potion of Invisibility,"potion[potion_contents={potion:""minecraft:invisibility""}]",FALSE,FALSE,1
+1501,Potion of Invisibility (Long),"potion[potion_contents={potion:""minecraft:long_invisibility""}]",FALSE,FALSE,1
+1502,Potion of Water Breathing,"potion[potion_contents={potion:""minecraft:water_breathing""}]",FALSE,FALSE,1
+1503,Potion of Water Breathing (Long),"potion[potion_contents={potion:""minecraft:long_water_breathing""}]",FALSE,FALSE,1
+1504,Potion of Fire Resistance,"potion[potion_contents={potion:""minecraft:fire_resistance""}]",FALSE,FALSE,1
+1505,Potion of Fire Resistance (Long),"potion[potion_contents={potion:""minecraft:long_fire_resistance""}]",FALSE,FALSE,1
+1506,Potion of Slow Falling,"potion[potion_contents={potion:""minecraft:slow_falling""}]",FALSE,FALSE,1
+1507,Potion of Slow Falling (Long),"potion[potion_contents={potion:""minecraft:long_slow_falling""}]",FALSE,FALSE,1
+1508,Potion of the Turtle Master,"potion[potion_contents={potion:""minecraft:turtle_master""}]",FALSE,FALSE,1
+1509,Potion of the Turtle Master (Long),"potion[potion_contents={potion:""minecraft:long_turtle_master""}]",FALSE,FALSE,1
+1510,Potion of the Turtle Master (Strong),"potion[potion_contents={potion:""minecraft:strong_turtle_master""}]",FALSE,FALSE,1
+1511,Potion of Harming,"potion[potion_contents={potion:""minecraft:harming""}]",FALSE,FALSE,1
+1512,Potion of Harming (Strong),"potion[potion_contents={potion:""minecraft:strong_harming""}]",FALSE,FALSE,1
+1513,Potion of Poison,"potion[potion_contents={potion:""minecraft:poison""}]",FALSE,FALSE,1
+1514,Potion of Poison (Long),"potion[potion_contents={potion:""minecraft:long_poison""}]",FALSE,FALSE,1
+1515,Potion of Poison (Strong),"potion[potion_contents={potion:""minecraft:strong_poison""}]",FALSE,FALSE,1
+1516,Potion of Weakness,"potion[potion_contents={potion:""minecraft:weakness""}]",FALSE,FALSE,1
+1517,Potion of Weakness (Long),"potion[potion_contents={potion:""minecraft:long_weakness""}]",FALSE,FALSE,1
+1518,Potion of Slowness,"potion[potion_contents={potion:""minecraft:slowness""}]",FALSE,FALSE,1
+1519,Potion of Slowness (Long),"potion[potion_contents={potion:""minecraft:long_slowness""}]",FALSE,FALSE,1
+1520,Potion of Slowness (Strong),"potion[potion_contents={potion:""minecraft:strong_slowness""}]",FALSE,FALSE,1
+1521,Potion of Infestation,"potion[potion_contents={potion:""minecraft:infested""}]",FALSE,FALSE,1
+1522,Potion of Oozing,"potion[potion_contents={potion:""minecraft:oozing""}]",FALSE,FALSE,1
+1523,Potion of Weaving,"potion[potion_contents={potion:""minecraft:weaving""}]",FALSE,FALSE,1
+1524,Potion of Wind Charging,"potion[potion_contents={potion:""minecraft:wind_charged""}]",FALSE,FALSE,1
+1525,Splash Water Bottle,"splash_potion[potion_contents={potion:""minecraft:water""}]",FALSE,FALSE,1
+1526,Splash Uncraftable Potion,splash_potion,FALSE,FALSE,1
+1527,Awkward Splash Potion,"splash_potion[potion_contents={potion:""minecraft:awkward""}]",FALSE,FALSE,1
+1528,Mundane Splash Potion,"splash_potion[potion_contents={potion:""minecraft:mundane""}]",FALSE,FALSE,1
+1529,Thick Splash Potion,"splash_potion[potion_contents={potion:""minecraft:thick""}]",FALSE,FALSE,1
+1530,Splash Potion of Healing,"splash_potion[potion_contents={potion:""minecraft:healing""}]",FALSE,FALSE,1
+1531,Splash Potion of Healing (Strong),"splash_potion[potion_contents={potion:""minecraft:strong_healing""}]",FALSE,FALSE,1
+1532,Splash Potion of Regeneration,"splash_potion[potion_contents={potion:""minecraft:regeneration""}]",FALSE,FALSE,1
+1533,Splash Potion of Regeneration (Long),"splash_potion[potion_contents={potion:""minecraft:long_regeneration""}]",FALSE,FALSE,1
+1534,Splash Potion of Regeneration (Strong),"splash_potion[potion_contents={potion:""minecraft:strong_regeneration""}]",FALSE,FALSE,1
+1535,Splash Potion of Strength,"splash_potion[potion_contents={potion:""minecraft:strength""}]",FALSE,FALSE,1
+1536,Splash Potion of Strength (Long),"splash_potion[potion_contents={potion:""minecraft:long_strength""}]",FALSE,FALSE,1
+1537,Splash Potion of Strength (Strong),"splash_potion[potion_contents={potion:""minecraft:strong_strength""}]",FALSE,FALSE,1
+1538,Splash Potion of Swiftness,"splash_potion[potion_contents={potion:""minecraft:swiftness""}]",FALSE,FALSE,1
+1539,Splash Potion of Swiftness (Long),"splash_potion[potion_contents={potion:""minecraft:long_swiftness""}]",FALSE,FALSE,1
+1540,Splash Potion of Swiftness (Strong),"splash_potion[potion_contents={potion:""minecraft:strong_swiftness""}]",FALSE,FALSE,1
+1541,Splash Potion of Leaping,"splash_potion[potion_contents={potion:""minecraft:leaping""}]",FALSE,FALSE,1
+1542,Splash Potion of Leaping (Long),"splash_potion[potion_contents={potion:""minecraft:long_leaping""}]",FALSE,FALSE,1
+1543,Splash Potion of Leaping (Strong),"splash_potion[potion_contents={potion:""minecraft:strong_leaping""}]",FALSE,FALSE,1
+1544,Splash Potion of Luck,"splash_potion[potion_contents={potion:""minecraft:luck""}]",FALSE,FALSE,1
+1545,Splash Potion of Night Vision,"splash_potion[potion_contents={potion:""minecraft:night_vision""}]",FALSE,FALSE,1
+1546,Splash Potion of Night Vision (Long),"splash_potion[potion_contents={potion:""minecraft:long_night_vision""}]",FALSE,FALSE,1
+1547,Splash Potion of Invisibility,"splash_potion[potion_contents={potion:""minecraft:invisibility""}]",FALSE,FALSE,1
+1548,Splash Potion of Invisibility (Long),"splash_potion[potion_contents={potion:""minecraft:long_invisibility""}]",FALSE,FALSE,1
+1549,Splash Potion of Water Breathing,"splash_potion[potion_contents={potion:""minecraft:water_breathing""}]",FALSE,FALSE,1
+1550,Splash Potion of Water Breathing (Long),"splash_potion[potion_contents={potion:""minecraft:long_water_breathing""}]",FALSE,FALSE,1
+1551,Splash Potion of Fire Resistance,"splash_potion[potion_contents={potion:""minecraft:fire_resistance""}]",FALSE,FALSE,1
+1552,Splash Potion of Fire Resistance (Long),"splash_potion[potion_contents={potion:""minecraft:long_fire_resistance""}]",FALSE,FALSE,1
+1553,Splash Potion of Slow Falling,"splash_potion[potion_contents={potion:""minecraft:slow_falling""}]",FALSE,FALSE,1
+1554,Splash Potion of Slow Falling (Long),"splash_potion[potion_contents={potion:""minecraft:long_slow_falling""}]",FALSE,FALSE,1
+1555,Splash Potion of the Turtle Master,"splash_potion[potion_contents={potion:""minecraft:turtle_master""}]",FALSE,FALSE,1
+1556,Splash Potion of the Turtle Master (Long),"splash_potion[potion_contents={potion:""minecraft:long_turtle_master""}]",FALSE,FALSE,1
+1557,Splash Potion of the Turtle Master (Strong),"splash_potion[potion_contents={potion:""minecraft:strong_turtle_master""}]",FALSE,FALSE,1
+1558,Splash Potion of Harming,"splash_potion[potion_contents={potion:""minecraft:harming""}]",FALSE,FALSE,1
+1559,Splash Potion of Harming (Strong),"splash_potion[potion_contents={potion:""minecraft:strong_harming""}]",FALSE,FALSE,1
+1560,Splash Potion of Poison,"splash_potion[potion_contents={potion:""minecraft:poison""}]",FALSE,FALSE,1
+1561,Splash Potion of Poison (Long),"splash_potion[potion_contents={potion:""minecraft:long_poison""}]",FALSE,FALSE,1
+1562,Splash Potion of Poison (Strong),"splash_potion[potion_contents={potion:""minecraft:strong_poison""}]",FALSE,FALSE,1
+1563,Splash Potion of Weakness,"splash_potion[potion_contents={potion:""minecraft:weakness""}]",FALSE,FALSE,1
+1564,Splash Potion of Weakness (Long),"splash_potion[potion_contents={potion:""minecraft:long_weakness""}]",FALSE,FALSE,1
+1565,Splash Potion of Slowness,"splash_potion[potion_contents={potion:""minecraft:slowness""}]",FALSE,FALSE,1
+1566,Splash Potion of Slowness (Long),"splash_potion[potion_contents={potion:""minecraft:long_slowness""}]",FALSE,FALSE,1
+1567,Splash Potion of Slowness (Strong),"splash_potion[potion_contents={potion:""minecraft:strong_slowness""}]",FALSE,FALSE,1
+1568,Splash Potion of Infestation,"splash_potion[potion_contents={potion:""minecraft:infested""}]",FALSE,FALSE,1
+1569,Splash Potion of Oozing,"splash_potion[potion_contents={potion:""minecraft:oozing""}]",FALSE,FALSE,1
+1570,Splash Potion of Weaving,"splash_potion[potion_contents={potion:""minecraft:weaving""}]",FALSE,FALSE,1
+1571,Splash Potion of Wind Charging,"splash_potion[potion_contents={potion:""minecraft:wind_charged""}]",FALSE,FALSE,1
+1572,Lingering Water Bottle,"lingering_potion[potion_contents={potion:""minecraft:water""}]",FALSE,TRUE,1
+1573,Lingering Uncraftable Potion,lingering_potion,FALSE,TRUE,1
+1574,Awkward Lingering Potion,"lingering_potion[potion_contents={potion:""minecraft:awkward""}]",FALSE,TRUE,1
+1575,Mundane Lingering Potion,"lingering_potion[potion_contents={potion:""minecraft:mundane""}]",FALSE,TRUE,1
+1576,Thick Lingering Potion,"lingering_potion[potion_contents={potion:""minecraft:thick""}]",FALSE,TRUE,1
+1577,Lingering Potion of Healing,"lingering_potion[potion_contents={potion:""minecraft:healing""}]",FALSE,TRUE,1
+1578,Lingering Potion of Healing (Strong),"lingering_potion[potion_contents={potion:""minecraft:strong_healing""}]",FALSE,TRUE,1
+1579,Lingering Potion of Regeneration,"lingering_potion[potion_contents={potion:""minecraft:regeneration""}]",FALSE,TRUE,1
+1580,Lingering Potion of Regeneration (Long),"lingering_potion[potion_contents={potion:""minecraft:long_regeneration""}]",FALSE,TRUE,1
+1581,Lingering Potion of Regeneration (Strong),"lingering_potion[potion_contents={potion:""minecraft:strong_regeneration""}]",FALSE,TRUE,1
+1582,Lingering Potion of Strength,"lingering_potion[potion_contents={potion:""minecraft:strength""}]",FALSE,TRUE,1
+1583,Lingering Potion of Strength (Long),"lingering_potion[potion_contents={potion:""minecraft:long_strength""}]",FALSE,TRUE,1
+1584,Lingering Potion of Strength (Strong),"lingering_potion[potion_contents={potion:""minecraft:strong_strength""}]",FALSE,TRUE,1
+1585,Lingering Potion of Swiftness,"lingering_potion[potion_contents={potion:""minecraft:swiftness""}]",FALSE,TRUE,1
+1586,Lingering Potion of Swiftness (Long),"lingering_potion[potion_contents={potion:""minecraft:long_swiftness""}]",FALSE,TRUE,1
+1587,Lingering Potion of Swiftness (Strong),"lingering_potion[potion_contents={potion:""minecraft:strong_swiftness""}]",FALSE,TRUE,1
+1588,Lingering Potion of Leaping,"lingering_potion[potion_contents={potion:""minecraft:leaping""}]",FALSE,TRUE,1
+1589,Lingering Potion of Leaping (Long),"lingering_potion[potion_contents={potion:""minecraft:long_leaping""}]",FALSE,TRUE,1
+1590,Lingering Potion of Leaping (Strong),"lingering_potion[potion_contents={potion:""minecraft:strong_leaping""}]",FALSE,TRUE,1
+1591,Lingering Potion of Luck,"lingering_potion[potion_contents={potion:""minecraft:luck""}]",FALSE,TRUE,1
+1592,Lingering Potion of Night Vision,"lingering_potion[potion_contents={potion:""minecraft:night_vision""}]",FALSE,TRUE,1
+1593,Lingering Potion of Night Vision (Long),"lingering_potion[potion_contents={potion:""minecraft:long_night_vision""}]",FALSE,TRUE,1
+1594,Lingering Potion of Invisibility ,"lingering_potion[potion_contents={potion:""minecraft:invisibility""}]",FALSE,TRUE,1
+1595,Lingering Potion of Invisibility (Long),"lingering_potion[potion_contents={potion:""minecraft:long_invisibility""}]",FALSE,TRUE,1
+1596,Lingering Potion of Water Breathing,"lingering_potion[potion_contents={potion:""minecraft:water_breathing""}]",FALSE,TRUE,1
+1597,Lingering Potion of Water Breathing (Long),"lingering_potion[potion_contents={potion:""minecraft:long_water_breathing""}]",FALSE,TRUE,1
+1598,Lingering Potion of Fire Resistance,"lingering_potion[potion_contents={potion:""minecraft:fire_resistance""}]",FALSE,TRUE,1
+1599,Lingering Potion of Fire Resistance (Long),"lingering_potion[potion_contents={potion:""minecraft:long_fire_resistance""}]",FALSE,TRUE,1
+1600,Lingering Potion of Slow Falling,"lingering_potion[potion_contents={potion:""minecraft:slow_falling""}]",FALSE,TRUE,1
+1601,Lingering Potion of Slow Falling (Long),"lingering_potion[potion_contents={potion:""minecraft:long_slow_falling""}]",FALSE,TRUE,1
+1602,Lingering Potion of the Turtle Master,"lingering_potion[potion_contents={potion:""minecraft:turtle_master""}]",FALSE,TRUE,1
+1603,Lingering Potion of the Turtle Master (Long),"lingering_potion[potion_contents={potion:""minecraft:long_turtle_master""}]",FALSE,TRUE,1
+1604,Lingering Potion of the Turtle Master (Strong),"lingering_potion[potion_contents={potion:""minecraft:strong_turtle_master""}]",FALSE,TRUE,1
+1605,Lingering Potion of Harming,"lingering_potion[potion_contents={potion:""minecraft:harming""}]",FALSE,TRUE,1
+1606,Lingering Potion of Harming (Strong),"lingering_potion[potion_contents={potion:""minecraft:strong_harming""}]",FALSE,TRUE,1
+1607,Lingering Potion of Poison,"lingering_potion[potion_contents={potion:""minecraft:poison""}]",FALSE,TRUE,1
+1608,Lingering Potion of Poison (Long),"lingering_potion[potion_contents={potion:""minecraft:long_poison""}]",FALSE,TRUE,1
+1609,Lingering Potion of Poison (Strong),"lingering_potion[potion_contents={potion:""minecraft:strong_poison""}]",FALSE,TRUE,1
+1610,Lingering Potion of Weakness,"lingering_potion[potion_contents={potion:""minecraft:weakness""}]",FALSE,TRUE,1
+1611,Lingering Potion of Weakness (Long),"lingering_potion[potion_contents={potion:""minecraft:long_weakness""}]",FALSE,TRUE,1
+1612,Lingering Potion of Slowness,"lingering_potion[potion_contents={potion:""minecraft:slowness""}]",FALSE,TRUE,1
+1613,Lingering Potion of Slowness (Long),"lingering_potion[potion_contents={potion:""minecraft:long_slowness""}]",FALSE,TRUE,1
+1614,Lingering Potion of Slowness (Strong),"lingering_potion[potion_contents={potion:""minecraft:strong_slowness""}]",FALSE,TRUE,1
+1615,Lingering Potion of Infestation,"lingering_potion[potion_contents={potion:""minecraft:infested""}]",FALSE,TRUE,1
+1616,Lingering Potion of Oozing,"lingering__potion[potion_contents={potion:""minecraft:oozing""}]",FALSE,TRUE,1
+1617,Lingering Potion of Weaving,"lingering_potion[potion_contents={potion:""minecraft:weaving""}]",FALSE,TRUE,1
+1618,Lingering Potion of Wind Charging,"lingering_potion[potion_contents={potion:""minecraft:wind_charged""}]",FALSE,TRUE,1
+1619,Saddle,saddle,TRUE,FALSE,1
+1620,Leather Horse Armor,leather_horse_armor,TRUE,FALSE,1
+1621,Iron Horse Armor,iron_horse_armor,FALSE,FALSE,1
+1622,Golden Horse Armor,gold_horse_armor,FALSE,FALSE,1
+1623,Diamond Horse Armor,diamond_horse_armor,FALSE,FALSE,1
+1624,Wolf Armor,wolf_armor,TRUE,FALSE,1
+1625,Bucket,bucket,TRUE,FALSE,16
+1626,Water Bucket,water_bucket,FALSE,FALSE,1
+1627,Bucket of Cod,cod_bucket,FALSE,FALSE,1
+1628,Bucket of Salmon,salmon_bucket,FALSE,FALSE,1
+1629,Bucket of Tropical Fish,tropical_fish_bucket,FALSE,FALSE,1
+1630,Bucket of Pufferfish,pufferfish_bucket,FALSE,FALSE,1
+1631,Bucket of Axolotl,axolotl_bucket,FALSE,FALSE,1
+1632,Bucket of Tadpole,tadpole_bucket,FALSE,FALSE,1
+1633,Lava Bucket,lava_bucket,FALSE,FALSE,1
+1634,Milk Bucket,milk_bucket,FALSE,TRUE,1
+1635,Powder Snow Bucket,powder_snow_bucket,FALSE,FALSE,1
+1636,Flint and Steel,flint_and_steel,TRUE,TRUE,1
+1637,Shears,shears,TRUE,TRUE,1
+1638,Compass,compass,TRUE,TRUE,64
+1639,Recovery Compass,recovery_compass,TRUE,FALSE,64
+1640,Clock,clock,TRUE,FALSE,64
+1641,Spyglass,spyglass,TRUE,FALSE,1
+1642,Brush,brush,TRUE,TRUE,1
+1643,Lead,lead,TRUE,FALSE,64
+1644,Name Tag,name_tag,FALSE,FALSE,64
+1645,Totem of Undying,totem_of_undying,FALSE,FALSE,1
+1646,Fishing Rod,fishing_rod,TRUE,TRUE,1
+1647,Carrot on a Stick,carrot_on_a_stick,TRUE,TRUE,1
+1648,Warped Fungus on a Stick,warped_fungus_on_a_stick,TRUE,TRUE,1
+1649,Bow,bow,TRUE,TRUE,1
+1650,Crossbow,crossbow,TRUE,TRUE,1
+1651,Shield,shield,TRUE,TRUE,1
+1652,Mace,mace,TRUE,TRUE,1
+1653,Trident,trident,FALSE,TRUE,1
+1654,Turtle Shell,turtle_helmet,TRUE,TRUE,1
+1655,Elytra,elytra,FALSE,TRUE,1
+1656,Wooden Sword,wooden_sword,TRUE,TRUE,1
+1657,Stone Sword,stone_sword,TRUE,TRUE,1
+1658,Iron Sword,iron_sword,TRUE,TRUE,1
+1659,Golden Sword,golden_sword,TRUE,TRUE,1
+1660,Diamond Sword,diamond_sword,TRUE,TRUE,1
+1661,Netherite Sword,netherite_sword,TRUE,TRUE,1
+1662,Wooden Pickaxe,wooden_pickaxe,TRUE,TRUE,1
+1663,Stone Pickaxe,stone_pickaxe,TRUE,TRUE,1
+1664,Iron Pickaxe,iron_pickaxe,TRUE,TRUE,1
+1665,Golden Pickaxe,golden_pickaxe,TRUE,TRUE,1
+1666,Diamond Pickaxe,diamond_pickaxe,TRUE,TRUE,1
+1667,Netherite Pickaxe,netherite_pickaxe,TRUE,TRUE,1
+1668,Wooden Axe,wooden_axe,TRUE,TRUE,1
+1669,Stone Axe,stone_axe,TRUE,TRUE,1
+1670,Iron Axe,iron_axe,TRUE,TRUE,1
+1671,Golden Axe,golden_axe,TRUE,TRUE,1
+1672,Diamond Axe,diamond_axe,TRUE,TRUE,1
+1673,Netherite Axe,netherite_axe,TRUE,TRUE,1
+1674,Wooden Shovel,wooden_shovel,TRUE,TRUE,1
+1675,Stone Shovel,stone_shovel,TRUE,TRUE,1
+1676,Iron Shovel,iron_shovel,TRUE,TRUE,1
+1677,Golden Shovel,golden_shovel,TRUE,TRUE,1
+1678,Diamond Shovel,diamond_shovel,TRUE,TRUE,1
+1679,Netherite Shovel,netherite_shovel,TRUE,TRUE,1
+1680,Wooden Hoe,wooden_hoe,TRUE,TRUE,1
+1681,Stone Hoe,stone_hoe,TRUE,TRUE,1
+1682,Iron Hoe,iron_hoe,TRUE,TRUE,1
+1683,Golden Hoe,golden_hoe,TRUE,TRUE,1
+1684,Diamond Hoe,diamond_hoe,TRUE,TRUE,1
+1685,Netherite Hoe,netherite_hoe,TRUE,TRUE,1
+1686,Leather Cap,leather_helmet,TRUE,TRUE,1
+1687,Chainmail Helmet,chainmail_helmet,TRUE,TRUE,1
+1688,Iron Helmet,iron_helmet,TRUE,TRUE,1
+1689,Golden Helmet,golden_helmet,TRUE,TRUE,1
+1690,Diamond Helmet,diamond_helmet,TRUE,TRUE,1
+1691,Netherite Helmet,netherite_helmet,TRUE,TRUE,1
+1692,Leather Tunic,leather_chestplate,TRUE,TRUE,1
+1693,Chainmail Chestplate,chainmail_chestplate,TRUE,TRUE,1
+1694,Iron Chestplate,iron_chestplate,TRUE,TRUE,1
+1695,Golden Chestplate,golden_chestplate,TRUE,TRUE,1
+1696,Diamond Chestplate,diamond_chestplate,TRUE,TRUE,1
+1697,Netherite Chestplate,netherite_chestplate,TRUE,TRUE,1
+1698,Leather Pants,leather_leggings,TRUE,TRUE,1
+1699,Chainmail Leggings,chainmail_leggings,TRUE,TRUE,1
+1700,Iron Leggings,iron_leggings,TRUE,TRUE,1
+1701,Golden Leggings,golden_leggings,TRUE,TRUE,1
+1702,Diamond Leggings,diamond_leggings,TRUE,TRUE,1
+1703,Netherite Leggings,netherite_leggings,TRUE,TRUE,1
+1704,Leather Boots,leather_boots,TRUE,TRUE,1
+1705,Chainmail Boots,chainmail_boots,TRUE,TRUE,1
+1706,Iron Boots,iron_boots,TRUE,TRUE,1
+1707,Golden Boots,golden_boots,TRUE,TRUE,1
+1708,Diamond Boots,diamond_boots,TRUE,TRUE,1
+1709,Netherite Boots,netherite_boots,TRUE,TRUE,1
+1710,Debug Stick,debug_stick,FALSE,FALSE,1
+1711,Command Block,command_block,FALSE,FALSE,64
+1712,Chain Command Block,chain_command_block,FALSE,FALSE,64
+1713,Repeating Command Block,repeating_command_block,FALSE,FALSE,64
+1714,Test Instance Block,test_instance_block,FALSE,FALSE,64
+1715,Test Block (Start),test_block,FALSE,FALSE,64
+1716,Test Block (Log),"test_block[block_state={mode:""log""}]",FALSE,FALSE,64
+1717,Test Block (Fail),"test_block[block_state={mode:""fail""}]",FALSE,FALSE,64
+1718,Test Block (Accept),"test_block[block_state={mode:""accept""}]",FALSE,FALSE,64
+1719,Structure Block,structure_block,FALSE,FALSE,64
+1720,Jigsaw Block,jigsaw,FALSE,FALSE,64
+1721,Structure Void,structure_void,FALSE,FALSE,64
+1722,Barrier,barrier,FALSE,FALSE,64
+1723,Light (0),"light[block_state={level:""0""}]",FALSE,FALSE,64
+1724,Light (1),"light[block_state={level:""1""}]",FALSE,FALSE,64
+1725,Light (2),"light[block_state={level:""2""}]",FALSE,FALSE,64
+1726,Light (3),"light[block_state={level:""3""}]",FALSE,FALSE,64
+1727,Light (4),"light[block_state={level:""4""}]",FALSE,FALSE,64
+1728,Light (5),"light[block_state={level:""5""}]",FALSE,FALSE,64
+1729,Light (6),"light[block_state={level:""6""}]",FALSE,FALSE,64
+1730,Light (7),"light[block_state={level:""7""}]",FALSE,FALSE,64
+1731,Light (8),"light[block_state={level:""8""}]",FALSE,FALSE,64
+1732,Light (9),"light[block_state={level:""9""}]",FALSE,FALSE,64
+1733,Light (10),"light[block_state={level:""10""}]",FALSE,FALSE,64
+1734,Light (11),"light[block_state={level:""11""}]",FALSE,FALSE,64
+1735,Light (12),"light[block_state={level:""12""}]",FALSE,FALSE,64
+1736,Light (13),"light[block_state={level:""13""}]",FALSE,FALSE,64
+1737,Light (14),"light[block_state={level:""14""}]",FALSE,FALSE,64
+1738,Light (15),light,FALSE,FALSE,64
+1739,Allay Spawn Egg,allay_spawn_egg,FALSE,FALSE,64
+1740,Armadillo Spawn Egg,armadillo_spawn_egg,FALSE,FALSE,64
+1741,Axolotl Spawn Egg,axolotl_spawn_egg,FALSE,FALSE,64
+1742,Bat Spawn Egg,bat_spawn_egg,FALSE,FALSE,64
+1743,Bee Spawn Egg,bee_spawn_egg,FALSE,FALSE,64
+1744,Blaze Spawn Egg,blaze_spawn_egg,FALSE,FALSE,64
+1745,Bogged Spawn Egg,bogged_spawn_egg,FALSE,FALSE,64
+1746,Breeze Spawn Egg,breeze_spawn_egg,FALSE,FALSE,64
+1747,Camel Spawn Egg,camel_spawn_egg,FALSE,FALSE,64
+1748,Cat Spawn Egg,cat_spawn_egg,FALSE,FALSE,64
+1749,Cave Spider Spawn Egg,cave_spider_spawn_egg,FALSE,FALSE,64
+1750,Chicken Spawn Egg,chicken_spawn_egg,FALSE,FALSE,64
+1751,Cod Spawn Egg,cod_spawn_egg,FALSE,FALSE,64
+1752,Cow Spawn Egg,cow_spawn_egg,FALSE,FALSE,64
+1753,Creaking Spawn Egg,creaking_spawn_egg,FALSE,FALSE,64
+1754,Creeper Spawn Egg,creeper_spawn_egg,FALSE,FALSE,64
+1755,Dolphin Spawn Egg,dolphin_spawn_egg,FALSE,FALSE,64
+1756,Donkey Spawn Egg,donkey_spawn_egg,FALSE,FALSE,64
+1757,Drowned Spawn Egg,drowned_spawn_egg,FALSE,FALSE,64
+1758,Elder Guardian Spawn Egg,elder_guardian_spawn_egg,FALSE,FALSE,64
+1759,Ender Dragon Spawn Egg,ender_dragon_spawn_egg,FALSE,FALSE,64
+1760,Enderman Spawn Egg,enderman_spawn_egg,FALSE,FALSE,64
+1761,Endermite Spawn Egg,endermite_spawn_egg,FALSE,FALSE,64
+1762,Evoker Spawn Egg,evoker_spawn_egg,FALSE,FALSE,64
+1763,Fox Spawn Egg,fox_spawn_egg,FALSE,FALSE,64
+1764,Frog Spawn Egg,frog_spawn_egg,FALSE,FALSE,64
+1765,Ghast Spawn Egg,ghast_spawn_egg,FALSE,FALSE,64
+1766,Glow Squid Spawn Egg,glow_squid_spawn_egg,FALSE,FALSE,64
+1767,Goat Spawn Egg,goat_spawn_egg,FALSE,FALSE,64
+1768,Guardian Spawn Egg,guardian_spawn_egg,FALSE,FALSE,64
+1769,Happy Ghast Spawn Egg,happy_ghast_spawn_egg,FALSE,FALSE,64
+1770,Hoglin Spawn Egg,hoglin_spawn_egg,FALSE,FALSE,64
+1771,Horse Spawn Egg,horse_spawn_egg,FALSE,FALSE,64
+1772,Husk Spawn Egg,husk_spawn_egg,FALSE,FALSE,64
+1773,Iron Golem Spawn Egg,iron_golem_spawn_egg,FALSE,FALSE,64
+1774,Llama Spawn Egg,llama_spawn_egg,FALSE,FALSE,64
+1775,Magma Cube Spawn Egg,magma_cube_spawn_egg,FALSE,FALSE,64
+1776,Mooshroom Spawn Egg,mooshroom_spawn_egg,FALSE,FALSE,64
+1777,Mule Spawn Egg,mule_spawn_egg,FALSE,FALSE,64
+1778,Ocelot Spawn Egg,ocelot_spawn_egg,FALSE,FALSE,64
+1779,Panda Spawn Egg,panda_spawn_egg,FALSE,FALSE,64
+1780,Parrot Spawn Egg,parrot_spawn_egg,FALSE,FALSE,64
+1781,Phantom Spawn Egg,phantom_spawn_egg,FALSE,FALSE,64
+1782,Pig Spawn Egg,pig_spawn_egg,FALSE,FALSE,64
+1783,Piglin Spawn Egg,piglin_spawn_egg,FALSE,FALSE,64
+1784,Piglin Brute Spawn Egg,piglin_brute_spawn_egg,FALSE,FALSE,64
+1785,Pillager Spawn Egg,pillager_spawn_egg,FALSE,FALSE,64
+1786,Polar Bear Spawn Egg,polar_bear_spawn_egg,FALSE,FALSE,64
+1787,Pufferfish Spawn Egg,pufferfish_spawn_egg,FALSE,FALSE,64
+1788,Rabbit Spawn Egg,rabbit_spawn_egg,FALSE,FALSE,64
+1789,Ravager Spawn Egg,ravager_spawn_egg,FALSE,FALSE,64
+1790,Salmon Spawn Egg,salmon_spawn_egg,FALSE,FALSE,64
+1791,Sheep Spawn Egg,sheep_spawn_egg,FALSE,FALSE,64
+1792,Shulker Spawn Egg,shulker_spawn_egg,FALSE,FALSE,64
+1793,Silverfish Spawn Egg,silverfish_spawn_egg,FALSE,FALSE,64
+1794,Skeleton Spawn Egg,skeleton_spawn_egg,FALSE,FALSE,64
+1795,Skeleton Horse Spawn Egg,skeleton_horse_spawn_egg,FALSE,FALSE,64
+1796,Slime Spawn Egg,slime_spawn_egg,FALSE,FALSE,64
+1797,Sniffer Spawn Egg,sniffer_spawn_egg,FALSE,FALSE,64
+1798,Snow Golem Spawn Egg,snow_golem_spawn_egg,FALSE,FALSE,64
+1799,Spider Spawn Egg,spider_spawn_egg,FALSE,FALSE,64
+1800,Squid Spawn Egg,squid_spawn_egg,FALSE,FALSE,64
+1801,Stray Spawn Egg,stray_spawn_egg,FALSE,FALSE,64
+1802,Strider Spawn Egg,strider_spawn_egg,FALSE,FALSE,64
+1803,Tadpole Spawn Egg,tadpole_spawn_egg,FALSE,FALSE,64
+1804,Trader Llama Spawn Egg,trader_llama_spawn_egg,FALSE,FALSE,64
+1805,Tropical Fish Spawn Egg,tropical_fish_spawn_egg,FALSE,FALSE,64
+1806,Turtle Spawn Egg,turtle_spawn_egg,FALSE,FALSE,64
+1807,Vex Spawn Egg,vex_spawn_egg,FALSE,FALSE,64
+1808,Villager Spawn Egg,villager_spawn_egg,FALSE,FALSE,64
+1809,Vindicator Spawn Egg,vindicator_spawn_egg,FALSE,FALSE,64
+1810,Wandering Trader Spawn Egg,wandering_trader_spawn_egg,FALSE,FALSE,64
+1811,Warden Spawn Egg,warden_spawn_egg,FALSE,FALSE,64
+1812,Witch Spawn Egg,witch_spawn_egg,FALSE,FALSE,64
+1813,Wither Spawn Egg,wither_spawn_egg,FALSE,FALSE,64
+1814,Wither Skeleton Spawn Egg,wither_skeleton_spawn_egg,FALSE,FALSE,64
+1815,Wolf Spawn Egg,wolf_spawn_egg,FALSE,FALSE,64
+1816,Zoglin Spawn Egg,zoglin_spawn_egg,FALSE,FALSE,64
+1817,Zombie Spawn Egg,zombie_spawn_egg,FALSE,FALSE,64
+1818,Zombie Horse Spawn Egg,zombie_horse_spawn_egg,FALSE,FALSE,64
+1819,Zombie Villager Spawn Egg,zombie_villager_spawn_egg,FALSE,FALSE,64
+1820,Zombified Piglin Spawn Egg,zombified_piglin_spawn_egg,FALSE,FALSE,64
