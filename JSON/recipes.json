@@ -1,0 +1,19 @@
+[
+  {
+    "name": "stick",
+    "pattern": [
+      [null, "oak_plank", null],
+      [null, "oak_plank", null],
+      [null, null, null]
+    ]
+  },
+  {
+    "name": "torch",
+    "shapeless": true,
+    "pattern": [
+      [null, "coal", null],
+      [null, "stick", null],
+      [null, null, null]
+    ]
+  }
+]
