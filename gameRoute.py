@@ -2,14 +2,14 @@ from flask import Blueprint, request, jsonify
 from gameModel import Item
 import json
 
-bp = Blueprint("craft", __name__, url_prefix="/craft")
+gameBP = Blueprint("craft", __name__, url_prefix="/craft")
 
 # Load recipes at startup
 with open("recipes.json") as f:
     RECIPES = json.load(f)
 
 
-@bp.route("/", methods=["POST"])
+@gameBP.route("/", methods=["POST"])
 def craft_item():
     data = request.json
     grid = data.get("grid")

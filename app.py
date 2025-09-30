@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from Account import maftleAcc
+from gameModel import Item
 
 def main():
 
@@ -11,8 +12,10 @@ def main():
     
     app.config["SECRET_KEY"] = "keyOfSecrets"
     from accRoute import bp
+    from gameRoute import gameBP
     app.register_blueprint(bp)
-    
+    app.register_blueprint(gameBP)
+
     return app
 
 app = main()
