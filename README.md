@@ -1,6 +1,12 @@
 # Maftle
 A wordle game website using the assets from Popular Game "Minecraft"
-Run app.py on your local ip / port.
+
+How to run:
+-Run the command "python app.py" in your terminal
+If this doesn't work:
+-Run "pip install flask" if you don't have it in your environment
+
+Using the site:
 Click on "Login", or the bottom leftmost button.
 If you have not made an account before, click on the words "Create One!" underneath the forms for logging in.
 To create an account, you need to enter a username and email that has not been used previously, as well as a password you want to use.
