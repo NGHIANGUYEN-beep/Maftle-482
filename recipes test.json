@@ -1,0 +1,24 @@
+[
+  {
+    "name": "stick",
+    "pattern": [
+      ["oak_plank"],
+      ["oak_plank"]
+    ]
+  },
+  {
+    "name": "torch",
+    "shapeless": true,
+    "pattern": [
+      ["coal"],
+      ["stick"]
+    ]
+  },
+  {
+    "name": "diamond_helmet",
+    "pattern": [
+      ["diamond", "diamond", "diamond"],
+      ["diamond", null, "diamond"]
+    ]
+  }
+]
