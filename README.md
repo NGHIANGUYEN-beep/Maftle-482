@@ -15,4 +15,4 @@ If all information is determined valid, it will return you back to the Login pag
 Within the login page, you will now enter the email and password you had decided on in the prior page. Again, if any of this information is entered incorrectly/does not exist, it will return with an error and have you retype the information.
 When the login is successful, it will return you to the homepage and change the "Login" button to a "Logout" button, as well as place a welcome banner on the top right corner.
 If you wish to logout, just click on the "Logout" button, and it will take you to a page to confirm that you have logged out.
-When you click on the button to return to the homepage, the "Login" button will reappear and the top right banner will disappear.
+When you click on the button to return to the homepage, the "Login" button will reappear and the top right banner will disappear.+
