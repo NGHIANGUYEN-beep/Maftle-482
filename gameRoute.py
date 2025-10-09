@@ -21,7 +21,7 @@ def craft_item():
             if item:
                 return jsonify({
                     "success": True,
-                    "crafted_item": item.itemNameUnformatted,
+                    "crafted_item": item.itemName,
                 })
 
     # No match found
