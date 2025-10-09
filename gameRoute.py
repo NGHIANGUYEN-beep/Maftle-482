@@ -9,6 +9,10 @@ with open("recipes.json") as f:
     RECIPES = json.load(f)
 
 
+# Generate a list of all items used in crafting
+# usableItems = select(Item.itemNameUnformatted, Item.itemName).filter_by(usedInCrafting='TRUE');
+
+
 @gameBP.route("/", methods=["POST"])
 def craft_item():
     data = request.json

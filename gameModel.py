@@ -1,4 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import select
 items = SQLAlchemy()
 
 class Item(items.Model):
@@ -8,3 +9,5 @@ class Item(items.Model):
     itemName = items.Column(items.String(100), nullable = False)
     obtainableFromCrafting = items.Column(items.Boolean)
     usedInCrafting = items.Column(items.Boolean)
+
+
