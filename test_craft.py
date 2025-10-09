@@ -11,6 +11,7 @@ def app():
     items.init_app(app)
     app.secret_key = "test_secret"
     app.register_blueprint(gameBP)
+    
     with app.app_context():
         items.create_all()
         # insert test items
@@ -42,7 +43,6 @@ def test_craft_stick(client):
   assert result["crafted_item"] == "Stick"
 
 def test_craft_no_match(client):
-    """Test invalid recipe returns success=False."""
     data = {
         "grid": [
             ["dirt"],
