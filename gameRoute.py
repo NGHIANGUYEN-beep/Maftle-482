@@ -5,7 +5,7 @@ import json
 gameBP = Blueprint("craft", __name__, url_prefix="/craft")
 
 # Load recipes at startup
-with open("recipes.json") as f:
+with open("recipeTest.json") as f:
     RECIPES = json.load(f)
 
 
@@ -17,11 +17,11 @@ def craft_item():
     # Iterate through all shaped recipes
     for recipe in RECIPES:
         if grid == recipe["pattern"]:
-            item = Item.query.filter_by(name=recipe["name"]).first()
+            item = Item.query.filter_by(itemNameUnformatted=recipe["name"]).first()
             if item:
                 return jsonify({
                     "success": True,
-                    "crafted_item": item.name,
+                    "crafted_item": item.itemNameUnformatted,
                 })
 
     # No match found
