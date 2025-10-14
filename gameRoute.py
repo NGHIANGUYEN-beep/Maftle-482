@@ -14,7 +14,7 @@ def index():
 
 # Generate a list of all items used in crafting
 # Might need to make changes to syntax
-usableItems = Item.query(Item.itemNameUnformatted, Item.itemName).filter_by(usedInCrafting='TRUE');
+# usableItems = Item.query(Item.itemNameUnformatted, Item.itemName).filter_by(usedInCrafting='TRUE');
 # I think this returns a tuple?
 
 

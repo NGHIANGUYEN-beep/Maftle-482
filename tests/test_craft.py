@@ -1,27 +1,27 @@
 import pytest
 from flask import Flask
 from gameRoute import gameBP, RECIPES
-from gameModel import Item, items
+from databaseTable import table, Item
 
 @pytest.fixture
 def app():
     app = Flask(__name__)
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///:memory:"
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-    items.init_app(app)
+    table.init_app(app)
     app.secret_key = "test_secret"
     app.register_blueprint(gameBP)
     
     with app.app_context():
-        items.create_all()
+        table.create_all()
         # insert test items
-        items.session.add(Item(
+        table.session.add(Item(
             itemNameUnformatted="stick",
             itemName="Stick",
             obtainableFromCrafting=True,
             usedInCrafting=True
         ))
-        items.session.commit()
+        table.session.commit()
     return app
 
 
@@ -36,7 +36,7 @@ def test_craft_stick(client):
             ["oak_plank"]
         ]
     }
-  response = client.post("/craft/", json=data)
+  response = client.post("/gamepage.html", json=data)
   result = response.get_json()
 
   assert result["success"] is True
@@ -49,7 +49,7 @@ def test_craft_no_match(client):
             ["dirt"]
         ]
     }
-    response = client.post("/craft/", json=data)
+    response = client.post("/gamepage.html", json=data)
     result = response.get_json()
 
     assert result["success"] is False

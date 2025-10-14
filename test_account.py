@@ -1,13 +1,13 @@
 import pytest
 from werkzeug.security import check_password_hash
-from Account import Accounts  # Make sure this path is correct
+from databaseTable import Account  # Make sure this path is correct
 
 
 # ---------------- Fixtures ----------------
 @pytest.fixture
 def sample_user():
     """Fixture to create a sample Accounts instance."""
-    return Accounts(
+    return Account(
         username="testuser",
         email="test@example.com",
         password="securepassword123"
@@ -27,7 +27,7 @@ def test_account_creation_fixture(sample_user):
 
 def test_account_creation_direct():
     """Test creating an Accounts object directly."""
-    user = Accounts(
+    user = Account(
         username="directuser",
         email="direct@example.com",
         password="mypassword"
@@ -40,7 +40,7 @@ def test_account_creation_direct():
 
 def test_password_is_hashed():
     """Ensure that the password is hashed correctly."""
-    user = Accounts(
+    user = Account(
         username="hashuser",
         email="hash@example.com",
         password="hashpass"
@@ -50,7 +50,7 @@ def test_password_is_hashed():
 
 def test_check_password_correct():
     """Test that checkPassword returns True for correct password."""
-    user = Accounts(
+    user = Account(
         username="passuser",
         email="pass@example.com",
         password="rightpass"
@@ -60,7 +60,7 @@ def test_check_password_correct():
 
 def test_check_password_incorrect():
     """Test that checkPassword returns False for incorrect password."""
-    user = Accounts(
+    user = Account(
         username="wrongpassuser",
         email="wrong@example.com",
         password="rightpass"
