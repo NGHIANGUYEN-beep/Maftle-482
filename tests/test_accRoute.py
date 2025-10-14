@@ -1,16 +1,22 @@
+import os
 import pytest
-from flask import Flask, session
+from flask import Flask
 from accRoute import bp
-
 
 @pytest.fixture
 def app():
-    """Create a Flask test app and register blueprint."""
-    app = Flask(__name__)
+    # Use absolute paths for templates and static
+    template_path = os.path.join(os.path.dirname(__file__), "../templates")
+    static_path = os.path.join(os.path.dirname(__file__), "../static")
+
+    app = Flask(
+        __name__,
+        template_folder=template_path,
+        static_folder=static_path
+    )
     app.secret_key = "test_secret"
     app.register_blueprint(bp)
     return app
-
 
 @pytest.fixture
 def client(app):
@@ -56,8 +62,8 @@ def test_create_account_new_user(monkeypatch, client):
     dummy_session = DummySession()
 
     # Apply monkeypatches
-    monkeypatch.setattr("accRoute.Accounts", DummyAccounts)
-    monkeypatch.setattr("accRoute.maftleAcc", type("db", (), {"session": dummy_session}))
+    monkeypatch.setattr("accRoute.Account", DummyAccounts)
+    monkeypatch.setattr("accRoute.table", type("db", (), {"session": dummy_session}))
 
     response = client.post(
         "/createaccount.html",
@@ -89,7 +95,7 @@ def test_create_account_existing_username(monkeypatch, client):
     class DummyAccounts:
         query = DummyQuery()
 
-    monkeypatch.setattr("accRoute.Accounts", DummyAccounts)
+    monkeypatch.setattr("accRoute.Account", DummyAccounts)
 
     response = client.post(
         "/createaccount.html",
@@ -119,7 +125,7 @@ def test_create_account_existing_email(monkeypatch, client):
     class DummyAccounts:
         query = DummyQuery()
 
-    monkeypatch.setattr("accRoute.Accounts", DummyAccounts)
+    monkeypatch.setattr("accRoute.Account", DummyAccounts)
 
     response = client.post(
         "/createaccount.html",
@@ -153,7 +159,7 @@ def test_login_success(monkeypatch, client):
     class DummyAccounts:
         query = DummyQuery()
 
-    monkeypatch.setattr("accRoute.Accounts", DummyAccounts)
+    monkeypatch.setattr("accRoute.Account", DummyAccounts)
 
     response = client.post(
         "/loginpage.html",
@@ -182,7 +188,7 @@ def test_login_failure(monkeypatch, client):
     class DummyAccounts:
         query = DummyQuery()
 
-    monkeypatch.setattr("accRoute.Accounts", DummyAccounts)
+    monkeypatch.setattr("accRoute.Account", DummyAccounts)
 
     response = client.post(
         "/loginpage.html",
