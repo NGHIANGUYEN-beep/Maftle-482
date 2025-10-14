@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drag & Drop Grid</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 5px;
+    }
+
+    .cell {
+      border: 1px solid #ccc;
+      text-align: center;
+      vertical-align: middle;
+      background-color: #f4f4f4;
+    }
+
+    .item {
+      padding: 10px;
+      background-color: #9cf;
+      cursor: move;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Drag & Drop Grid Guess</h2>
+
+<div class="grid" id="grid">
+  <!-- 3x3 = 9 cells -->
+  <div class="cell" data-row="0" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class="cell" data-row="0" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class="cell" data-row="0" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+  <div class="cell" data-row="1" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class="cell" data-row="1" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class="cell" data-row="1" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+  <div class="cell" data-row="2" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class="cell" data-row="2" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <div class="cell" data-row="2" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+
+<br>
+
+<div>
+  <h3>Items to Drag</h3>
+  <div id="items">
+    <div class="item" draggable="true" ondragstart="drag(event)" id="item-A">coal</div>
+    <div class="item" draggable="true" ondragstart="drag(event)" id="item-B">stick</div>
+    <div class="item" draggable="true" ondragstart="drag(event)" id="item-C">C</div>
+  </div>
+</div>
+
+<br>
+<button onclick="submitGrid()">Submit Guess</button>
+
+<p id="response"></p>
+
+<script>
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  function drop(ev) {
+    ev.preventDefault();
+    const data = ev.dataTransfer.getData("text");
+    const item = document.getElementById(data);
+
+    // Remove any existing item in the cell
+    if (ev.target.classList.contains('cell')) {
+      ev.target.innerHTML = '';
+      ev.target.appendChild(item);
+    }
+  }
+
+  function submitGrid() {
+    const grid = Array.from({ length: 3 }, () => Array(3).fill(null));
+
+    document.querySelectorAll('.cell').forEach(cell => {
+      const row = cell.dataset.row;
+      const col = cell.dataset.col;
+
+      const item = cell.querySelector('.item');
+      grid[row][col] = item ? item.textContent : null;
+    });
+
+    fetch('/submit-guess', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ grid: grid })
+    })
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('response').textContent = data.message;
+    })
+    .catch(err => console.error('Error:', err));
+  }
+</script>

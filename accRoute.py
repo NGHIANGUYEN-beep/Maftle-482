@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, jsonify, request, redirect, url_for, flash, session, Flask
-from Account import maftleAcc, Accounts
+from databaseTable import table, Account
 
 #BP for running the home page, only uses the template
 bp = Blueprint('main', __name__)
@@ -18,21 +18,21 @@ def create_account():
         password = request.form.get("password")
     
     #Checks if username is taken
-        existing_user = Accounts.query.filter_by(username=username).first()
+        existing_user = Account.query.filter_by(username=username).first()
         if existing_user:
             flash("Username already exists!", "usererror")
             return redirect("/createaccount.html")
         
     #Checks if there is account with existing email
-        existing_email = Accounts.query.filter_by(email=email).first()
+        existing_email = Account.query.filter_by(email=email).first()
         if existing_email:
             flash("Email is already registered. Please log in!", "createerror")
             return redirect("/createaccount.html")
     
     #Commits account to database
-        account = Accounts(username, email, password)
-        maftleAcc.session.add(account)
-        maftleAcc.session.commit()
+        account = Account(username, email, password)
+        table.session.add(account)
+        table.session.commit()
         
         return redirect("/loginpage.html")
     
@@ -48,7 +48,7 @@ def login():
         password = request.form.get("password")
         
         #Filters through accounts with the same email
-        user = Accounts.query.filter_by(email=email).first()
+        user = Account.query.filter_by(email=email).first()
         
         #Finds account
         if user and user.checkPassword(password):

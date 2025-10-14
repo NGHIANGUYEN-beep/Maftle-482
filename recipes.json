@@ -9,7 +9,6 @@
   },
   {
     "name": "torch",
-    "shapeless": true,
     "pattern": [
       [null, "coal", null],
       [null, "stick", null],
