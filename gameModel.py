@@ -8,5 +8,6 @@ class Item(items.Model):
     itemNameUnformatted = items.Column(items.String(50), nullable = False)
     itemName = items.Column(items.String(100), nullable = False)
     obtainableFromCrafting = items.Column(items.Boolean)
+    usedInCrafting = items.Column(items.Boolean)
 
 
