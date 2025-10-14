@@ -13,7 +13,7 @@ with open("recipeTest.json") as f:
 # usableItems = select(Item.itemNameUnformatted, Item.itemName).filter_by(usedInCrafting='TRUE');
 
 
-@gameBP.route("/", methods=["POST"])
+@gameBP.route("/gamepage.html", methods=["POST"])
 def craft_item():
     data = request.json
     grid = data.get("grid")
