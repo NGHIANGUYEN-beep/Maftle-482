@@ -10,7 +10,10 @@ with open("recipeTest.json") as f:
 
 
 # Generate a list of all items used in crafting
-# usableItems = select(Item.itemNameUnformatted, Item.itemName).filter_by(usedInCrafting='TRUE');
+# Might need to make changes to syntax
+usableItems = Item.query(Item.itemNameUnformatted, Item.itemName).filter_by(usedInCrafting='TRUE');
+# I think this returns a tuple?
+
 
 
 @gameBP.route("/", methods=["POST"])
