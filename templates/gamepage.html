@@ -84,12 +84,33 @@
   function submitGrid() {
     const grid = Array.from({ length: 3 }, () => Array(3).fill(null));
 
+    // Going through gui grid, and filling out grid data array
     document.querySelectorAll('.cell').forEach(cell => {
       const row = cell.dataset.row;
       const col = cell.dataset.col;
 
       const item = cell.querySelector('.item');
       grid[row][col] = item ? item.textContent : null;
+      // Now Cut off empty rows and columns
+
+      // Cutting off empty rows
+      const cleanedRows = grid.filter(row => row.some(cell => cell));
+      // This keeps rows that have at least one truthy value.
+      // If you want to keep rows with any content, even if it's falsy, you might need a different check.
+      
+      // Cutting off empty columns
+      // Step 1: Transpose the array (rows become columns, columns become rows)
+      const transposedArray = cleanedRows[0].map((_, colIndex) =>
+          arrayWithEmptyColumns.map(row => row[colIndex])
+      );
+      // Step 2: Filter out the "empty" columns (now rows)
+      const cleanedTransposed = transposedArray.filter(column => column.some(cell => cell));
+
+      // Step 3: Transpose back to the original orientation
+      const cleanedRowsColumns = cleanedTransposed[0].map((_, rowIndex) =>
+          cleanedTransposed.map(column => column[rowIndex])
+      );
+      console.log(cleanedRowsColumns);
     });
 
     fetch('/submit-guess', {
@@ -97,8 +118,11 @@
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ grid: grid })
+        // as a string?
+      //body: JSON.stringify({ grid: grid })
+      body: JSON.stringify({ grid: cleanedRowsColumns })
     })
+    // Submitting grid back to backend
     .then(res => res.json())
     .then(data => {
       document.getElementById('response').textContent = data.message;
