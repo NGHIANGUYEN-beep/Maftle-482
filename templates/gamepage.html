@@ -109,6 +109,7 @@ function trimNullRows(grid) {
 function submitGrid() {
   const rawGrid = Array.from({ length: 3 }, () => Array(3).fill(null));
 
+    // Going through gui grid, and filling out grid data array
   document.querySelectorAll('.cell').forEach(cell => {
     const row = cell.dataset.row;
     const col = cell.dataset.col;
