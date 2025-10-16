@@ -6,8 +6,8 @@
   <style>
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 100px);
-      grid-template-rows: repeat(3, 100px);
+      grid-template-columns: repeat(3, 80px);
+      grid-template-rows: repeat(3, 80px);
       gap: 5px;
     }
 
@@ -26,8 +26,6 @@
   </style>
 </head>
 <body>
-
-<h2>Drag & Drop Grid Guess</h2>
 
 <div class="grid" id="grid">
   <!-- 3x3 = 9 cells -->
@@ -49,9 +47,9 @@
 <div>
   <h3>Items to Drag</h3>
   <div id="items">
-    <div class="item" draggable="true" ondragstart="drag(event)" id="item-A">coal</div>
-    <div class="item" draggable="true" ondragstart="drag(event)" id="item-B">stick</div>
-    <div class="item" draggable="true" ondragstart="drag(event)" id="item-C">C</div>
+    <div class="item" draggable="true" ondragstart="drag(event)" id="coal" data-id="coal">Coal</div>
+    <div class="item" draggable="true" ondragstart="drag(event)" id="stick" data-id="stick">Stick</div>
+    <div class="item" draggable="true" ondragstart="drag(event)" id="oak_plank" data-id="oak_plank">Oak Plank</div>
   </div>
 </div>
 
@@ -67,42 +65,74 @@
 
   function drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
+    ev.dataTransfer.effectAllowed = "copy";
   }
 
   function drop(ev) {
-    ev.preventDefault();
-    const data = ev.dataTransfer.getData("text");
-    const item = document.getElementById(data);
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  const original = document.getElementById(data);
 
-    // Remove any existing item in the cell
-    if (ev.target.classList.contains('cell')) {
-      ev.target.innerHTML = '';
-      ev.target.appendChild(item);
+  if (ev.target.classList.contains('cell')) {
+    ev.target.innerHTML = '';
+
+    const clone = original.cloneNode(true);
+    clone.id = original.id + "-" + Math.random().toString(36).substr(2, 5); // Give it a unique ID
+    clone.setAttribute("draggable", "true");
+    clone.ondragstart = drag;
+    clone.textContent = original.textContent;
+
+    ev.target.appendChild(clone);
+  }
+}
+
+function trimNullColumns(grid) {
+  if (!grid.length) return grid;
+
+  const numCols = grid[0].length;
+  const colsToKeep = [];
+
+  for (let col = 0; col < numCols; col++) {
+    const hasNonNull = grid.some(row => row[col] !== null);
+    if (hasNonNull) {
+      colsToKeep.push(col);
     }
   }
 
-  function submitGrid() {
-    const grid = Array.from({ length: 3 }, () => Array(3).fill(null));
+  return grid.map(row => colsToKeep.map(col => row[col]));
+}
 
-    document.querySelectorAll('.cell').forEach(cell => {
-      const row = cell.dataset.row;
-      const col = cell.dataset.col;
+function trimNullRows(grid) {
+  return grid.filter(row => row.some(cell => cell !== null));
+}
 
-      const item = cell.querySelector('.item');
-      grid[row][col] = item ? item.textContent : null;
-    });
+function submitGrid() {
+  const rawGrid = Array.from({ length: 3 }, () => Array(3).fill(null));
 
-    fetch('/submit-guess', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ grid: grid })
-    })
-    .then(res => res.json())
-    .then(data => {
-      document.getElementById('response').textContent = data.message;
-    })
-    .catch(err => console.error('Error:', err));
-  }
+  document.querySelectorAll('.cell').forEach(cell => {
+    const row = cell.dataset.row;
+    const col = cell.dataset.col;
+
+    const item = cell.querySelector('.item');
+    rawGrid[row][col] = item ? item.dataset.id : null;
+  });
+
+  // Trim null columns
+ let trimmedGrid = trimNullRows(rawGrid);
+trimmedGrid = trimNullColumns(trimmedGrid);
+
+  // Send to server
+  fetch('/submit-guess', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ grid: trimmedGrid })
+  })
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('response').textContent = data.message;
+  })
+  .catch(err => console.error('Error:', err));
+}
 </script>

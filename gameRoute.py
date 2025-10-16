@@ -5,7 +5,7 @@ import json
 gameBP = Blueprint("craft", __name__)
 
 # Load recipes at startup
-with open("recipes.json") as f:
+with open("recipeTest.json") as f:
     RECIPES = json.load(f)
 
 @gameBP.route("/gamepage.html", methods=['GET'])
