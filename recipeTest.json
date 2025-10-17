@@ -19,5 +19,12 @@
       ["diamond", "diamond", "diamond"],
       ["diamond", null, "diamond"]
     ]
+  },
+  {
+    "name": "oak_trapdoor",
+    "pattern": [
+      ["oak_plank", "oak_plank"]
+    ]
   }
+  
 ]

@@ -47,69 +47,111 @@
 <div>
   <h3>Items to Drag</h3>
   <div id="items">
-    <div class="item" draggable="true" ondragstart="drag(event)" id="coal" data-id="coal">Coal</div>
-    <div class="item" draggable="true" ondragstart="drag(event)" id="stick" data-id="stick">Stick</div>
-    <div class="item" draggable="true" ondragstart="drag(event)" id="oak_plank" data-id="oak_plank">Oak Plank</div>
-  </div>
+  <div class="item" draggable="true" ondragstart="drag(event)" data-id="coal" data-source="list" id="coal">Coal</div>
+  <div class="item" draggable="true" ondragstart="drag(event)" data-id="stick" data-source="list" id="stick">Stick</div>
+  <div class="item" draggable="true" ondragstart="drag(event)" data-id="oak_plank" data-source="list" id="oak_plank">Oak Plank</div>
+</div>
 </div>
 
 <br>
 <button onclick="submitGrid()">Submit Guess</button>
+<button onclick="clearGrid()">Clear Grid</button>
 
 <p id="response"></p>
 
 <script>
-  function allowDrop(ev) {
-    ev.preventDefault();
-  }
-
-  function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-    ev.dataTransfer.effectAllowed = "copy";
-  }
-
-  function drop(ev) {
+// Allows for drag and drop functionality
+function allowDrop(ev) {
   ev.preventDefault();
-  const data = ev.dataTransfer.getData("text");
-  const original = document.getElementById(data);
-
-  if (ev.target.classList.contains('cell')) {
-    ev.target.innerHTML = '';
-
-    const clone = original.cloneNode(true);
-    clone.id = original.id + "-" + Math.random().toString(36).substr(2, 5); // Give it a unique ID
-    clone.setAttribute("draggable", "true");
-    clone.ondragstart = drag;
-    clone.textContent = original.textContent;
-
-    ev.target.appendChild(clone);
-  }
 }
 
+// Allows for items to be copied then dragged from their list
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+  ev.dataTransfer.setData("source", ev.target.dataset.source);
+  ev.dataTransfer.effectAllowed = "copyMove";
+}
+
+// Allows for items being dragged to get dropped into the grid
+function drop(ev) {
+  ev.preventDefault();
+  const id = ev.dataTransfer.getData("text");
+  const sourceType = ev.dataTransfer.getData("source");
+  const original = document.getElementById(id);
+
+  if (!ev.target.classList.contains('cell')) return;
+  ev.target.innerHTML = '';
+  let elementToAppend;
+
+  if (sourceType === "list") {
+    // Copy from list
+    const clone = original.cloneNode(true);
+    clone.id = original.id + "-" + Math.random().toString(36).substr(2, 5);
+    clone.setAttribute("draggable", "true");
+    clone.dataset.source = "grid"; // mark as grid item, stops allowing copy
+    clone.ondragstart = drag;
+    elementToAppend = clone;
+  } else {
+    // Move inside grid
+    elementToAppend = original;
+  }
+
+  ev.target.appendChild(elementToAppend);
+}
+
+// Clears all items inside the grid
+function clearGrid() {
+  const cells = document.querySelectorAll('.grid .cell');
+  cells.forEach(cell => {
+    cell.innerHTML = '';
+  });
+}
+
+// Removes nulls from columns, preserves if null is between two items in a column
 function trimNullColumns(grid) {
   if (!grid.length) return grid;
 
   const numCols = grid[0].length;
-  const colsToKeep = [];
+  let firstCol = numCols, lastCol = -1;
 
   for (let col = 0; col < numCols; col++) {
-    const hasNonNull = grid.some(row => row[col] !== null);
-    if (hasNonNull) {
-      colsToKeep.push(col);
+    const hasValue = grid.some(row => row[col] !== null);
+    if (hasValue) {
+      firstCol = Math.min(firstCol, col);
+      lastCol = Math.max(lastCol, col);
     }
   }
 
-  return grid.map(row => colsToKeep.map(col => row[col]));
+  // If all columns are null, just return the original grid
+  if (lastCol === -1) return grid;
+
+  return grid.map(row => row.slice(firstCol, lastCol + 1));
 }
 
+// Removes nulls from rows, preserves if null is between two items in a row
 function trimNullRows(grid) {
-  return grid.filter(row => row.some(cell => cell !== null));
+  const numRows = grid.length;
+  let firstRow = numRows, lastRow = -1;
+
+  for (let row = 0; row < numRows; row++) {
+    const hasValue = grid[row].some(cell => cell !== null);
+    if (hasValue) {
+      firstRow = Math.min(firstRow, row);
+      lastRow = Math.max(lastRow, row);
+    }
+  }
+
+  // If all rows are null, just return the original grid
+  if (lastRow === -1) return grid;
+
+  return grid.slice(firstRow, lastRow + 1);
 }
 
+// Sends grid to backend to confirm if pattern in grid is an accepted recipe
 function submitGrid() {
   const rawGrid = Array.from({ length: 3 }, () => Array(3).fill(null));
 
-    // Going through gui grid, and filling out grid data array
+  // Going through grid, and filling out grid data array
   document.querySelectorAll('.cell').forEach(cell => {
     const row = cell.dataset.row;
     const col = cell.dataset.col;
@@ -118,9 +160,9 @@ function submitGrid() {
     rawGrid[row][col] = item ? item.dataset.id : null;
   });
 
-  // Trim null columns
- let trimmedGrid = trimNullRows(rawGrid);
-trimmedGrid = trimNullColumns(trimmedGrid);
+  // Calling functions to remove nulls
+  let trimmedGrid = trimNullRows(rawGrid);
+  trimmedGrid = trimNullColumns(trimmedGrid);
 
   // Send to server
   fetch('/submit-guess', {
