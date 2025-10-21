@@ -2,17 +2,29 @@
   {
     "name": "stick",
     "pattern": [
-      [null, "oak_plank", null],
-      [null, "oak_plank", null],
-      [null, null, null]
+      ["oak_plank"],
+      ["oak_plank"]
     ]
   },
   {
     "name": "torch",
     "pattern": [
-      [null, "coal", null],
-      [null, "stick", null],
-      [null, null, null]
+      ["coal"],
+      ["stick"]
+    ]
+  },
+  {
+    "name": "diamond_helmet",
+    "pattern": [
+      ["diamond", "diamond", "diamond"],
+      ["diamond", null, "diamond"]
+    ]
+  },
+  {
+    "name": "oak_trapdoor",
+    "pattern": [
+      ["oak_plank", "oak_plank"]
     ]
   }
+  
 ]
