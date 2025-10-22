@@ -1,69 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maftle Main Page</title>
-    <style>
-        @font-face {
-            font-family: "MinecraftFont";
-            src: url("/static/MinecraftFont.woff") format("woff");
-            src: url("/static/MinecraftFont.woff2") format("woff2");
-        }
-        body {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url("/static/MinecraftBackground.png");
-            overflow: hidden;
-        }
-        .button-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 7px;
-            width: 500px;
-        }
-        .split-container {
-            display: flex;
-            justify-content: center;
-            gap: 7px;
-            min-width: 250px;
-            width: 100%;
-        }
-        .split-container button {
-            width: 50%;
-        }
-        button {
-            padding: 12px;
-            font-size: 28px;
-            font-family: "MinecraftFont";
-            color: white;
-            background-image: url("/static/StoneButtons.png");
-            background-size: 500px;
-            border-radius: 8px;
-            width: 100%;
-        }
-        button:hover {
-            filter: brightness(85%);
-        }
-        a {
-            color: white;
-            text-decoration: none;
-        }
-        .top-right {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            font-family: "MinecraftFont";
-            font-size: 20px;
-            color: white;
-            background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
-            padding: 8px 12px;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <!-- top right welcome -->
