@@ -4,95 +4,151 @@
   <meta charset="UTF-8">
   <title>Drag & Drop Grid</title>
   <style>
-    .grid {
+    @font-face {
+      font-family: "MinecraftFont";
+      src: url("/static/MinecraftFont.woff") format("woff");
+      src: url("/static/MinecraftFont.woff2") format("woff2");
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url("/static/MinecraftBackground.png");
+      overflow: hidden;
+      margin-top: 150px;
+      margin-right: 1000px;
+    }
+    .box {
+      background-color: #C6C6C6;
+      border: 2px solid black;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+    .grid-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      .grid {
       display: grid;
       grid-template-columns: repeat(3, 80px);
       grid-template-rows: repeat(3, 80px);
       gap: 5px;
+      
     }
 
     .cell {
-      border: 1px solid #ccc;
-      text-align: center;
-      vertical-align: middle;
-      background-color: #f4f4f4;
+      border-left: 3px solid #373737;
+      border-top: 3px solid #373737;
+      background-color: #8B8B8B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .items-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      #items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
     }
 
     .item {
-      padding: 10px;
-      background-color: #9cf;
       cursor: move;
+    }
+
+    .item img {
+      width: 75px;
+      height: 75px;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 28px;
+      font-family: "MinecraftFont";
+      color: white;
+      background-image: url("/static/StoneButtons.png");
+      background-size: 500px;
+      border-radius: 8px;
+    }
+    button:hover {
+      filter: brightness(85%);
     }
   </style>
 </head>
 <body>
+<div class="box grid-box">
+  <div class="grid" id="grid">
+    <!-- 3x3 = 9 cells -->
+    <div class="cell" data-row="0" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="cell" data-row="0" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="cell" data-row="0" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-<div class="grid" id="grid">
-  <!-- 3x3 = 9 cells -->
-  <div class="cell" data-row="0" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  <div class="cell" data-row="0" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  <div class="cell" data-row="0" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="cell" data-row="1" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="cell" data-row="1" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="cell" data-row="1" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-  <div class="cell" data-row="1" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  <div class="cell" data-row="1" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  <div class="cell" data-row="1" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-  <div class="cell" data-row="2" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  <div class="cell" data-row="2" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  <div class="cell" data-row="2" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="cell" data-row="2" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="cell" data-row="2" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="cell" data-row="2" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
 </div>
 
-<br>
+<div class="button-container">
+  <button onclick="clearGrid()">Clear Table</button>
+  <button onclick="submitGrid()">Submit Guess</button>
+</div><br><br>
 
-<div>
-  <h3>Items to Drag</h3>
+<div class="box items-box">
   <div id="items">
-  <div class="item" draggable="true" ondragstart="drag(event)" data-id="coal" data-source="list" id="coal">Coal</div>
-  <div class="item" draggable="true" ondragstart="drag(event)" data-id="stick" data-source="list" id="stick">Stick</div>
-  <div class="item" draggable="true" ondragstart="drag(event)" data-id="oak_plank" data-source="list" id="oak_plank">Oak Plank</div>
+    <div class="item" draggable="true" ondragstart="drag(event)" data-id="coal" data-source="list" id="coal">
+      <img src="/static/coal.png" draggable="false"></div>
+    <div class="item" draggable="true" ondragstart="drag(event)" data-id="stick" data-source="list" id="stick">
+      <img src="/static/stick.png" draggable="false"></div>
+    <div class="item" draggable="true" ondragstart="drag(event)" data-id="oak_plank" data-source="list" id="oak_plank">
+      <img src="/static/oak_plank.png" draggable="false"></div>
+      <div class="item" draggable="true" ondragstart="drag(event)" data-id="diamond" data-source="list" id="diamond">
+      <img src="/static/diamond.png" draggable="false"></div>
+  </div>
 </div>
-</div>
-
-<br>
-<button onclick="submitGrid()">Submit Guess</button>
-<button onclick="clearGrid()">Clear Grid</button>
-
-<p id="response"></p>
 
 <script>
-// Allows for drag and drop functionality
 function allowDrop(ev) {
   ev.preventDefault();
 }
 
-// Allows for items to be copied then dragged from their list
 function drag(ev) {
   ev.dataTransfer.setData("text", ev.target.id);
   ev.dataTransfer.setData("source", ev.target.dataset.source);
   ev.dataTransfer.effectAllowed = "copyMove";
 }
 
-// Allows for items being dragged to get dropped into the grid
 function drop(ev) {
   ev.preventDefault();
   const id = ev.dataTransfer.getData("text");
   const sourceType = ev.dataTransfer.getData("source");
   const original = document.getElementById(id);
+  if (!original) return; // Safety check
 
   if (!ev.target.classList.contains('cell')) return;
+
   ev.target.innerHTML = '';
   let elementToAppend;
 
   if (sourceType === "list") {
-    // Copy from list
     const clone = original.cloneNode(true);
     clone.id = original.id + "-" + Math.random().toString(36).substr(2, 5);
     clone.setAttribute("draggable", "true");
-    clone.dataset.source = "grid"; // mark as grid item, stops allowing copy
+    clone.dataset.source = "grid";
     clone.ondragstart = drag;
     elementToAppend = clone;
   } else {
-    // Move inside grid
     elementToAppend = original;
   }
 
