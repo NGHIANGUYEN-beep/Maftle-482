@@ -1,8 +1,13 @@
 from flask import Blueprint, request, jsonify, render_template
+import random
 from databaseTable import Item
 import json
+from datetime import date
 
 gameBP = Blueprint("craft", __name__)
+
+# Global Variables
+currentDailyItem = {"date": None, "item": None}
 
 # Load recipes at startup
 with open("recipes.json") as f:
@@ -32,9 +37,29 @@ def craft_item():
                 print("Item found:", item.itemName)
                 return jsonify({
                     "success": True,
-                    "crafted_item": item.itemName,
+                    "crafted_item": item.itemName
                 })
 
     # No match found
     print("Received grid:", grid)
     return jsonify({"success": False})
+
+@gameBP.route("/randomGenerator", methods = ["POST"])
+def generateRandomItem():
+        dailyItem = Item.query.filter_by(obtainableFromCrafting=True).order_by(random()).first()
+        for name in RECIPES:
+            if dailyItem.itemNameUnformatted == name:
+                currentDailyItem["item"] = dailyItem
+                return jsonify({
+                 "success" : True,
+                    "daily_item": dailyItem.itemName
+            })
+
+def dailyItem():
+    today = date.today()
+    if currentDailyItem["date"] == today:
+        return currentDailyItem["item"]
+    
+    if currentDailyItem["item"] == None:
+        generateRandomItem()
+        
