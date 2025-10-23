@@ -37,3 +37,30 @@ body {
     font-size: 54px;
     line-height: .1em;
 }
+
+.card-stone input[type="text"],
+.card-stone input[type="password"] {
+    width: 96%;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    /* We should maybe use a slightly more serious / professional looking font for this part */
+    font-family: "MinecraftFont";
+}
+
+.card-stone button {
+    /* logoutpage uses a different button */
+    width: 100%;
+    padding: 8px;
+    background-image: url("/static/StoneButtons.png");
+    background-size: 500px;     /* this line is in loginpage but not createaccount - makes the button look nicer so using it for both */
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: "MinecraftFont";
+    color: white;
+}
+
+.card-stone button:hover {
+    filter: brightness(85%);
+}
