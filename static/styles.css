@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "MinecraftFont";
+    src: url("/static/MinecraftFont.woff") format("woff");
+    src: url("/static/MinecraftFont.woff2") format("woff2");
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/static/MinecraftBackground.png");
+    overflow: hidden;
+}
+
+.card-stone {
+    /* This block of code is in loginpage.html, createaccounthtml, and logoutpage.html */
+      /* Except in logoutpage.html, it also has the line [ display: block; ] */
+        /* - Does it not work without that line? */
+        /* - Update: I don't think that line did anything */
+    /* .login-container, .setup-container, .button-container */
+    background-image: url("/static/StoneButtons.png");
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2.5rem;
+    font-family: "MinecraftFont";
+    color: white;
+    font-size: 24px;
+}
+
+.card-stone h2 {
+    /* Used in loginpage.html and createaccount.html */
+    text-align: center;
+    margin: 1.5rem;
+    font-family: "MinecraftFont";
+    color: white;
+    font-size: 54px;
+    line-height: .1em;
+}
+
+.card-stone input[type="text"],
+.card-stone input[type="password"] {
+    width: 96%;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    /* We should maybe use a slightly more serious / professional looking font for this part */
+    font-family: "MinecraftFont";
+}
+
+.card-stone button {
+    /* logoutpage uses a different button */
+    width: 100%;
+    padding: 8px;
+    background-image: url("/static/StoneButtons.png");
+    background-size: 500px;     /* this line is in loginpage but not createaccount - makes the button look nicer so using it for both */
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: "MinecraftFont";
+    color: white;
+}
+
+.card-stone button:hover {
+    filter: brightness(85%);
+}
+
+.flash-message {
+    text-align: center;
+    margin: 10px auto;
+    padding: 8px 16px;
+    border-radius: 5px;
+    width: fit-content;
+    font-family: "MinecraftFont";
+    font-size: 25px;
+}
