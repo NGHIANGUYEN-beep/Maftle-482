@@ -4,61 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maftle Logout Page</title>
-    <style>
-        @font-face {
-            font-family: "MinecraftFont";
-            src: url("/static/MinecraftFont.woff") format("woff");
-            src: url("/static/MinecraftFont.woff2") format("woff2");
-        }
-        body {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-image: url("/static/MinecraftBackground.png");
-            overflow: hidden;
-        }
-        button {
-            padding: 12px;
-            font-size: 28px;
-            font-family: "MinecraftFont";
-            color: white;
-            background-image: url("/static/StoneButtons.png");
-            background-size: 500px;
-            border-radius: 8px;
-            width: 100%;
-        }
-        .button-container {
-            background-image: url("/static/StoneButtons.png");
-            border: 2px solid black;
-            border-radius: 8px;
-            padding: 2.5rem;
-            font-family: "MinecraftFont";
-            color: white;
-            font-size: 24px;
-            display: block;
-        }
-        .button-container p {
-            text-align: center;
-            margin: 1.5rem;
-            font-family: "MinecraftFont";
-            color: white;
-            font-size: 32px;
-            line-height: .1em;
-        }
-        a {
-            display: block;
-            color: white;
-            text-decoration: none;
-        }
-        a:hover {
-            filter: brightness(85%);
-        }
-    </style>
+    <link rel="icon" type="image/png" href="/static/icon.png">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="/static/logoutpage.css">
     <body>
-        <div class="button-container">
+        <div class="card-stone">
             <p>You have been Logged Out</p><br>
-            <button type="submit">
+            <button id="return-button" type="submit">
             <a href="/">Return to Home</a>
             </button>
         </div>
