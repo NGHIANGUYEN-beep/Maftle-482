@@ -1,0 +1,7 @@
+{
+  "tests/test_account.py": true,
+  "tests/test_craft.py::test_craft_stick": true,
+  "tests/test_craft.py::test_craft_no_match": true,
+  "tests/test_accRoute.py": true,
+  "tests/test_craft.py": true
+}
