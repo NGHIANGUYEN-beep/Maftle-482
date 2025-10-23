@@ -47,8 +47,8 @@ def craft_item():
 @gameBP.route("/randomGenerator", methods = ["POST"])
 def generateRandomItem():
         dailyItem = Item.query.filter_by(obtainableFromCrafting=True).order_by(random()).first()
-        for name in RECIPES:
-            if dailyItem.itemNameUnformatted == name:
+        for recipe in RECIPES:
+            if dailyItem.itemNameUnformatted == recipe["name"]:
                 currentDailyItem["item"] = dailyItem
                 return jsonify({
                  "success" : True,
