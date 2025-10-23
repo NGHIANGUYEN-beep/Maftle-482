@@ -27,3 +27,13 @@ body {
     color: white;
     font-size: 24px;
 }
+
+.card-stone h2 {
+    /* Used in loginpage.html and createaccount.html */
+    text-align: center;
+    margin: 1.5rem;
+    font-family: "MinecraftFont";
+    color: white;
+    font-size: 54px;
+    line-height: .1em;
+}
