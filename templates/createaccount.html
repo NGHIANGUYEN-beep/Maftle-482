@@ -7,17 +7,7 @@
     <link rel="icon" type="image/png" href="/static/icon.png">
     <link rel="stylesheet" href="/static/styles.css">
     <style>
-        .setup-container {
-            background-image: url("/static/StoneButtons.png");
-            border: 2px solid black;
-            border-radius: 8px;
-            padding: 2.5rem;
-            font-family: "MinecraftFont";
-            color: white;
-            font-size: 24px;
-        }
-
-        .setup-container h2 {
+        .card-stone h2 {
             text-align: center;
             margin: 1.5rem;
             font-family: "MinecraftFont";
@@ -26,8 +16,8 @@
             line-height: .1em;
         }
 
-        .setup-container input[type="text"],
-        .setup-container input[type="password"] {
+        .card-stone input[type="text"],
+        .card-stone input[type="password"] {
             width: 96%;
             padding: 8px;
             border: 2px solid black;
@@ -36,7 +26,7 @@
             font-family: "MinecraftFont";
         }
 
-        .setup-container button {
+        .card-stone button {
             width: 100%;
             padding: 8px;
             background-image: url("/static/StoneButtons.png");
@@ -45,7 +35,7 @@
             font-family: "MinecraftFont";
             color: white;
         }
-        .setup-container button:hover {
+        .card-stone button:hover {
             filter: brightness(85%);
         }
         .flash-message {
@@ -63,7 +53,7 @@
     </style>
 </head>
 <body>
-    <div class="setup-container">
+    <div class="card-stone">
         <form action="/createaccount.html" method="POST">
         <h2>Create Account</h2>
             <label for="username">Username:</label>

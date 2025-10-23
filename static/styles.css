@@ -13,7 +13,7 @@ body {
     overflow: hidden;
 }
 
-.generic-container {
+.card-stone {
     /* This block of code is in loginpage.html, createaccounthtml, and logoutpage.html */
         /* Except in logoutpage.html, it also has the line [ display: block; ] */
             /* - Does it not work without that line? */
