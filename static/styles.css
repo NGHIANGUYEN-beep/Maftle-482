@@ -3,6 +3,7 @@
     src: url("/static/MinecraftFont.woff") format("woff");
     src: url("/static/MinecraftFont.woff2") format("woff2");
 }
+
 body {
     height: 100vh;
     display: flex;
@@ -11,48 +12,17 @@ body {
     background-image: url("/static/MinecraftBackground.png");
     overflow: hidden;
 }
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 7px;
-    width: 500px;
-}
-.split-container {
-    display: flex;
-    justify-content: center;
-    gap: 7px;
-    min-width: 250px;
-    width: 100%;
-}
-.split-container button {
-    width: 50%;
-}
-button {
-    padding: 12px;
-    font-size: 28px;
-    font-family: "MinecraftFont";
-    color: white;
+
+.generic-container {
+    /* This block of code is in loginpage.html, createaccounthtml, and logoutpage.html */
+        /* Except in logoutpage.html, it also has the line [ display: block; ] */
+            /* - Does it not work without that line? */
+    /* .login-container, .setup-container, .button-container */
     background-image: url("/static/StoneButtons.png");
-    background-size: 500px;
+    border: 2px solid black;
     border-radius: 8px;
-    width: 100%;
-}
-button:hover {
-    filter: brightness(85%);
-}
-a {
-    color: white;
-    text-decoration: none;
-}
-.top-right {
-    position: absolute;
-    top: 10px;
-    right: 20px;
+    padding: 2.5rem;
     font-family: "MinecraftFont";
-    font-size: 20px;
     color: white;
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent background */
-    padding: 8px 12px;
-    border-radius: 5px;
+    font-size: 24px;
 }
