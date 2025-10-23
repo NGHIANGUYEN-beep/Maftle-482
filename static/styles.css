@@ -15,8 +15,9 @@ body {
 
 .card-stone {
     /* This block of code is in loginpage.html, createaccounthtml, and logoutpage.html */
-        /* Except in logoutpage.html, it also has the line [ display: block; ] */
-            /* - Does it not work without that line? */
+      /* Except in logoutpage.html, it also has the line [ display: block; ] */
+        /* - Does it not work without that line? */
+        /* - Update: I don't think that line did anything */
     /* .login-container, .setup-container, .button-container */
     background-image: url("/static/StoneButtons.png");
     border: 2px solid black;
