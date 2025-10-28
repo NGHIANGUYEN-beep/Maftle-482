@@ -125,10 +125,49 @@ function allowDrop(ev) {
 }
 
 function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
-  ev.dataTransfer.setData("source", ev.target.dataset.source);
+  const itemEl = ev.currentTarget || ev.target.closest('.item');
+  if (!itemEl) return;
+
+  // Keep the same key drop() reads
+  ev.dataTransfer.setData("text", itemEl.id);
+  ev.dataTransfer.setData("source", itemEl.dataset.source);
   ev.dataTransfer.effectAllowed = "copyMove";
+
+  const img = itemEl.querySelector('img');
+  if (!img) return;
+
+  // Use the rendered size so the drag image matches what the user sees
+  const rect = img.getBoundingClientRect();
+  const w = Math.max(1, Math.round(rect.width || img.width || 75));
+  const h = Math.max(1, Math.round(rect.height || img.height || 75));
+
+  // Clone the <img>, place it offscreen (not display:none), and use it as the drag image.
+  // Many browsers require the element to be in the DOM to render as a drag image.
+  const clone = img.cloneNode(true);
+  clone.style.position = 'absolute';
+  clone.style.top = '-9999px';
+  clone.style.left = '-9999px';
+  clone.style.width = w + 'px';
+  clone.style.height = h + 'px';
+  clone.style.pointerEvents = 'none';
+  // Ensure it's fully visible/opaque for the drag image
+  clone.style.opacity = '1';
+  document.body.appendChild(clone);
+
+  // center pointer on the sprite
+  ev.dataTransfer.setDragImage(clone, Math.floor(w / 2), Math.floor(h / 2));
+
+  // Cleanup: remove clone when drag ends (works across browsers). Use document for robustness.
+  const cleanup = () => {
+    if (clone && clone.parentNode) clone.parentNode.removeChild(clone);
+    document.removeEventListener('dragend', cleanup);
+    // Also remove touchcancel if needed (some platforms)
+    document.removeEventListener('touchend', cleanup);
+  };
+  document.addEventListener('dragend', cleanup, { once: true });
+  document.addEventListener('touchend', cleanup, { once: true });
 }
+
 
 function drop(ev) {
   ev.preventDefault();
