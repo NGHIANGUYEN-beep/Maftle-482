@@ -25,6 +25,21 @@
     "pattern": [
       ["oak_plank", "oak_plank"]
     ]
+  },
+  {
+    "name": "bow",
+    "pattern": [
+      [null,"stick","string"],
+      ["stick",null,"string"],
+      [null,"stick","string"]
+    ]
+  },
+  {
+    "name": "fishing_rod",
+    "pattern": [
+      [null,null,"stick"],
+      [null,"stick","string"],
+      ["stick",null,"string"]
+    ]
   }
-  
 ]
