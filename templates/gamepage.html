@@ -138,8 +138,12 @@ function drag(ev) {
   const img = itemEl.querySelector('img');
   if (!img) return;
 
-  /*itemEl.style.visibility = 'hidden';*/
-  itemEl.style.opacity = '0';
+  // ***This (if condition) is how we can apply properties to the items in the grid without changing how the original items in the items-box work
+  // Don't make images in the source items-box (data-source="list") transparent.
+  if (itemEl.dataset.source !== 'list') {
+    itemEl.style.opacity = '0';
+  }
+  /* Could also do: itemEl.style.visibility = 'hidden';*/
 
   // Use the rendered size so the drag image matches what the user sees
   const rect = img.getBoundingClientRect();
@@ -176,7 +180,6 @@ function drag(ev) {
   document.addEventListener('dragend', cleanup, { once: true });
   document.addEventListener('touchend', cleanup, { once: true });
 }
-
 
 function drop(ev) {
   ev.preventDefault();
@@ -288,3 +291,5 @@ function submitGrid() {
   .catch(err => console.error('Error:', err));
 }
 </script>
+</body>
+</html>
