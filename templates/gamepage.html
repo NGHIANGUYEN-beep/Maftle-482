@@ -127,7 +127,7 @@ function allowDrop(ev) {
 }
 
 function drag(ev) {
-  var itemEl = ev.currentTarget || ev.target.closest('.item');
+  const itemEl = ev.currentTarget || ev.target.closest('.item');
   if (!itemEl) return;
 
   // Keep the same key drop() reads
