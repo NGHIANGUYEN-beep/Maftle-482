@@ -127,7 +127,7 @@ function allowDrop(ev) {
 }
 
 function drag(ev) {
-  const itemEl = ev.currentTarget || ev.target.closest('.item');
+  var itemEl = ev.currentTarget || ev.target.closest('.item');
   if (!itemEl) return;
 
   // Keep the same key drop() reads
@@ -137,6 +137,9 @@ function drag(ev) {
 
   const img = itemEl.querySelector('img');
   if (!img) return;
+
+  /*itemEl.style.visibility = 'hidden';*/
+  itemEl.style.opacity = '0';
 
   // Use the rendered size so the drag image matches what the user sees
   const rect = img.getBoundingClientRect();
@@ -161,7 +164,11 @@ function drag(ev) {
 
   // Cleanup: remove clone when drag ends (works across browsers). Use document for robustness.
   const cleanup = () => {
-    if (clone && clone.parentNode) clone.parentNode.removeChild(clone);
+    if (clone && clone.parentNode) {
+      clone.parentNode.removeChild(clone);
+      /* Need this for dragging from one part of the grid to another */
+      itemEl.style.opacity = '1';
+    }
     document.removeEventListener('dragend', cleanup);
     // Also remove touchcancel if needed (some platforms)
     document.removeEventListener('touchend', cleanup);
@@ -189,6 +196,10 @@ function drop(ev) {
     clone.setAttribute("draggable", "true");
     clone.dataset.source = "grid";
     clone.ondragstart = drag;
+
+    /* Need to have this for the first initial drag from the item-box */
+    clone.style.opacity = '1';
+
     elementToAppend = clone;
   } else {
     elementToAppend = original;
