@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify, render_template
-import random
+from sqlalchemy.sql.expression import func
 from databaseTable import Item
 import json
 from datetime import date
@@ -46,20 +46,20 @@ def craft_item():
 
 @gameBP.route("/randomGenerator", methods = ["POST"])
 def generateRandomItem():
-        dailyItem = Item.query.filter_by(obtainableFromCrafting=True).order_by(random()).first()
+        dailyItem = Item.query.filter_by(obtainableFromCrafting=True).order_by(func.random()).first()
         for recipe in RECIPES:
             if dailyItem.itemNameUnformatted == recipe["name"]:
                 currentDailyItem["item"] = dailyItem
+                currentDailyItem["date"] = date.today()
                 return jsonify({
                  "success" : True,
-                    "daily_item": dailyItem.itemName
+                 "daily_item": dailyItem.itemName
             })
 
-def dailyItem():
+def getDailyItem():
     today = date.today()
-    if currentDailyItem["date"] == today:
+    if currentDailyItem["date"] == today and currentDailyItem["item"]:
         return currentDailyItem["item"]
     
-    if currentDailyItem["item"] == None:
-        generateRandomItem()
+    return generateRandomItem()
         
