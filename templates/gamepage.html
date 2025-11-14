@@ -157,6 +157,13 @@ function drag(ev) {
   const img = itemEl.querySelector('img');
   if (!img) return;
 
+  // ***This (if condition) is how we can apply properties to the items in the grid without changing how the original items in the items-box work
+  // Don't make images in the source items-box (data-source="list") transparent.
+  if (itemEl.dataset.source !== 'list') {
+    itemEl.style.opacity = '0';
+  }
+  /* Could also do: itemEl.style.visibility = 'hidden';*/
+
   // Use the rendered size so the drag image matches what the user sees
   const rect = img.getBoundingClientRect();
   const w = Math.max(1, Math.round(rect.width || img.width || 75));
@@ -180,7 +187,11 @@ function drag(ev) {
 
   // Cleanup: remove clone when drag ends (works across browsers). Use document for robustness.
   const cleanup = () => {
-    if (clone && clone.parentNode) clone.parentNode.removeChild(clone);
+    if (clone && clone.parentNode) {
+      clone.parentNode.removeChild(clone);
+      /* Need this for dragging from one part of the grid to another */
+      itemEl.style.opacity = '1';
+    }
     document.removeEventListener('dragend', cleanup);
     // Also remove touchcancel if needed (some platforms)
     document.removeEventListener('touchend', cleanup);
@@ -188,7 +199,6 @@ function drag(ev) {
   document.addEventListener('dragend', cleanup, { once: true });
   document.addEventListener('touchend', cleanup, { once: true });
 }
-
 
 function drop(ev) {
   ev.preventDefault();
@@ -208,6 +218,10 @@ function drop(ev) {
     clone.setAttribute("draggable", "true");
     clone.dataset.source = "grid";
     clone.ondragstart = drag;
+
+    /* Need to have this for the first initial drag from the item-box */
+    clone.style.opacity = '1';
+
     elementToAppend = clone;
   } else {
     elementToAppend = original;
