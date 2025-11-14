@@ -37,7 +37,7 @@ def craft_item():
                 print("Item found:", item.itemName)
                 return jsonify({
                     "success": True,
-                    "crafted_item": item.itemName
+                    "crafted_item": item.itemNameUnformatted
                 })
 
     # No match found

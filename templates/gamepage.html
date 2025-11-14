@@ -10,7 +10,6 @@
       src: url("/static/MinecraftFont.woff") format("woff");
       src: url("/static/MinecraftFont.woff2") format("woff2");
     }
-
     body {
       display: flex;
       flex-direction: column;
@@ -34,12 +33,32 @@
     }
       .grid {
       display: grid;
+      margin-right: 150px;
       grid-template-columns: repeat(3, 80px);
       grid-template-rows: repeat(3, 80px);
       gap: 5px;
-      
     }
-
+    .grid-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+    .output-box {
+      width: 80px;
+      height: 80px;
+      background-color: #8B8B8B;
+      border-left: 3px solid #373737;
+      border-top: 3px solid #373737;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .output-box img {
+      max-width: 80px;
+      max-height: 80px;
+    }
     .cell {
       border-left: 3px solid #373737;
       border-top: 3px solid #373737;
@@ -59,16 +78,13 @@
       align-items: center;
       gap: 5px;
     }
-
     .item {
       cursor: move;
     }
-
     .item img {
       width: 75px;
       height: 75px;
     }
-
     button {
       padding: 12px;
       font-size: 28px;
@@ -84,7 +100,7 @@
   </style>
 </head>
 <body>
-<div class="box grid-box">
+<div class="box grid-wrapper">
   <div class="grid" id="grid">
     <!-- 3x3 = 9 cells -->
     <div class="cell" data-row="0" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -98,6 +114,9 @@
     <div class="cell" data-row="2" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div class="cell" data-row="2" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <div class="cell" data-row="2" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+  <div class="output-box">
+    <img id="output-image" src="" style="display:none"/>
   </div>
 </div>
 
@@ -195,6 +214,7 @@ function drop(ev) {
   }
 
   ev.target.appendChild(elementToAppend);
+  seeRecipe();
 }
 
 // Clears all items inside the grid
@@ -203,6 +223,9 @@ function clearGrid() {
   cells.forEach(cell => {
     cell.innerHTML = '';
   });
+  const outImg = document.getElementById("output-image");
+  outImg.src = "";
+  outImg.style.display = "none";
 }
 
 // Removes nulls from columns, preserves if null is between two items in a column
@@ -246,7 +269,7 @@ function trimNullRows(grid) {
 }
 
 // Sends grid to backend to confirm if pattern in grid is an accepted recipe
-function submitGrid() {
+function seeRecipe() {
   const rawGrid = Array.from({ length: 3 }, () => Array(3).fill(null));
 
   // Going through grid, and filling out grid data array
@@ -272,8 +295,17 @@ function submitGrid() {
   })
   .then(res => res.json())
   .then(data => {
-    document.getElementById('response').textContent = data.message;
+    console.log("SERVER RESPONSE:", data);
+    if (data.success && data.crafted_item) {
+      const img = document.getElementById("output-image");
+      img.src = `/static/${data.crafted_item}.png`;
+      img.style.display = "block";
+    }
   })
   .catch(err => console.error('Error:', err));
+}
+function submitGrid() {
+  seeRecipe();
+  //We should be able add more logic down here when we want to change guess colors once they press the actual "Submit Guess" button
 }
 </script>
