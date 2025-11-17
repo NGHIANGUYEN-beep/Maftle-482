@@ -296,6 +296,7 @@ function trimNullRows(grid) {
 }
 
 // Sends grid to backend to confirm if pattern in grid is an accepted recipe
+// If recipe is valid, display image of craftable item in frontend
 function seeRecipe() {
   const rawGrid = Array.from({ length: 3 }, () => Array(3).fill(null));
 
@@ -307,7 +308,6 @@ function seeRecipe() {
     const item = cell.querySelector('.item');
     rawGrid[row][col] = item ? item.dataset.id : null;
   });
-
   // Calling functions to remove nulls
   let trimmedGrid = trimNullRows(rawGrid);
   trimmedGrid = trimNullColumns(trimmedGrid);
@@ -321,11 +321,12 @@ function seeRecipe() {
     body: JSON.stringify({ grid: trimmedGrid })
   })
   .then(res => res.json())
+  // Display craftable item
   .then(data => {
     console.log("SERVER RESPONSE:", data);
     if (data.success && data.crafted_item) {
       const img = document.getElementById("output-image");
-      img.src = `/static/${data.crafted_item}.png`;
+      img.src = `/static/items/${data.crafted_item}.png`;
       img.style.display = "block";
     }
   })
