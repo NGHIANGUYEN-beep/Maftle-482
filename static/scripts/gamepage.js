@@ -84,6 +84,11 @@ function drop(ev) {
     elementToAppend = original;
   }
 
+  // Making the crafting output disappear when you change what is in the crafting table
+    // Reappears once their is a valid recipe again
+  const img = document.getElementById("output-image");
+  img.style.opacity = '0';
+
   ev.target.appendChild(elementToAppend);
   seeRecipe();
 }
@@ -172,6 +177,8 @@ function seeRecipe() {
       const img = document.getElementById("output-image");
       img.src = `/static/items/${data.crafted_item}.png`;
       img.style.display = "block";
+      // Making crafting output visible again
+      img.style.opacity = '1';
     }
   })
   .catch(err => console.error('Error:', err));
