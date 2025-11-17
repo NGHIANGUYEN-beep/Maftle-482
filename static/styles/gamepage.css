@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "MinecraftFont";
+    src: url("/static/MinecraftFont.woff") format("woff");
+    src: url("/static/MinecraftFont.woff2") format("woff2");
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/static/MinecraftBackground.png");
+    overflow: hidden;
+    margin-top: 150px;
+    margin-right: 1000px;
+}
+.box {
+    background-color: #C6C6C6;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.grid-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .grid {
+    display: grid;
+    margin-right: 150px;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 5px;
+}
+.grid-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.output-box {
+    width: 80px;
+    height: 80px;
+    background-color: #8B8B8B;
+    border-left: 3px solid #373737;
+    border-top: 3px solid #373737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.output-box img {
+    max-width: 80px;
+    max-height: 80px;
+}
+.cell {
+    border-left: 3px solid #373737;
+    border-top: 3px solid #373737;
+    background-color: #8B8B8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.item {
+    cursor: move;
+}
+.item img {
+    width: 75px;
+    height: 75px;
+}
+button {
+    padding: 12px;
+    font-size: 28px;
+    font-family: "MinecraftFont";
+    color: white;
+    background-image: url("/static/StoneButtons.png");
+    background-size: 500px;
+    border-radius: 8px;
+}
+button:hover {
+    filter: brightness(85%);
+}
+.bottom-left {
+position: absolute;
+bottom: 10px;
+left: 20px;
+font-family: "MinecraftFont";
+font-size: 20px;
+color: white;
+padding: 8px 12px;
+border-radius: 5px;
+}
