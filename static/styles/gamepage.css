@@ -41,6 +41,19 @@ main {
     justify-content: flex-start;
     gap: 20px;
 }
+.arrow-box {
+    /* Basically a grid item */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Ok ngl this was a really hacky way of getting this stuff over to the left more */
+    margin-left: -145px;    /* Delete this line if things get broken */
+}
+.arrow-box img {
+    /* Image is 88 x 60 */
+    max-width: 74.8px;
+    max-height: 51px;
+}
 .output-box {
     width: 80px;
     height: 80px;
