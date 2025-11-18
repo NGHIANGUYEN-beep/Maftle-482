@@ -42,6 +42,7 @@ main {
     justify-content: flex-start;
     /* Space between grid and arrow and output */
     gap: 20px;
+    margin-left: 2rem;
 }
 .arrow-box {
     /* Basically a grid item */
