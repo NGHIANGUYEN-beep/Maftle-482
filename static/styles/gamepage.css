@@ -29,7 +29,7 @@ main {
 }
 .grid {
     display: grid;
-    margin-right: 150px;
+    /* margin-right: 150px; */
     grid-template-columns: repeat(3, 80px);
     grid-template-rows: repeat(3, 80px);
     /* Space between boxes in grid */
@@ -48,8 +48,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Ok ngl this was a really hacky way of getting this stuff over to the left more */
-    margin-left: -145px;    /* Delete this line if things get broken */
 }
 .arrow-box img {
     /* Image is 88 x 60 */
