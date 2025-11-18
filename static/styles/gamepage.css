@@ -4,13 +4,16 @@
     src: url("/static/MinecraftFont.woff2") format("woff2");
 }
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-image: url("/static/MinecraftBackground.png");
     overflow: hidden;
-    margin-top: 150px;
-    margin-right: 1000px;
+}
+main {
+    /* In the future we'll probably need to change this from a flexbox to a grid */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Might be kind of a hacky way of limiting the width of stuff */
+    /* margin-top: 75px; */
+    margin-top: 4.6875rem;
 }
 .box {
     background-color: #C6C6C6;
@@ -24,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-    .grid {
+.grid {
     display: grid;
     margin-right: 150px;
     grid-template-columns: repeat(3, 80px);
@@ -60,12 +63,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+.game-buttons-area {
+    margin-left: 4.5rem;
+}
 .items-box {
+    /* might want to change this from flex (flexbox) to grid so we can have rows and columns of items */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 3.375rem;
 }
-    #items {
+#items {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,13 +98,9 @@ button {
 button:hover {
     filter: brightness(85%);
 }
-.bottom-left {
-position: absolute;
-bottom: 10px;
-left: 20px;
-font-family: "MinecraftFont";
-font-size: 20px;
-color: white;
-padding: 8px 12px;
-border-radius: 5px;
+.exit-button {
+    /* Just doing this to make the exit button a little smaller */
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 24px;
 }
