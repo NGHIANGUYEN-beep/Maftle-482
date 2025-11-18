@@ -32,13 +32,15 @@ main {
     margin-right: 150px;
     grid-template-columns: repeat(3, 80px);
     grid-template-rows: repeat(3, 80px);
-    gap: 5px;
+    /* Space between boxes in grid */
+    /* gap: 5px; */
 }
 .grid-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    /* Space between grid and arrow and output */
     gap: 20px;
 }
 .arrow-box {
@@ -58,8 +60,10 @@ main {
     width: 80px;
     height: 80px;
     background-color: #8B8B8B;
-    border-left: 3px solid #373737;
-    border-top: 3px solid #373737;
+    border-left: 4px solid #373737;
+    border-top: 4px solid #373737;
+    border-right: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,9 +73,11 @@ main {
     max-height: 80px;
 }
 .cell {
-    border-left: 3px solid #373737;
-    border-top: 3px solid #373737;
     background-color: #8B8B8B;
+    border-left: 4px solid #373737;
+    border-top: 4px solid #373737;
+    border-right: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,6 +96,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* space between items in inventory */
     gap: 5px;
 }
 .item {
