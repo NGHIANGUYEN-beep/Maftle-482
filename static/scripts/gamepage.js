@@ -144,9 +144,8 @@ function trimNullRows(grid) {
   return grid.slice(firstRow, lastRow + 1);
 }
 
-// Sends grid to backend to confirm if pattern in grid is an accepted recipe
-// If recipe is valid, display image of craftable item in frontend
-function seeRecipe() {
+// Function that we can call from both seeRecipe() and submitGrid()
+function processGridInput() {
   // Making a copy of the crafting table grid and the items in it
   const rawGrid = Array.from({ length: 3 }, () => Array(3).fill(null));
   // Going through grid, and filling out grid data array
@@ -159,6 +158,14 @@ function seeRecipe() {
   // Calling functions to remove nulls
   let trimmedGrid = trimNullRows(rawGrid);
   trimmedGrid = trimNullColumns(trimmedGrid);
+  return trimmedGrid
+}
+
+// Sends grid to backend to confirm if pattern in grid is an accepted recipe
+// If recipe is valid, display image of craftable item in frontend
+function seeRecipe() {
+  trimmedGrid = processGridInput()
+
   // Send to server
   fetch('/check-craft-result', {
     method: 'POST',
@@ -186,19 +193,8 @@ function seeRecipe() {
 function submitGrid() {
   //We should be able add more logic down here when we want to change guess colors once they press the actual "Submit Guess" button
   // Going through grid, and filling out grid data array
-  
-  /* For now just copying from seeRecipe */ // - make this into a function later
-  const rawGrid = Array.from({ length: 3 }, () => Array(3).fill(null));
-  document.querySelectorAll('.cell').forEach(cell => {
-    const row = cell.dataset.row;
-    const col = cell.dataset.col;
-    const item = cell.querySelector('.item');
-    rawGrid[row][col] = item ? item.dataset.id : null;
-  });
-  // Calling functions to remove nulls
-  let trimmedGrid = trimNullRows(rawGrid);
-  trimmedGrid = trimNullColumns(trimmedGrid);
-  /* ^ Next push: turn this into a function that we can call from both submitGrid() and seeRecipe() */
+
+  trimmedGrid = processGridInput()
 
   // Send to server
   fetch('/check-answer', {
