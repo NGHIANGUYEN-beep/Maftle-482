@@ -15,6 +15,11 @@ It also handles past attempts and their results.
 # Global variable to store the current infinite target
 # pattern is from the recipes json  # - array of arrays, strings
 currentInfiniteItem = {"item": None, "pattern": None}
+# If the user has a valid recipe in their crafting table, the item being crafted will be stored here
+    # Updated on seeRecipe(), not submitGrid()
+currentUserItem = None
+# Whether what is currently in the crafting table is a valid recipe
+isValidRecipe = False
 
 # Load recipes at startup
 with open("recipes.json") as f:
@@ -31,17 +36,25 @@ def craft_item():
     data = request.json
     grid = data.get("grid") # gives us trimmedGrid from gamepage.js
     
+    global isValidRecipe
+    global currentUserItem
+
     # Check if the crafted grid matches any recipe
     for recipe in RECIPES:
         if grid == recipe["pattern"]:
             item = Item.query.filter_by(itemNameUnformatted=recipe["name"]).first()
             if item:
+                # Updating global variables
+                isValidRecipe = True
+                currentUserItem = item
                 print("Item found:", item.itemName)
                 return jsonify({
                     "success": True,
                     "crafted_item": item.itemNameUnformatted
                 })
     # If no match found
+    isValidRecipe = False
+    currentUserItem = None
     print("Received grid:", grid)
     return jsonify({"success": False})
 
@@ -56,6 +69,9 @@ def check_solution():
     # Going to need this in order to check which items are part of the correct answer and which aren't
     target_item_pattern = getInfiniteItemPattern();
 
+    global isValidRecipe
+    global currentUserItem
+
     #Base case: Initialize past guesses if not present
     if "past_guesses" not in session:
         session["past_guesses"] = []
@@ -64,46 +80,35 @@ def check_solution():
     session["past_guesses"].append(grid)
     session.modified = True
     
-
-    # This tells you if the user's guess is correct without having to loop through the json again
-    # issue is that if the guess is incorrect, you don't know what item the user did craft
-    # if grid == target_item_pattern:
-
-    
-    # Check if the crafted grid matches any recipe
-    # Don't actually need to do all of this again, since we already know it's a valid item
-        # All we need to do now is compare what's in the grid to the answer
-    # Plan: fix in next push
-    for recipe in RECIPES:
-        if grid == recipe["pattern"]:
-            item = Item.query.filter_by(itemNameUnformatted=recipe["name"]).first()
-            if item:
-                if item.itemNameUnformatted == target_item.itemNameUnformatted:
-                    # Correct guess → generate a new target
-                    # Resets past guesses
-                    session["past_guesses"] = []
-                    session.modified = True
-                    new_item = generateInfiniteItem()
-                    print("You have crafted the correct item:", item.itemNameUnformatted)
-                    return jsonify({
-                        "success": True,
-                        "correct": True,
-                        "crafted_item": item.itemNameUnformatted,
-                        "next_item": new_item.itemName,
-                        "message": "Correct! New item generated.",
-                        "past_guesses": []
-                    })
-                else:
-                    print("You have crafted an item, but it's not the target:", item.itemNameUnformatted)
-                    return jsonify({
-                        "success": True,
-                        "correct": False,
-                        "crafted_item": item.itemNameUnformatted,
-                        "message": "Valid item, but not the target.",
-                        "past_guesses": session["past_guesses"]
-                    })
-
-    # No match found
+    # Tells you whether what's currently in the crafting table is a valid recipe
+    if isValidRecipe:
+        # Tells you if the user's guess is correct without having to loop through the json a second time
+        if grid == target_item_pattern:
+            # Correct guess → generate a new target
+            # Resets past guesses
+            session["past_guesses"] = []
+            session.modified = True
+            new_item = generateInfiniteItem()
+            print("You have crafted the correct item:", currentUserItem.itemNameUnformatted)
+            return jsonify({
+                "success": True,
+                "correct": True,
+                "crafted_item": currentUserItem.itemNameUnformatted,
+                "next_item": new_item.itemName,
+                "message": "Correct! New item generated.",
+                "past_guesses": []
+            })
+        else:
+            print("You have crafted an item, but it's not the target:", currentUserItem.itemNameUnformatted)
+            return jsonify({
+                "success": True,
+                "correct": False,
+                "crafted_item": currentUserItem.itemNameUnformatted,
+                "message": "Valid item, but not the target.",
+                "past_guesses": session["past_guesses"]
+            })
+    # If the user clicked "Submit Guess" without there being a valid recipe in the table
+    print("You have not crafted a valid recipe")
     return jsonify({"success": False, "past_guesses": session["past_guesses"]})
 
 
