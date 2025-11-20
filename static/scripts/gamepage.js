@@ -207,6 +207,9 @@ function submitGrid() {
   .then(res => res.json()) // idk what this does
   .then(data => {
     console.log("SERVER RESPONSE:", data);
+    // Now we can do stuff with all of the info it sends back
+    // if guess was incorrect, add miniature grid of that guess to our history display
+    // if guess was correct, add a point in infinite mode
   })
   .catch(err => console.error('Error:', err));
 
