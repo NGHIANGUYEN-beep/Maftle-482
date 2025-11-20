@@ -208,8 +208,26 @@ function submitGrid() {
   .then(data => {
     console.log("SERVER RESPONSE:", data);
     // Now we can do stuff with all of the info it sends back
-    // if guess was incorrect, add miniature grid of that guess to our history display
     // if guess was correct, add a point in infinite mode
+    
+    // if guess was incorrect, add miniature grid of that guess to our history display
+    if (data.success && !data.correct) {
+      console.log("Incorrect item") // testing
+      // Clone the current crafting table: <div class="box grid-wrapper">
+      // Shrink the cloned crafting table and then append it to vertical-flexbox-2
+      
+      /*
+      // Currently pretty broken
+      const originalGrid = document.getElementById('craftingTable');
+      const gridClone = originalGrid.cloneNode(true); // Copying our code for drag and drop functionality
+      gridClone.id = originalGrid.id + "-" + Math.random().toString(36).substr(2, 5);
+
+      // clone.style.maxWidth = '200px';
+
+      const historyView = document.getElementById('vertical-flexbox-2');
+      historyView.append(clone);
+      */
+    }
   })
   .catch(err => console.error('Error:', err));
 

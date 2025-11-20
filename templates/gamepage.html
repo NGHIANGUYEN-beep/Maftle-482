@@ -10,49 +10,56 @@
   <div id="exit">
       <a href="/"><button class="exit-button"> <- Return Home</button></a>
   </div>
-  <main>
-    <div class="box grid-wrapper">
-      <div class="grid" id="grid">
-        <!-- 3x3 = 9 cells -->
-        <div class="cell" data-row="0" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <div class="cell" data-row="0" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <div class="cell" data-row="0" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <main id="horizontal-flexbox">
+    <section id="vertical-flexbox-1">
+      <div class="box grid-wrapper" id="craftingTable">
+        <div class="grid" id="grid">
+          <!-- 3x3 = 9 cells -->
+          <div class="cell" data-row="0" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="cell" data-row="0" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="cell" data-row="0" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-        <div class="cell" data-row="1" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <div class="cell" data-row="1" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <div class="cell" data-row="1" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="cell" data-row="1" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="cell" data-row="1" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="cell" data-row="1" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-        <div class="cell" data-row="2" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <div class="cell" data-row="2" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <div class="cell" data-row="2" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="cell" data-row="2" data-col="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="cell" data-row="2" data-col="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          <div class="cell" data-row="2" data-col="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <div class="arrow-box">
+          <img src="/static/CT-Arrow.png"/>
+        </div>
+        <div class="output-box">
+          <img id="output-image" src="" style="display:none"/>
+        </div>
       </div>
-      <div class="arrow-box">
-        <img src="/static/CT-Arrow.png"/>
-      </div>
-      <div class="output-box">
-        <img id="output-image" src="" style="display:none"/>
-      </div>
-    </div>
 
-    <div class='game-buttons-area'>
-      <button onclick="clearGrid()">Clear Table</button>
-      <button onclick="submitGrid()">Submit Guess</button>
-    </div><br><br>
+      <div class='game-buttons-area'>
+        <button onclick="clearGrid()">Clear Table</button>
+        <button onclick="submitGrid()">Submit Guess</button>
+      </div><br><br>
 
-    <div class="box items-box">
-      <div id="items">
-        <div class="item" draggable="true" ondragstart="drag(event)" data-id="coal" data-source="list" id="coal">
-          <img src="/static/items/coal.png" draggable="false"></div>
-        <div class="item" draggable="true" ondragstart="drag(event)" data-id="stick" data-source="list" id="stick">
-          <img src="/static/items/stick.png" draggable="false"></div>
-        <div class="item" draggable="true" ondragstart="drag(event)" data-id="oak_plank" data-source="list" id="oak_plank">
-          <img src="/static/items/oak_plank.png" draggable="false"></div>
-        <div class="item" draggable="true" ondragstart="drag(event)" data-id="diamond" data-source="list" id="diamond">
-          <img src="/static/items/diamond.png" draggable="false"></div>
-        <div class="item" draggable="true" ondragstart="drag(event)" data-id="string" data-source="list" id="string">
-          <img src="/static/items/string.png" draggable="false"></div>
+      <div class="box items-box">
+        <div id="items">
+          <div class="item" draggable="true" ondragstart="drag(event)" data-id="coal" data-source="list" id="coal">
+            <img src="/static/items/coal.png" draggable="false"></div>
+          <div class="item" draggable="true" ondragstart="drag(event)" data-id="stick" data-source="list" id="stick">
+            <img src="/static/items/stick.png" draggable="false"></div>
+          <div class="item" draggable="true" ondragstart="drag(event)" data-id="oak_plank" data-source="list" id="oak_plank">
+            <img src="/static/items/oak_plank.png" draggable="false"></div>
+          <div class="item" draggable="true" ondragstart="drag(event)" data-id="diamond" data-source="list" id="diamond">
+            <img src="/static/items/diamond.png" draggable="false"></div>
+          <div class="item" draggable="true" ondragstart="drag(event)" data-id="string" data-source="list" id="string">
+            <img src="/static/items/string.png" draggable="false"></div>
+        </div>
       </div>
-    </main>
+    </section>
+    <!-- For now, this is where we will display past guesses -->
+    <section id="vertical-flexbox-2">
+
+    </section>
+  </main id="horizontal-flexbox">
   <script src="/static/scripts/gamepage.js"></script>
 </body>
 </html>

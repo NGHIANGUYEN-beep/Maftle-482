@@ -8,6 +8,10 @@ body {
     overflow: hidden;
 }
 main {
+    display: flex;
+    flex-direction: row;
+}
+#vertical-flexbox-1 {
     /* In the future we'll probably need to change this from a flexbox to a grid */
     display: flex;
     flex-direction: column;
