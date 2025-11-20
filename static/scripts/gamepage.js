@@ -147,22 +147,20 @@ function trimNullRows(grid) {
 // Sends grid to backend to confirm if pattern in grid is an accepted recipe
 // If recipe is valid, display image of craftable item in frontend
 function seeRecipe() {
+  // Making a copy of the crafting table grid and the items in it
   const rawGrid = Array.from({ length: 3 }, () => Array(3).fill(null));
-
   // Going through grid, and filling out grid data array
   document.querySelectorAll('.cell').forEach(cell => {
     const row = cell.dataset.row;
     const col = cell.dataset.col;
-
     const item = cell.querySelector('.item');
     rawGrid[row][col] = item ? item.dataset.id : null;
   });
   // Calling functions to remove nulls
   let trimmedGrid = trimNullRows(rawGrid);
   trimmedGrid = trimNullColumns(trimmedGrid);
-
   // Send to server
-  fetch('/submit-guess', {
+  fetch('/check-craft-result', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -183,7 +181,37 @@ function seeRecipe() {
   })
   .catch(err => console.error('Error:', err));
 }
+
+// Sends grid to backend to confirm if pattern in grid is the correct answer
 function submitGrid() {
-  seeRecipe();
   //We should be able add more logic down here when we want to change guess colors once they press the actual "Submit Guess" button
+  // Going through grid, and filling out grid data array
+  
+  /* For now just copying from seeRecipe */ // - make this into a function later
+  const rawGrid = Array.from({ length: 3 }, () => Array(3).fill(null));
+  document.querySelectorAll('.cell').forEach(cell => {
+    const row = cell.dataset.row;
+    const col = cell.dataset.col;
+    const item = cell.querySelector('.item');
+    rawGrid[row][col] = item ? item.dataset.id : null;
+  });
+  // Calling functions to remove nulls
+  let trimmedGrid = trimNullRows(rawGrid);
+  trimmedGrid = trimNullColumns(trimmedGrid);
+  /* ^ Next push: turn this into a function that we can call from both submitGrid() and seeRecipe() */
+
+  // Send to server
+  fetch('/check-answer', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ grid: trimmedGrid })
+  })
+  .then(res => res.json()) // idk what this does
+  .then(data => {
+    console.log("SERVER RESPONSE:", data);
+  })
+  .catch(err => console.error('Error:', err));
+
 }

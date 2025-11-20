@@ -24,9 +24,29 @@ with open("recipes.json") as f:
 def index():
     return render_template('/gamepage.html')
 
-# Handles crafting attempts
-@gameBP.route("/submit-guess", methods=["POST"])
+# Checking if what's in the crafting table is a valid recipe, and if so, sending the resulting item back
+@gameBP.route("/check-craft-result", methods=["POST"])
 def craft_item():
+    data = request.json
+    grid = data.get("grid")
+    
+    # Check if the crafted grid matches any recipe
+    for recipe in RECIPES:
+        if grid == recipe["pattern"]:
+            item = Item.query.filter_by(itemNameUnformatted=recipe["name"]).first()
+            if item:
+                print("Item found:", item.itemName)
+                return jsonify({
+                    "success": True,
+                    "crafted_item": item.itemNameUnformatted
+                })
+    # If no match found
+    print("Received grid:", grid)
+    return jsonify({"success": False})
+
+# Checking if the recipe in the crafting table is the correct answer
+@gameBP.route("/check-answer", methods=["POST"])
+def check_solution():
     data = request.json
     grid = data.get("grid")
     target_item = getInfiniteItem()
@@ -40,6 +60,9 @@ def craft_item():
     session.modified = True
     
     # Check if the crafted grid matches any recipe
+    # Don't actually need to do all of this again, since we already know it's a valid item
+        # All we need to do now is compare what's in the grid to the answer
+    # Plan: fix in next push
     for recipe in RECIPES:
         if grid == recipe["pattern"]:
             item = Item.query.filter_by(itemNameUnformatted=recipe["name"]).first()
