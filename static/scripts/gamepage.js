@@ -213,20 +213,78 @@ function submitGrid() {
     // if guess was incorrect, add miniature grid of that guess to our history display
     if (data.success && !data.correct) {
       console.log("Incorrect item") // testing
-      // Clone the current crafting table: <div class="box grid-wrapper">
-      // Shrink the cloned crafting table and then append it to vertical-flexbox-2
+      // Remake the current crafting table and then append it to vertical-flexbox-2
       
       /*
-      // Currently pretty broken
+      // Using clones - very broken and would probably be very difficult to fix
       const originalGrid = document.getElementById('craftingTable');
       const gridClone = originalGrid.cloneNode(true); // Copying our code for drag and drop functionality
       gridClone.id = originalGrid.id + "-" + Math.random().toString(36).substr(2, 5);
 
-      // clone.style.maxWidth = '200px';
+      gridClone.style.maxWidth = '200px';
 
       const historyView = document.getElementById('vertical-flexbox-2');
-      historyView.append(clone);
+      historyView.append(gridClone);
       */
+
+      
+      // Can we just make a copy of the crafting grid from scratch
+      const newCraftingTable = document.createElement("div");
+      newCraftingTable.id = "miniCraftingTable" // New version of <div class="box grid-wrapper" id="craftingTable">
+      const newGrid = document.createElement("div");
+      newGrid.id = "miniGrid" // New version of <div class="grid" id="grid">
+
+      // Still need to set the image somewhere
+      const newArrowBox = document.createElement("div");
+      newArrowBox.id = "miniArrowBox"
+      const newOutputBox =document.createElement("div")
+      newOutputBox.id = "miniOutputBox"
+
+      // Can we set the class like this
+      // element.classList.add('new-class')
+      const newGridCellTopLeft = document.createElement("div");
+      newGridCellTopLeft.classList.add("miniGridCell"); // New version of <div class="cell".... >
+      const newGridCellTopCenter = document.createElement("div");
+      newGridCellTopCenter.classList.add("miniGridCell");
+      const newGridCellTopRight = document.createElement("div");
+      newGridCellTopRight.classList.add("miniGridCell");
+
+      const newGridCellMiddleLeft = document.createElement("div");
+      newGridCellMiddleLeft.classList.add("miniGridCell");
+      const newGridCellMiddleCenter = document.createElement("div");
+      newGridCellMiddleCenter.classList.add("miniGridCell");
+      const newGridCellMiddleRight = document.createElement("div");
+      newGridCellMiddleRight.classList.add("miniGridCell");
+
+      const newGridCellBottomLeft = document.createElement("div");
+      newGridCellBottomLeft.classList.add("miniGridCell");
+      const newGridCellBottomCenter = document.createElement("div");
+      newGridCellBottomCenter.classList.add("miniGridCell");
+      const newGridCellBottomRight = document.createElement("div");
+      newGridCellBottomRight.classList.add("miniGridCell");
+
+      newGrid.append(newGridCellTopLeft);
+      newGrid.append(newGridCellTopCenter);
+      newGrid.append(newGridCellTopRight);
+      newGrid.append(newGridCellMiddleLeft);
+      newGrid.append(newGridCellMiddleCenter);
+      newGrid.append(newGridCellMiddleRight);
+      newGrid.append(newGridCellBottomLeft);
+      newGrid.append(newGridCellBottomCenter);
+      newGrid.append(newGridCellBottomRight);
+
+      const newArrowBoxImg = document.createElement("img"); // New version of <img src="/static/CT-Arrow.png"/>
+      newArrowBoxImg.id = "miniArrowBoxImg";
+      newArrowBoxImg.src = "/static/CT-Arrow.png";
+      newArrowBox.append(newArrowBoxImg);
+
+      newCraftingTable.append(newGrid);
+      newCraftingTable.append(newArrowBox);
+      newCraftingTable.append(newOutputBox);
+
+      const pastGuessView = document.getElementById('vertical-flexbox-2');
+      pastGuessView.append(newCraftingTable);
+      
     }
   })
   .catch(err => console.error('Error:', err));

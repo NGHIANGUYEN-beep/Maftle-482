@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="/static/styles/gamepage.css">
 </head>
 <body>
-  <div id="exit">
-      <a href="/"><button class="exit-button"> <- Return Home</button></a>
-  </div>
   <main id="horizontal-flexbox">
     <section id="vertical-flexbox-1">
+      <div id="exit"> <!-- preventing the vertical-flexbox-1 styles from appylying to this-->
+        <a href="/"><button class="exit-button"> <- Return Home</button></a>
+      </div>
       <div class="box grid-wrapper" id="craftingTable">
         <div class="grid" id="grid">
           <!-- 3x3 = 9 cells -->
@@ -55,7 +55,7 @@
         </div>
       </div>
     </section>
-    <!-- For now, this is where we will display past guesses -->
+    <!-- For now, this is where we will display previous guesses -->
     <section id="vertical-flexbox-2">
 
     </section>

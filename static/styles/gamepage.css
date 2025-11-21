@@ -6,18 +6,31 @@
 body {
     background-image: url("/static/MinecraftBackground.png");
     overflow: hidden;
+    /* Browser default margin for body: 8px */
 }
-main {
+main {  /* Horizontal flexbox */
     display: flex;
     flex-direction: row;
 }
-#vertical-flexbox-1 {
-    /* In the future we'll probably need to change this from a flexbox to a grid */
+#vertical-flexbox-1::not(#exit) {
+    /* In the future we might want to change this from a flexbox to a grid */
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Might be kind of a hacky way of limiting the width of stuff */
     /* margin-top: 75px; */
     margin-top: 4.6875rem;
+}
+#vertical-flexbox-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Might be kind of a hacky way of limiting the width of stuff */
+    /*margin-top: -2rem;*/ /* Horizontal flex box only begins below the exit button's section */
+    margin-left: 3rem;
+    margin-top: 8px;
+
+    height: 95vh;
+    overflow-y: auto; /* Adds a vertical scrollbar if content overflows */
+    padding: 10px; /* Optional: for spacing */
 }
 .box {
     background-color: #C6C6C6;
@@ -26,10 +39,15 @@ main {
     padding: 20px;
     margin-bottom: 25px;
 }
-.grid-box {
+.grid-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
+    /* Space between grid and arrow and output */
+    gap: 20px;
+    margin-top: 4.75rem;
+    margin-left: 2rem;
 }
 .grid {
     display: grid;
@@ -38,15 +56,6 @@ main {
     grid-template-rows: repeat(3, 80px);
     /* Space between boxes in grid */
     /* gap: 5px; */
-}
-.grid-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    /* Space between grid and arrow and output */
-    gap: 20px;
-    margin-left: 2rem;
 }
 .arrow-box {
     /* Basically a grid item */
@@ -85,6 +94,72 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+/* --------Making mini copies of the crafting table-------- */
+#miniCraftingTable { /* New version of class="box grid-wrapper" id="craftingTable" */
+    /* From box: */
+    background-color: #C6C6C6;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 12.5px;
+
+    /* From gridwrapper: */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; /* Space between grid and arrow and output */
+    margin-left: 1rem;
+}
+#miniGrid { /* New version of class="grid" id="grid" */
+    /* From grid class: */
+    display: grid;
+    /* margin-right: 150px; */
+    grid-template-columns: repeat(3, 40px);
+    grid-template-rows: repeat(3, 40px);
+    /* Space between boxes in grid */
+    /* gap: 5px; */
+}
+.miniGridCell {  /* New version of .cell class */
+    background-color: #8B8B8B;
+    border-left: 2px solid #373737;
+    border-top: 2px solid #373737;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#miniArrowBox {
+    /* From arrow-box class: */
+    /* Basically a grid item */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#miniArrowBoxImg {
+    /* From arrow-box img class */
+    max-width: 37.4px;
+    max-height: 25.5px;
+}
+#miniOutputBox {
+    /* From output-box class: */
+    width: 40px;
+    height: 40px;
+    background-color: #8B8B8B;
+    border-left: 2px solid #373737;
+    border-top: 2px solid #373737;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Should probably also redo .arrow-box img and .output-box img
+/* -------------------------------------------------------- */
+
+
 .game-buttons-area {
     margin-left: 4.5rem;
 }
