@@ -3,6 +3,7 @@ from sqlalchemy.sql.expression import func
 from databaseTable import Item
 import json
 from flask import session
+import random
 
 gameBP = Blueprint("craft", __name__)
 
@@ -16,7 +17,7 @@ It also handles past attempts and their results.
 # pattern is from the recipes json  # - array of arrays, strings
 currentInfiniteItem = {"item": None, "pattern": None}
 # If the user has a valid recipe in their crafting table, the item being crafted will be stored here
-    # Updated on seeRecipe(), not submitGrid()
+# Updated on seeRecipe(), not submitGrid()
 currentUserItem = None
 # Whether what is currently in the crafting table is a valid recipe
 isValidRecipe = False
@@ -34,7 +35,7 @@ def index():
 @gameBP.route("/check-craft-result", methods=["POST"])
 def craft_item():
     data = request.json
-    grid = data.get("grid") # gives us trimmedGrid from gamepage.js
+    grid = data.get("grid")
     
     global isValidRecipe
     global currentUserItem
@@ -61,14 +62,14 @@ def craft_item():
 # Checking if the recipe in the crafting table is the correct answer
 @gameBP.route("/check-answer", methods=["POST"])
 def check_solution():
+    
+    #Initialization for checking answer
     data = request.json
-    grid = data.get("grid") # gives us trimmedGrid from gamepage.js
-    # The current correct answer
-        # a row from our database
+    grid = data.get("grid")
     target_item = getInfiniteItem()
-    # Going to need this in order to check which items are part of the correct answer and which aren't
-    target_item_pattern = getInfiniteItemPattern();
+    target_item_pattern = getInfiniteItemPattern()
 
+    #Global Variables
     global isValidRecipe
     global currentUserItem
 
@@ -114,21 +115,22 @@ def check_solution():
 
 #Generates a new infinite target item
 def generateInfiniteItem():
-    new_item = Item.query.filter_by(itemNameUnformatted="bow").first()
-    # .order_by(func.random()).first()
-    #^^ Code for SQLite ^^
+    # Pick a random recipe
+    recipe = random.choice(RECIPES)
 
-    # new_item gives us a row from our database
-        # we can't access the pattern through this though
-    # We're going to access the pattern for the item from the recipes json and then add it to our global variable
+    # Pull matching item from DB
+    new_item = Item.query.filter_by(itemNameUnformatted=recipe["name"]).first()
 
-    # Ensure the new item has a recipe
-    for recipe in RECIPES:
-        if new_item.itemNameUnformatted == recipe["name"]:
-            currentInfiniteItem["item"] = new_item
-            currentInfiniteItem["pattern"] = recipe["pattern"]
-            return new_item
-    return None
+    if not new_item:
+        print("DB missing item for recipe:", recipe["name"])
+        return generateInfiniteItem()  # Try another
+
+    # Update global variable
+    currentInfiniteItem["item"] = new_item
+    currentInfiniteItem["pattern"] = recipe["pattern"]
+
+    return new_item
+
 
 
 #Retrieves the current infinite target item
