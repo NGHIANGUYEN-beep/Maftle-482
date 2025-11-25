@@ -13,13 +13,10 @@ processing crafting attempts and handling the infinite generator of items and th
 It also handles past attempts and their results.
 
 """
-# Global variable to store the current infinite target
-# pattern is from the recipes json  # - array of arrays, strings
+# Global variable to store the current infinite item and its pattern
+# Global Variable to store the current user item and whether it's a valid recipe
 currentInfiniteItem = {"item": None, "pattern": None}
-# If the user has a valid recipe in their crafting table, the item being crafted will be stored here
-# Updated on seeRecipe(), not submitGrid()
 currentUserItem = None
-# Whether what is currently in the crafting table is a valid recipe
 isValidRecipe = False
 
 # Load recipes at startup
