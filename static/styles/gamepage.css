@@ -94,6 +94,18 @@ main {  /* Horizontal flexbox */
     justify-content: center;
     align-items: center;
 }
+#winScreen {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: "MinecraftFont";
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
 
 /* --------Making mini copies of the crafting table-------- */
 #miniCraftingTable { /* New version of class="box grid-wrapper" id="craftingTable" */

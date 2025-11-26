@@ -207,6 +207,14 @@ function submitGrid() {
   .then(res => res.json()) // idk what this does
   .then(data => {
     console.log("SERVER RESPONSE:", data);
+    if (data.correct === true) { // Displays a win screen, then refreshes the page
+      showWinScreen(data.crafted_item)
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000); // Kind of delicate. If some code is wrong, this doesn't trigger?
+      return;
+    }
+
     // Now we can do stuff with all of the info it sends back
     // if guess was correct, add a point in infinite mode
     
@@ -289,4 +297,9 @@ function submitGrid() {
   })
   .catch(err => console.error('Error:', err));
 
+}
+function showWinScreen(crafted_item) {
+  winDiv = document.getElementById("winScreen");
+  winDiv.style.display = "flex";
+  winDiv.innerHTML = `Correct! The item was&nbsp<b>${crafted_item}</b>!`;
 }

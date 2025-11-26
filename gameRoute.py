@@ -117,6 +117,11 @@ def generateInfiniteItem():
 
     # Pull matching item from DB
     new_item = Item.query.filter_by(itemNameUnformatted=recipe["name"]).first()
+    
+
+    # Can remove later, just need to know what's needed to win
+    print("!TESTING! Item to guess is ", new_item.itemName)
+
 
     if not new_item:
         print("DB missing item for recipe:", recipe["name"])
