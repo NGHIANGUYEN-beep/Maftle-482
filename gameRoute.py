@@ -1,5 +1,4 @@
 from flask import Blueprint, request, jsonify, render_template
-from sqlalchemy.sql.expression import func
 from databaseTable import Item
 import json
 from flask import session
