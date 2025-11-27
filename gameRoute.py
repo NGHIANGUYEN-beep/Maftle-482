@@ -90,7 +90,7 @@ def check_solution():
             return jsonify({
                 "success": True,
                 "correct": True,
-                "crafted_item": currentUserItem.itemNameUnformatted,
+                "crafted_item": currentUserItem.itemName,
                 "next_item": new_item.itemName,
                 "message": "Correct! New item generated.",
                 "past_guesses": []
