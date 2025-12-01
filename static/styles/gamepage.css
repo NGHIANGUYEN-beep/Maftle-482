@@ -24,7 +24,6 @@ main {  /* Horizontal flexbox */
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Might be kind of a hacky way of limiting the width of stuff */
-    /*margin-top: -2rem;*/ /* Horizontal flex box only begins below the exit button's section */
     margin-left: 3rem;
     margin-top: 8px;
 
@@ -32,6 +31,11 @@ main {  /* Horizontal flexbox */
     overflow-y: auto; /* Adds a vertical scrollbar if content overflows */
     padding: 10px; /* Optional: for spacing */
 }
+/*  Use this to make scroll bar invisible
+#vertical-flexbox-2::-webkit-scrollbar {
+  display: none;
+}
+*/
 .box {
     background-color: #C6C6C6;
     border: 2px solid black;
@@ -57,6 +61,16 @@ main {  /* Horizontal flexbox */
     /* Space between boxes in grid */
     /* gap: 5px; */
 }
+.cell {
+    background-color: #8B8B8B;
+    border-left: 3.5px solid #373737;
+    border-top: 3.5px solid #373737;
+    border-right: 3.5px solid #ffffff;
+    border-bottom: 3.5px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .arrow-box {
     /* Basically a grid item */
     display: flex;
@@ -72,10 +86,10 @@ main {  /* Horizontal flexbox */
     width: 80px;
     height: 80px;
     background-color: #8B8B8B;
-    border-left: 4px solid #373737;
-    border-top: 4px solid #373737;
-    border-right: 4px solid #ffffff;
-    border-bottom: 4px solid #ffffff;
+    border-left: 3.5px solid #373737;
+    border-top: 3.5px solid #373737;
+    border-right: 3.5px solid #ffffff;
+    border-bottom: 3.5px solid #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,18 +98,9 @@ main {  /* Horizontal flexbox */
     max-width: 80px;
     max-height: 80px;
 }
-.cell {
-    background-color: #8B8B8B;
-    border-left: 4px solid #373737;
-    border-top: 4px solid #373737;
-    border-right: 4px solid #ffffff;
-    border-bottom: 4px solid #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* --------Making mini copies of the crafting table-------- */
+/* Making every measurement 1/2 of original table */
 #miniCraftingTable { /* New version of class="box grid-wrapper" id="craftingTable" */
     /* From box: */
     background-color: #C6C6C6;
@@ -103,7 +108,6 @@ main {  /* Horizontal flexbox */
     border-radius: 3px;
     padding: 10px;
     margin-bottom: 12.5px;
-
     /* From gridwrapper: */
     display: flex;
     flex-direction: row;
@@ -123,13 +127,18 @@ main {  /* Horizontal flexbox */
 }
 .miniGridCell {  /* New version of .cell class */
     background-color: #8B8B8B;
-    border-left: 2px solid #373737;
-    border-top: 2px solid #373737;
-    border-right: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
+    border-left: 1.75px solid #373737;
+    border-top: 1.75px solid #373737;
+    border-right: 1.75px solid #ffffff;
+    border-bottom: 1.75px solid #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.miniGridItem {
+    /* From .item img : */
+    width: 37.5px;
+    height: 37.5px;
 }
 #miniArrowBox {
     /* From arrow-box class: */
@@ -148,13 +157,18 @@ main {  /* Horizontal flexbox */
     width: 40px;
     height: 40px;
     background-color: #8B8B8B;
-    border-left: 2px solid #373737;
-    border-top: 2px solid #373737;
-    border-right: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
+    border-left: 1.75px solid #373737;
+    border-top: 1.75px solid #373737;
+    border-right: 1.75px solid #ffffff;
+    border-bottom: 1.75px solid #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#miniOutputItem {
+    /* From output-box img: */
+    max-width: 40px;
+    max-height: 40px;
 }
 /* Should probably also redo .arrow-box img and .output-box img
 /* -------------------------------------------------------- */
