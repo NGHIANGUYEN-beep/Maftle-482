@@ -1,5 +1,4 @@
 from flask import Blueprint, request, jsonify, render_template
-from sqlalchemy.sql.expression import func
 from databaseTable import Item
 import json
 from flask import session
@@ -91,7 +90,7 @@ def check_solution():
             return jsonify({
                 "success": True,
                 "correct": True,
-                "crafted_item": currentUserItem.itemNameUnformatted,
+                "crafted_item": currentUserItem.itemName,
                 "next_item": new_item.itemName,
                 "message": "Correct! New item generated.",
                 "past_guesses": []
@@ -117,6 +116,11 @@ def generateInfiniteItem():
 
     # Pull matching item from DB
     new_item = Item.query.filter_by(itemNameUnformatted=recipe["name"]).first()
+    
+
+    # Can remove later, just need to know what's needed to win
+    print("!TESTING! Item to guess is ", new_item.itemName)
+
 
     if not new_item:
         print("DB missing item for recipe:", recipe["name"])

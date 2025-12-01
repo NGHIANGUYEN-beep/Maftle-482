@@ -68,9 +68,9 @@
   {
     "name": "diamond_sword",
     "pattern": [
-      [null,"diamond",null],
-      [null,"diamond",null],
-      [null,"stick",null]
+      ["diamond"],
+      ["diamond"],
+      ["stick"]
     ]
   },
   {
@@ -84,9 +84,9 @@
   {
     "name": "diamond_axe",
     "pattern": [
-      [null,"diamond","diamond"],
-      [null,"stick","diamond"],
-      [null,"stick",null]
+      ["diamond","diamond"],
+      ["stick","diamond"],
+      ["stick",null]
     ]
   }
 ]
