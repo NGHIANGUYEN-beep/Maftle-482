@@ -220,71 +220,59 @@ function submitGrid() {
     
     // if guess was incorrect, add miniature grid of that guess to our history display
     if (data.success && !data.correct) {
-      console.log("Incorrect item") // testing
-      // Remake the current crafting table and then append it to vertical-flexbox-2
+      console.log("Incorrect item"); // testing
       
-      /*
-      // Using clones - very broken and would probably be very difficult to fix
-      const originalGrid = document.getElementById('craftingTable');
-      const gridClone = originalGrid.cloneNode(true); // Copying our code for drag and drop functionality
-      gridClone.id = originalGrid.id + "-" + Math.random().toString(36).substr(2, 5);
-
-      gridClone.style.maxWidth = '200px';
-
-      const historyView = document.getElementById('vertical-flexbox-2');
-      historyView.append(gridClone);
-      */
-
-      
-      // Can we just make a copy of the crafting grid from scratch
+      // Remake the current crafting table (but mini) and then append it to vertical-flexbox-2
       const newCraftingTable = document.createElement("div");
-      newCraftingTable.id = "miniCraftingTable" // New version of <div class="box grid-wrapper" id="craftingTable">
+      newCraftingTable.id = "miniCraftingTable"; // New version of <div class="box grid-wrapper" id="craftingTable">
       const newGrid = document.createElement("div");
       newGrid.id = "miniGrid" // New version of <div class="grid" id="grid">
 
-      // Still need to set the image somewhere
+      //const miniCells = Array.from({ length: 3 }, () => []);
+      for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+          const cell = document.createElement("div");
+          cell.classList.add("miniGridCell");
+
+          // access the original cell that has data-row of i and data-col of j
+          const origCell = document.querySelector(`.cell[data-row="${i}"][data-col="${j}"]`);   // console.log(origCell.dataset.row);   // console.log(origCell.dataset.col);
+          // If origCell contains an image, add the same image to the mini crafting table
+          if (origCell.hasChildNodes()) {   // Child node will be a div if it contains an image / item
+            const newImg = document.createElement("img");
+            newImg.classList.add("miniGridItem");
+            // Set the src attribute
+            newImg.src = origCell.querySelector('img').src;   // console.log(newImg.src);
+            newImg.setAttribute("draggable", "false");
+            cell.append(newImg);
+          }
+
+          newGrid.appendChild(cell);
+          //miniCells[i][j] = cell;
+        }
+      }      
+
+      // These "boxes" are essentially just cells but outside of the 3x3 grid:
+
       const newArrowBox = document.createElement("div");
-      newArrowBox.id = "miniArrowBox"
-      const newOutputBox =document.createElement("div")
-      newOutputBox.id = "miniOutputBox"
-
-      // Can we set the class like this
-      // element.classList.add('new-class')
-      const newGridCellTopLeft = document.createElement("div");
-      newGridCellTopLeft.classList.add("miniGridCell"); // New version of <div class="cell".... >
-      const newGridCellTopCenter = document.createElement("div");
-      newGridCellTopCenter.classList.add("miniGridCell");
-      const newGridCellTopRight = document.createElement("div");
-      newGridCellTopRight.classList.add("miniGridCell");
-
-      const newGridCellMiddleLeft = document.createElement("div");
-      newGridCellMiddleLeft.classList.add("miniGridCell");
-      const newGridCellMiddleCenter = document.createElement("div");
-      newGridCellMiddleCenter.classList.add("miniGridCell");
-      const newGridCellMiddleRight = document.createElement("div");
-      newGridCellMiddleRight.classList.add("miniGridCell");
-
-      const newGridCellBottomLeft = document.createElement("div");
-      newGridCellBottomLeft.classList.add("miniGridCell");
-      const newGridCellBottomCenter = document.createElement("div");
-      newGridCellBottomCenter.classList.add("miniGridCell");
-      const newGridCellBottomRight = document.createElement("div");
-      newGridCellBottomRight.classList.add("miniGridCell");
-
-      newGrid.append(newGridCellTopLeft);
-      newGrid.append(newGridCellTopCenter);
-      newGrid.append(newGridCellTopRight);
-      newGrid.append(newGridCellMiddleLeft);
-      newGrid.append(newGridCellMiddleCenter);
-      newGrid.append(newGridCellMiddleRight);
-      newGrid.append(newGridCellBottomLeft);
-      newGrid.append(newGridCellBottomCenter);
-      newGrid.append(newGridCellBottomRight);
-
+      newArrowBox.id = "miniArrowBox";
+      
       const newArrowBoxImg = document.createElement("img"); // New version of <img src="/static/CT-Arrow.png"/>
       newArrowBoxImg.id = "miniArrowBoxImg";
       newArrowBoxImg.src = "/static/CT-Arrow.png";
       newArrowBox.append(newArrowBoxImg);
+
+      const newOutputBox = document.createElement("div");
+      newOutputBox.id = "miniOutputBox";
+      
+
+
+      const origOutputBox = document.querySelector('.output-box');   // Should've used an Id instead of a class in the original html - could then just use document.getElementByID() instead of querySelector()
+      const newOutputImg = document.createElement("img");
+      newOutputImg.id = "miniOutputItem";
+      newOutputImg.src = origOutputBox.querySelector('img').src;
+      newOutputImg.setAttribute("draggable", "false");
+      newOutputBox.append(newOutputImg);
+
 
       newCraftingTable.append(newGrid);
       newCraftingTable.append(newArrowBox);
@@ -301,5 +289,5 @@ function submitGrid() {
 function showWinScreen(crafted_item) {
   winDiv = document.getElementById("winScreen");
   winDiv.style.display = "flex";
-  winDiv.innerHTML = `Correct! The item was&nbsp<b>${crafted_item}</b>!`;
+  winDiv.innerHTML = `Correct! The item was&nbsp<b>${crafted_item}</b>! Starting a new game...`;
 }
