@@ -23,15 +23,21 @@ currentDailyItem = {"item": None, "pattern": None, "date": None}
 with open("recipes.json") as f:
     RECIPES = json.load(f)
 
-#Renders the pages page
+# ========== ROUTES ========== #
 
 @gameBP.route("/tutorialpage.html", methods=['GET'])
 def tutorial():
     return render_template('/tutorialpage.html')
 
-@gameBP.route("/gamepage.html", methods=['GET'])
+@gameBP.route("/infinite", methods=['GET'])
 def index():
-    return render_template('/gamepage.html')
+    return render_template('/gamepage.html', mode = "infinite")
+
+@gameBP.route("/daily", methods=['GET'])
+def daily_mode():
+    return render_template('/gamepage.html', mode = "daily")
+
+# ============ CRAFTING LOGIC ============ #
 
 # Checking if what's in the crafting table is a valid recipe, and if so, sending the resulting item back
 @gameBP.route("/check-craft-result", methods=["POST"])
@@ -114,6 +120,7 @@ def check_solution():
     print("You have not crafted a valid recipe")
     return jsonify({"success": False, "past_guesses": session["past_guesses"]})
 
+# ============ INFINITE ITEM GENERATOR ============ #
 
 #Generates a new infinite target item
 def generateInfiniteItem():
@@ -152,7 +159,8 @@ def getInfiniteItemPattern():
     return currentInfiniteItem["pattern"]
 
 
-@gameBP.route("/daily", methods=["GET"])
+# ============ DAILY ITEM GENERATOR ============ #
+
 def generateDailyItem():
     print("Generating new daily item...")
 
@@ -200,9 +208,6 @@ def check_daily_answer():
     # retrieve daily item and pattern
     target_item = getDailyItem()
     target_pattern = getDailyItemPattern()
-
-    # validate recipe using existing infinite mode tool
-    # (your existing craft_item() logic)
     valid = False
     crafted_item = None
     for recipe in RECIPES:
