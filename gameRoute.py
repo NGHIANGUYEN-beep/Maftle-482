@@ -23,7 +23,12 @@ currentDailyItem = {"item": None, "pattern": None, "date": None}
 with open("recipes.json") as f:
     RECIPES = json.load(f)
 
-#Renders the game page
+#Renders the pages page
+
+@gameBP.route("/tutorialpage.html", methods=['GET'])
+def tutorial():
+    return render_template('/tutorialpage.html')
+
 @gameBP.route("/gamepage.html", methods=['GET'])
 def index():
     return render_template('/gamepage.html')
