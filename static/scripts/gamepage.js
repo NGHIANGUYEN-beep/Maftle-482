@@ -289,5 +289,5 @@ function submitGrid() {
 function showWinScreen(crafted_item) {
   winDiv = document.getElementById("winScreen");
   winDiv.style.display = "flex";
-  winDiv.innerHTML = `Correct! The item was&nbsp<b>${crafted_item}</b>!`;
+  winDiv.innerHTML = `Correct! The item was&nbsp<b>${crafted_item}</b>! Starting a new game...`;
 }
