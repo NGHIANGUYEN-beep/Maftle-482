@@ -167,6 +167,7 @@ def generateDailyItem():
     print("[Daily] Today's daily item is:", item.itemName)
     return item
 
+@gameBP.route("/daily", methods=["GET"])
 def getDailyItem():
     today = date.today()
 
