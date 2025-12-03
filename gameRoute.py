@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify, render_template
 from databaseTable import Item
 import json
-from flask import session
+from flask import session   # I don't think we're using this now
 import random
 from datetime import date
 gameBP = Blueprint("craft", __name__)
@@ -74,14 +74,14 @@ def check_solution():
     #Initialization for checking answer
     data = request.json
     grid = data.get("grid")
-    # target_item = getInfiniteItem()
-    getInfiniteItem()
+    target_item = getInfiniteItem()     # We need to call the function here, but we're only saving the returned value to a variable so we can send it back to the front end for debugging
     target_item_pattern = getInfiniteItemPattern()
 
     #Global Variables
     global isValidRecipe
     global currentUserItem
 
+    """  - I don't think we're using this:
     #Base case: Initialize past guesses if not present
     if "past_guesses" not in session:
         session["past_guesses"] = []
@@ -89,6 +89,7 @@ def check_solution():
     #Appends past guess to session
     session["past_guesses"].append(grid)
     session.modified = True
+    """
     
     # Tells you whether what's currently in the crafting table is a valid recipe
     if isValidRecipe:
@@ -96,31 +97,35 @@ def check_solution():
         if grid == target_item_pattern:
             # Correct guess → generate a new target
             # Resets past guesses
+            """
             session["past_guesses"] = []
             session.modified = True
-            new_item = generateInfiniteItem()
+            """
+            # new_item = generateInfiniteItem()
+            generateInfiniteItem()
             print("You have crafted the correct item:", currentUserItem.itemNameUnformatted)
             return jsonify({
                 "success": True,
                 "correct": True,
-                "crafted_item": currentUserItem.itemName,
-                "next_item": new_item.itemName,
-                "message": "Correct! New item generated.",
-                "past_guesses": []
+                "crafted_item": currentUserItem.itemName
+                # "next_item": new_item.itemName,   # I don't think we're using this anywhere
+                # "message": "Correct! New item generated.",    We're just doing this on the frontend
+                # "past_guesses": []    # Not using this
             })
         else:
             print("You have crafted an item, but it's not the target:", currentUserItem.itemNameUnformatted)
             return jsonify({
                 "success": True,
                 "correct": False,
+                "answer": target_item.itemName,
                 "answerPattern": target_item_pattern,
                 "crafted_item": currentUserItem.itemNameUnformatted,
-                "message": "Valid item, but not the target.",
-                "past_guesses": session["past_guesses"]
+                # "message": "Valid item, but not the target.",
+                # "past_guesses": session["past_guesses"]   # Not using this
             })
     # If the user clicked "Submit Guess" without there being a valid recipe in the table
     print("You have not crafted a valid recipe")
-    return jsonify({"success": False, "past_guesses": session["past_guesses"]})
+    return jsonify({"success": False})    # , "past_guesses": session["past_guesses"]   - (not using)
 
 # ============ INFINITE ITEM GENERATOR ============ #
 
@@ -132,10 +137,8 @@ def generateInfiniteItem():
     # Pull matching item from DB
     new_item = Item.query.filter_by(itemNameUnformatted=recipe["name"]).first()
     
-
     # Can remove later, just need to know what's needed to win
     print("!TESTING! Item to guess is ", new_item.itemName)
-
 
     if not new_item:
         print("DB missing item for recipe:", recipe["name"])
