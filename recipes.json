@@ -88,5 +88,21 @@
       ["stick","diamond"],
       ["stick",null]
     ]
+  },
+  {
+    "name": "diamond_shovel",
+    "pattern": [
+      ["diamond"],
+      ["stick"],
+      ["stick"]
+    ]
+  },
+  {
+    "name": "diamond_hoe",
+    "pattern": [
+      ["diamond","diamond"],
+      [null,"stick"],
+      [null, "stick"]
+    ]
   }
 ]
