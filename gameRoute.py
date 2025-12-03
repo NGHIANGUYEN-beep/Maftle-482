@@ -62,7 +62,8 @@ def check_solution():
     #Initialization for checking answer
     data = request.json
     grid = data.get("grid")
-    target_item = getInfiniteItem()
+    # target_item = getInfiniteItem()
+    getInfiniteItem()
     target_item_pattern = getInfiniteItemPattern()
 
     #Global Variables
@@ -100,6 +101,7 @@ def check_solution():
             return jsonify({
                 "success": True,
                 "correct": False,
+                "answerPattern": target_item_pattern,
                 "crafted_item": currentUserItem.itemNameUnformatted,
                 "message": "Valid item, but not the target.",
                 "past_guesses": session["past_guesses"]

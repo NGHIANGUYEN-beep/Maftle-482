@@ -219,7 +219,9 @@ function submitGrid() {
     // if guess was correct, add a point in infinite mode
     
     // if guess was incorrect, add miniature grid of that guess to our history display
-    if (data.success && !data.correct) {
+    if (data.success) {
+      console.log(data.answerPattern);
+      
       console.log("Incorrect item"); // testing
       
       // Remake the current crafting table (but mini) and then append it to vertical-flexbox-2
@@ -228,7 +230,6 @@ function submitGrid() {
       const newGrid = document.createElement("div");
       newGrid.id = "miniGrid" // New version of <div class="grid" id="grid">
 
-      //const miniCells = Array.from({ length: 3 }, () => []);
       for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
           const cell = document.createElement("div");
@@ -236,6 +237,7 @@ function submitGrid() {
 
           // access the original cell that has data-row of i and data-col of j
           const origCell = document.querySelector(`.cell[data-row="${i}"][data-col="${j}"]`);   // console.log(origCell.dataset.row);   // console.log(origCell.dataset.col);
+          
           // If origCell contains an image, add the same image to the mini crafting table
           if (origCell.hasChildNodes()) {   // Child node will be a div if it contains an image / item
             const newImg = document.createElement("img");
@@ -246,8 +248,24 @@ function submitGrid() {
             cell.append(newImg);
           }
 
+          // Check if an item is in the correct answers
+          // Get item
+          const item = origCell.querySelector('.item');
+          if (item != null) {
+            console.log(item);
+            console.log(item.dataset.id);
+            // Check if item.dataset.id (string) is in data.answerPattern (array of arrays of strings)
+            if (data.answerPattern.some(innerArray => innerArray.includes(item.dataset.id)) ) {   // used kind of shitty ai code for if condition
+              // console.log("Item included in recipe");
+              cell.style.backgroundColor = "#00ff00";
+            }
+            else {
+              cell.style.backgroundColor = "#ff0000";
+            }
+          }
+          
+
           newGrid.appendChild(cell);
-          //miniCells[i][j] = cell;
         }
       }      
 
@@ -278,9 +296,11 @@ function submitGrid() {
       newCraftingTable.append(newArrowBox);
       newCraftingTable.append(newOutputBox);
 
+
       const pastGuessView = document.getElementById('vertical-flexbox-2');
       pastGuessView.append(newCraftingTable);
-      
+
+      clearGrid();      
     }
   })
   .catch(err => console.error('Error:', err));
