@@ -177,7 +177,7 @@ function seeRecipe() {
   .then(res => res.json())
   // Display craftable item
   .then(data => {
-    console.log("SERVER RESPONSE:", data);
+    // console.log("SERVER RESPONSE:", data); // Debugging
     if (data.success && data.crafted_item) {
       const img = document.getElementById("output-image");
       img.src = `/static/items/${data.crafted_item}.png`;
@@ -191,9 +191,7 @@ function seeRecipe() {
 
 // Sends grid to backend to confirm if pattern in grid is the correct answer
 function submitGrid() {
-  //We should be able add more logic down here when we want to change guess colors once they press the actual "Submit Guess" button
   // Going through grid, and filling out grid data array
-
   trimmedGrid = processGridInput()
 
   // Send to server
@@ -206,9 +204,9 @@ function submitGrid() {
   })
   .then(res => res.json()) // idk what this does
   .then(data => {
-    console.log("SERVER RESPONSE:", data);
+    // console.log("SERVER RESPONSE:", data); // Debugging
     if (data.correct === true) { // Displays a win screen, then refreshes the page
-      showWinScreen(data.crafted_item)
+      showWinScreen(data.crafted_item)  // Why is there no ";" at the end of this line - is that why the code is weird?
       setTimeout(() => {
         window.location.reload();
       }, 2000); // Kind of delicate. If some code is wrong, this doesn't trigger?
@@ -218,44 +216,57 @@ function submitGrid() {
     // Now we can do stuff with all of the info it sends back
     // if guess was correct, add a point in infinite mode
     
-    // if guess was incorrect, add miniature grid of that guess to our history display
-    if (data.success && !data.correct) {
-      console.log("Incorrect item"); // testing
+    // if guess was valid but incorrect, add miniature grid of that guess to our history display
+    if (data.success) {
+      console.log(data.answerPattern)
+      console.log(data.answer); // Debugging
+      // console.log("Incorrect item"); // Debugging
       
-      // Remake the current crafting table (but mini) and then append it to vertical-flexbox-2
+      // ***Remake the current crafting table (but mini) and then append it to vertical-flexbox-2
       const newCraftingTable = document.createElement("div");
       newCraftingTable.id = "miniCraftingTable"; // New version of <div class="box grid-wrapper" id="craftingTable">
       const newGrid = document.createElement("div");
       newGrid.id = "miniGrid" // New version of <div class="grid" id="grid">
-
-      //const miniCells = Array.from({ length: 3 }, () => []);
+      // New cells
       for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
+          // New cells
           const cell = document.createElement("div");
           cell.classList.add("miniGridCell");
-
-          // access the original cell that has data-row of i and data-col of j
-          const origCell = document.querySelector(`.cell[data-row="${i}"][data-col="${j}"]`);   // console.log(origCell.dataset.row);   // console.log(origCell.dataset.col);
+          
+          // Access the original cell that has data-row of i and data-col of j
+          const origCell = document.querySelector(`.cell[data-row="${i}"][data-col="${j}"]`);   // console.log(origCell.dataset.row);   // console.log(origCell.dataset.col); // Debugging
           // If origCell contains an image, add the same image to the mini crafting table
           if (origCell.hasChildNodes()) {   // Child node will be a div if it contains an image / item
             const newImg = document.createElement("img");
             newImg.classList.add("miniGridItem");
             // Set the src attribute
-            newImg.src = origCell.querySelector('img').src;   // console.log(newImg.src);
+            newImg.src = origCell.querySelector('img').src;   // console.log(newImg.src); // Debugging
             newImg.setAttribute("draggable", "false");
             cell.append(newImg);
           }
-
+          // Check if an item is in the correct answers - green if it is, red if not
+          // Get item
+          const item = origCell.querySelector('.item');
+          if (item != null) {
+            console.log(item); // Debugging
+            console.log(item.dataset.id); // Debugging
+            // Check if item.dataset.id (string) is in data.answerPattern (array of arrays of strings)
+            if (data.answerPattern.some(innerArray => innerArray.includes(item.dataset.id)) ) {   // used kind of shitty ai code for if condition
+              // console.log("Item included in recipe"); // Debugging
+              cell.style.backgroundColor = "#00ff00";
+            }
+            else {
+              cell.style.backgroundColor = "#ff0000";
+            }
+          }
           newGrid.appendChild(cell);
-          //miniCells[i][j] = cell;
         }
       }      
-
       // These "boxes" are essentially just cells but outside of the 3x3 grid:
-
       const newArrowBox = document.createElement("div");
       newArrowBox.id = "miniArrowBox";
-      
+      // Arrow image
       const newArrowBoxImg = document.createElement("img"); // New version of <img src="/static/CT-Arrow.png"/>
       newArrowBoxImg.id = "miniArrowBoxImg";
       newArrowBoxImg.src = "/static/CT-Arrow.png";
@@ -263,9 +274,7 @@ function submitGrid() {
 
       const newOutputBox = document.createElement("div");
       newOutputBox.id = "miniOutputBox";
-      
-
-
+      // Output image
       const origOutputBox = document.querySelector('.output-box');   // Should've used an Id instead of a class in the original html - could then just use document.getElementByID() instead of querySelector()
       const newOutputImg = document.createElement("img");
       newOutputImg.id = "miniOutputItem";
@@ -273,19 +282,20 @@ function submitGrid() {
       newOutputImg.setAttribute("draggable", "false");
       newOutputBox.append(newOutputImg);
 
-
+      // Add all of the components into the new crafting table, then add the new crafting table to our history column
       newCraftingTable.append(newGrid);
       newCraftingTable.append(newArrowBox);
       newCraftingTable.append(newOutputBox);
-
       const pastGuessView = document.getElementById('vertical-flexbox-2');
       pastGuessView.append(newCraftingTable);
-      
+
+      // Clear the grid after the user submits their guess
+      clearGrid();      
     }
   })
   .catch(err => console.error('Error:', err));
-
 }
+
 function showWinScreen(crafted_item) {
   winDiv = document.getElementById("winScreen");
   winDiv.style.display = "flex";
